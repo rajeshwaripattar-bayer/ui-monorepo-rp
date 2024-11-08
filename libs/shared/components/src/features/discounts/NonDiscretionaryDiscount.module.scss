@@ -1,0 +1,53 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.card {
+  border: 0 !important;
+  margin-top: 24px;
+}
+.card_title {
+  margin: -4px 0px;
+  padding: 12px 24px !important;
+}
+.prepay_section {
+  padding: 8px 0px 16px 0px;
+}
+.prepay_select {
+  margin-top: 12px;
+}
+.strategy_list {
+  @media (max-width: 599px) {
+    width: 95%;
+  }
+  @media (min-width: 600px) {
+    width: 97%;
+  }
+  overflow: hidden !important;
+}
+.table {
+  border: none;
+  :global(.lmnt-select__anchor) {
+    min-height: 40px !important;
+  }
+  :global(.lmnt-select-container) {
+    margin-top: 2px;
+  }
+  :global(.mdc-notched-outline__leading) {
+    border-radius: 0 !important;
+  }
+  :global(.mdc-notched-outline__trailing) {
+    border-radius: 0 !important;
+  }
+
+  th:first-child {
+    padding-left: 24px;
+  }
+
+  th:last-child {
+    padding-right: 24px;
+  }
+}

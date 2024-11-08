@@ -1,0 +1,41 @@
+.container {
+  padding: 0px 4% 0px 4%;
+  position: fixed;
+  height: 48px;
+  width: 92%;
+  top: 8px;
+  background: #fff;
+  z-index: 10;
+  right: 0px;
+  left: 81px;
+
+  @media (max-width: 599px) {
+    left: 0px !important;
+  }
+  @media (min-width: 600px) {
+    width: 92%;
+    position: inherit;
+  }
+
+  :global(.mdc-text-field__icon--leading) {
+    margin-left: 0px;
+  }
+}
+
+.farmer_search {
+  left: 0px;
+  position: absolute;
+  @media (max-width: 1023px) {
+    z-index: 3;
+  }
+}
+.search {
+  .search-icon {
+    color: #262626;
+  }
+}
+.search:focus {
+  .search-icon {
+    color: blue;
+  }
+}

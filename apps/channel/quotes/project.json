@@ -1,0 +1,122 @@
+{
+  "name": "channel-quotes",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/channel/quotes/src",
+  "projectType": "application",
+  "tags": ["scope:channel-quotes", "type:app"],
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/channel/quotes",
+        "outputFileName": "bundle",
+        "index": "apps/channel/quotes/src/index.html",
+        "baseHref": "/",
+        "main": "apps/channel/quotes/src/faste.tsx",
+        "tsConfig": "apps/channel/quotes/tsconfig.app.json",
+        "assets": ["apps/channel/quotes/src/favicon.ico", "apps/channel/quotes/src/assets"],
+        "styles": ["apps/channel/quotes/src/styles.scss"],
+        "scripts": [],
+        "vendorChunk": false,
+        "webpackConfig": "webpack.config.js"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": false
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/channel/quotes/src/environments/environment.ts",
+              "with": "apps/channel/quotes/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": false
+        },
+        "browser": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": false,
+          "vendorChunk": true,
+          "main": "apps/channel/quotes/src/browser.tsx",
+          "outputFileName": "main",
+          "webpackConfig": "webpack.browser.config.js"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/webpack:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "channel-quotes:build",
+        "port": 3003,
+        "allowedHosts": "all"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "channel-quotes:build:development",
+          "ssl": true,
+          "sslKey": "./localhost-key.pem",
+          "sslCert": "./localhost.pem"
+        },
+        "production": {
+          "buildTarget": "channel-quotes:build:production",
+          "ssl": true,
+          "sslKey": "./localhost-key.pem",
+          "sslCert": "./localhost.pem"
+        },
+        "browser": {
+          "buildTarget": "channel-quotes:build:browser",
+          "port": 1233
+        }
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "tools/scripts",
+        "command": "./spectrum-deploy.sh channel/quotes channel-quotes {args.ENV}",
+        "parallel": true
+      }
+    },
+    "check": {
+      "executor": "nx:run-commands",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "command": "biome check --error-on-warnings",
+        "cwd": "apps/channel/quotes"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "command": "biome lint --error-on-warnings",
+        "cwd": "apps/channel/quotes"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/channel/quotes/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "webpack-bundle-analyzer": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nx build --stats-json --skip-nx-cache --configuraion=production && webpack-bundle-analyzer dist/apps/channel/quotes/stats.json"
+      }
+    },
+    "version": { "executor": "@jscutlery/semver:version", "options": { "preset": "conventional" } }
+  }
+}

@@ -1,0 +1,10 @@
+/* Your styles goes here. */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+@media (max-width: 719px) {
+  :global(.lmnt.lmnt-modal .lmnt-modal__container.mdc-dialog--fullscreen .mdc-dialog__surface) {
+    height: 100% !important;
+  }
+}

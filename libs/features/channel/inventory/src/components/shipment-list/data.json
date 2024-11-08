@@ -1,0 +1,286 @@
+{
+   "delivery" : [ {
+      "agent" : {
+         "name" : "BRIAN HAVLIK",
+         "uid" : "0009146406"
+      },
+      "code" : "501136100",
+      "createdOnDateTime" : "2024-04-22T10:55:36-05:00",
+      "entries" : [ {
+         "batchName" : "TEST1",
+         "deliveryItemNumber" : "000010",
+         "product" : {
+            "available" : 0.0,
+            "code" : "000000000045361170",
+            "name" : "PR106-22SSC VT2P 50USP F+I+N+B360"
+         },
+         "quantity" : 2,
+         "salesOrderEntryNumber" : "10",
+         "salesUnitOfMeasureCode" : "BUN",
+         "storageLocation" : {
+            "address" : {
+               "city" : "WHITE LAKE",
+               "line1" : "37329 US HWY 16",
+               "postalcode" : "57383",
+               "region" : "SD",
+               "streetName" : "37329 US HWY 16",
+               "uid" : "8V2U_WH02-L"
+            },
+            "code" : "8V2U_WH02",
+            "locationCode" : "WH02",
+            "locationName" : "BRIAN HAVLIK - BEAN",
+            "plant" : "SM Kimball SD - Brian Havlik"
+         },
+         "transferOrderEntryNumber" : "10",
+         "warehouse" : {
+            "address" : {
+               "city" : "WHITE LAKE",
+               "line1" : "37329 US HWY 16",
+               "postalcode" : "57383",
+               "region" : "SD",
+               "streetName" : "37329 US HWY 16",
+               "uid" : "8V2U_WH02-L"
+            },
+            "code" : "8V2U_WH02",
+            "name" : "BRIAN HAVLIK - BEAN",
+            "plantCode" : "8V2U"
+         }
+      } ],
+      "farmer" : {
+         "name" : "BRIAN HAVLIK",
+         "uid" : "0009146406"
+      },
+      "fromWarehouse" : {
+         "country" : {
+            "isocode" : "US",
+            "name" : "United States"
+         },
+         "defaultAddress" : false,
+         "email" : "phcrest@midstatesd.net",
+         "formattedAddress" : "23625 365th Ave, South Dakota, Kimball, 57355-6004",
+         "id" : "8860318433303",
+         "line1" : "23625 365th Ave",
+         "phone" : "605-778-6380",
+         "postalCode" : "57355-6004",
+         "region" : {
+            "countryIso" : "US",
+            "isocode" : "US-SD",
+            "isocodeShort" : "SD",
+            "name" : "South Dakota"
+         },
+         "shippingAddress" : true,
+         "town" : "Kimball",
+         "visibleInAddressBook" : true
+      },
+      "lineOfBusiness" : "SEED",
+      "plannedShipDate" : "2024-04-22T19:00:00-05:00",
+      "salesOrderId" : "0000129707",
+      "shipToAddress" : {
+         "country" : {
+            "isocode" : "US",
+            "name" : "United States"
+         },
+         "defaultAddress" : false,
+         "email" : "sue.norris@monsanto.com",
+         "formattedAddress" : "23625 365TH AVE, South Dakota, KIMBALL, 57355-6004",
+         "id" : "8806185598999",
+         "line1" : "23625 365TH AVE",
+         "phone" : "605-778-6340",
+         "postalCode" : "57355-6004",
+         "region" : {
+            "countryIso" : "US",
+            "isocode" : "US-SD",
+            "isocodeShort" : "SD",
+            "name" : "South Dakota"
+         },
+         "shippingAddress" : false,
+         "town" : "KIMBALL",
+         "visibleInAddressBook" : true
+      },
+      "shipToWarehouse" : {
+         "country" : {
+            "isocode" : "US",
+            "name" : "United States"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "37329 US HWY 16, South Dakota, WHITE LAKE, 57383",
+         "id" : "8860319842327",
+         "line1" : "37329 US HWY 16",
+         "postalCode" : "57383",
+         "region" : {
+            "countryIso" : "US",
+            "isocode" : "US-SD",
+            "isocodeShort" : "SD",
+            "name" : "South Dakota"
+         },
+         "shippingAddress" : true,
+         "town" : "WHITE LAKE",
+         "visibleInAddressBook" : true
+      },
+      "shipmentId" : "0833990260",
+      "status" : "DELIVERED",
+      "statusText" : "Goods Issued",
+      "transferOrderId" : "0000129707"
+   }, {
+      "agent" : {
+         "name" : "BRIAN HAVLIK",
+         "uid" : "0009146406"
+      },
+      "code" : "08017522100",
+      "createdOnDateTime" : "2023-08-13T19:00:00-05:00",
+      "entries" : [ {
+         "batchName" : "batch123",
+         "deliveryItemNumber" : "000010",
+         "product" : {
+            "available" : 0.0,
+            "code" : "000000000089231108",
+            "name" : "180-33VT2PRIB 80M BAG BAS500 B"
+         },
+         "quantity" : 10,
+         "salesOrderEntryNumber" : "10",
+         "salesUnitOfMeasureCode" : "BG",
+         "seedSize" : "size123",
+         "transferOrderEntryNumber" : "10"
+      }, {
+         "batchName" : "batch123",
+         "deliveryItemNumber" : "000020",
+         "product" : {
+            "available" : 0.0,
+            "code" : "000000000012287034",
+            "name" : "192-08VT2PRIB 40U BOX BAS250"
+         },
+         "quantity" : 2,
+         "salesOrderEntryNumber" : "20",
+         "salesUnitOfMeasureCode" : "BG",
+         "seedSize" : "size123",
+         "transferOrderEntryNumber" : "20"
+      } ],
+      "farmer" : {
+         "name" : "AGRAVIS RAIFFEISEN AG",
+         "uid" : "0001008596"
+      },
+      "fromWarehouse" : {
+         "country" : {
+            "isocode" : "US",
+            "name" : "United States"
+         },
+         "defaultAddress" : false,
+         "email" : "phcrest@midstatesd.net",
+         "formattedAddress" : "23625 365th Ave, South Dakota, Kimball, 57355-6004",
+         "id" : "8860318433303",
+         "line1" : "23625 365th Ave",
+         "phone" : "605-778-6380",
+         "postalCode" : "57355-6004",
+         "region" : {
+            "countryIso" : "US",
+            "isocode" : "US-SD",
+            "isocodeShort" : "SD",
+            "name" : "South Dakota"
+         },
+         "shippingAddress" : true,
+         "town" : "Kimball",
+         "visibleInAddressBook" : true
+      },
+      "lineOfBusiness" : "SEED",
+      "plannedShipDate" : "2023-08-13T19:00:00-05:00",
+      "salesOrderId" : "T1-49398115",
+      "shipToAddress" : {
+         "country" : {
+            "isocode" : "US",
+            "name" : "United States"
+         },
+         "defaultAddress" : false,
+         "firstName" : "Dakota",
+         "formattedAddress" : "23625 365TH AVE, 23625 365TH AVE, US, 57355-6004",
+         "id" : "8860744318999",
+         "lastName" : "KIMBALL",
+         "line1" : "23625 365TH AVE",
+         "line2" : "23625 365TH AVE",
+         "postalCode" : "57355-6004",
+         "shippingAddress" : false,
+         "town" : "US",
+         "visibleInAddressBook" : true
+      },
+      "shipToWarehouse" : {
+         "country" : {
+            "isocode" : "US",
+            "name" : "United States"
+         },
+         "defaultAddress" : false,
+         "formattedAddress" : "37329 US HWY 16, South Dakota, WHITE LAKE, 57383",
+         "id" : "8860319842327",
+         "line1" : "37329 US HWY 16",
+         "postalCode" : "57383",
+         "region" : {
+            "countryIso" : "US",
+            "isocode" : "US-SD",
+            "isocodeShort" : "SD",
+            "name" : "South Dakota"
+         },
+         "shippingAddress" : true,
+         "town" : "WHITE LAKE",
+         "visibleInAddressBook" : true
+      },
+      "status" : "DELIVERED",
+      "statusText" : "Goods Issued",
+      "transferOrderId" : "T1-49398115"
+   }, {
+      "agent" : {
+         "name" : "BRIAN HAVLIK",
+         "uid" : "0009146406"
+      },
+      "code" : "0801763224",
+      "createdOnDateTime" : "2024-09-11T13:56:11-05:00",
+      "entries" : [ {
+         "batchName" : "K38FCMKP8",
+         "deliveryItemNumber" : "000010",
+         "product" : {
+            "available" : 0.0,
+            "code" : "000000000089231108",
+            "name" : "180-33VT2PRIB 80M BAG BAS500 B"
+         },
+         "quantity" : 4,
+         "salesOrderEntryNumber" : "10",
+         "salesUnitOfMeasureCode" : "SSU",
+         "transferOrderEntryNumber" : "10"
+      } ],
+      "farmer" : {
+         "name" : "CARL GREEN",
+         "uid" : "0009221009"
+      },
+      "fromWarehouse" : {
+         "country" : {
+            "isocode" : "US",
+            "name" : "United States"
+         },
+         "defaultAddress" : false,
+         "email" : "phcrest@midstatesd.net",
+         "formattedAddress" : "23625 365th Ave, South Dakota, Kimball, 57355-6004",
+         "id" : "8860318433303",
+         "line1" : "23625 365th Ave",
+         "phone" : "605-778-6380",
+         "postalCode" : "57355-6004",
+         "region" : {
+            "countryIso" : "US",
+            "isocode" : "US-SD",
+            "isocodeShort" : "SD",
+            "name" : "South Dakota"
+         },
+         "shippingAddress" : true,
+         "town" : "Kimball",
+         "visibleInAddressBook" : true
+      },
+      "lineOfBusiness" : "SEED",
+      "plannedShipDate" : "2024-09-10T19:00:00-05:00",
+      "salesOrderId" : "BC-0060375908",
+      "status" : "GOODS_ISSUED",
+      "statusText" : "Goods Issued",
+      "transferOrderId" : "BC-0060375908"
+   } ],
+   "pagination" : {
+      "count" : 20,
+      "page" : 0,
+      "totalCount" : 3,
+      "totalPages" : 1
+   }
+}

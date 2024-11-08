@@ -1,0 +1,32 @@
+{
+  "name": "features-channel-quotes",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/channel/quotes/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "check": {
+      "executor": "nx:run-commands",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "command": "biome check --error-on-warnings",
+        "cwd": "libs/features/channel/quotes"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "command": "biome lint --error-on-warnings",
+        "cwd": "libs/features/channel/quotes"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/features/channel/quotes/jest.config.ts"
+      }
+    }
+  }
+}

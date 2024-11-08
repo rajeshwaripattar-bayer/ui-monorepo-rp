@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductListHeader should render successfully for desktop 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="container undefined"
+      >
+        <i
+          aria-hidden="false"
+          class="lmnt lmnt-icon material-icons lmnt-icon--medium lmnt-icon--fill lmnt-icon--fill-secondary"
+        >
+          tune
+        </i>
+        <div
+          class="info"
+        >
+          <span
+            class="mdc-typography lmnt mdc-typography--subtitle2"
+          >
+            2
+             
+            Corn
+             
+            common.product.label
+          </span>
+          <span
+            class="mdc-typography lmnt mdc-typography--caption"
+          >
+            common.average_desktop.label:
+             
+            $100.00
+            /
+            common.unit.label
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container undefined"
+    >
+      <i
+        aria-hidden="false"
+        class="lmnt lmnt-icon material-icons lmnt-icon--medium lmnt-icon--fill lmnt-icon--fill-secondary"
+      >
+        tune
+      </i>
+      <div
+        class="info"
+      >
+        <span
+          class="mdc-typography lmnt mdc-typography--subtitle2"
+        >
+          2
+           
+          Corn
+           
+          common.product.label
+        </span>
+        <span
+          class="mdc-typography lmnt mdc-typography--caption"
+        >
+          common.average_desktop.label:
+           
+          $100.00
+          /
+          common.unit.label
+        </span>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`ProductListHeader should render successfully for mobile 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="container undefined"
+      >
+        <i
+          aria-hidden="false"
+          class="lmnt lmnt-icon material-icons lmnt-icon--medium lmnt-icon--fill lmnt-icon--fill-secondary"
+        >
+          tune
+        </i>
+        <div
+          class="info"
+        >
+          <span
+            class="mdc-typography lmnt mdc-typography--subtitle1"
+          >
+            2
+             
+            Corn
+             
+            common.product.label
+          </span>
+          <span
+            class="mdc-typography lmnt mdc-typography--caption"
+          >
+            common.average_mobile.label
+             
+            $100.00
+            /
+            common.unit.label
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container undefined"
+    >
+      <i
+        aria-hidden="false"
+        class="lmnt lmnt-icon material-icons lmnt-icon--medium lmnt-icon--fill lmnt-icon--fill-secondary"
+      >
+        tune
+      </i>
+      <div
+        class="info"
+      >
+        <span
+          class="mdc-typography lmnt mdc-typography--subtitle1"
+        >
+          2
+           
+          Corn
+           
+          common.product.label
+        </span>
+        <span
+          class="mdc-typography lmnt mdc-typography--caption"
+        >
+          common.average_mobile.label
+           
+          $100.00
+          /
+          common.unit.label
+        </span>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

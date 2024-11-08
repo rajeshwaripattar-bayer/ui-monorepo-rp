@@ -1,0 +1,166 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.container {
+  display: flex;
+  min-width: 200;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.icon_container {
+  display: inline;
+  padding-right: 5px !important;
+}
+
+.text_container {
+  display: inline-block;
+  flex-wrap: none;
+}
+
+.info_container {
+  display: flex;
+  flex-wrap: none;
+  padding-top: 0px;
+}
+
+.show_action_button{
+  @media (max-width: 1023px) {
+    padding-bottom: 16px;
+  }
+}
+
+.action_container {
+  margin-left: auto;
+  align-content: center;
+  float:right;
+}
+
+.alert {
+  min-width: 50%;
+}
+
+.title {
+  display: block;
+  font-weight: 500;
+}
+.description {
+  display: block;
+  font-weight: 400;
+}
+.info_tonal {
+  background-color: #d1e5fa;
+  .icon {
+    color: #1466b7;
+  }
+  .text {
+    color: #082645;
+  }
+}
+.info_filled {
+  background-color: #1466b7;
+  .icon {
+    color: #b6d6f7;
+  }
+  .text {
+    color: #ffffff;
+  }
+}
+.info_outlined {
+  border: 1px solid #1466b7;
+  .icon {
+    color: #1466b7;
+  }
+  .text {
+    color: #082645;
+  }
+}
+
+.warning_tonal {
+  background-color: #ffeebd;
+  .icon {
+    color: #b87c05;
+  }
+  .text {
+    color: #4d3000;
+  }
+}
+.warning_filled {
+  background-color: #b87c05;
+  .icon {
+    color: #ffe494;
+  }
+  .text {
+    color: #ffffff;
+  }
+}
+.warning_outlined {
+  border: 1px solid #b87c05;
+  .icon {
+    color: #b87c05;
+  }
+  .text {
+    color: #4d3000;
+  }
+}
+
+.error_tonal {
+  background-color: #ffccce;
+  .icon {
+    color: #cf2d22;
+  }
+  .text {
+    color: #b3190d;
+  }
+}
+
+.error_filled {
+  background-color: #b85302;
+  .icon {
+    color: #ffc18d;
+  }
+  .text {
+    color: #ffffff;
+  }
+}
+
+.error_outlined {
+  border: 1px solid #ce630b;
+  .icon {
+    color: #ce630b;
+  }
+  .text {
+    color: #652d01;
+  }
+}
+
+.success_tonal {
+  background-color: #eeffef;
+  .icon {
+    color: #01830c;
+  }
+  .text {
+    color: #053709;
+  }
+}
+.success_filled {
+  background-color: #01830c;
+  .icon {
+    color: #d3ffd7;
+  }
+  .text {
+    color: #ffffff;
+  }
+}
+.success_outlined {
+  border: 1px solid #01830c;
+  .icon {
+    color: #01830c;
+  }
+  .text {
+    color: #053709;
+  }
+}

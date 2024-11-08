@@ -1,0 +1,73 @@
+name: Set Environment
+description: Sets the staging environment
+
+inputs:
+  VAULT_ROLE_ID:
+    description: Use secrets.VAULT_ROLE_ID
+    required: true
+  VAULT_SECRET_ID:
+    description: Use secrets.VAULT_SECRET_ID
+    required: true
+  VAULT_PATH:
+    description: Use env.VAULT_NON_PROD_PATH
+    required: false
+    default: kv/data/gc-agency/npm
+  is_prod:
+    description: Set to true if workflow is for production
+    required: true
+    default: 'false'
+  is_np:
+    description: Set to true if workflow needs to override to np
+    required: false
+    default: 'true'
+  node_version:
+    description: Version of node to run workflow
+    default: "20"
+    required: false
+  base_branch:
+    description: The base branch of your repository (the branch which you target with PRs).
+    default: 'development'
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - name : Set NX SHAs
+      uses: nrwl/nx-set-shas@v4
+      with:
+        # The "main" branch of your repository (the base branch which you target with PRs).
+        # Common names for this branch include main and master.
+        #
+        # Default: main
+        main-branch-name: ${{ inputs.base_branch }}
+
+    - name: Set Prod ENV
+      shell: bash
+      if: inputs.is_prod == 'true'
+      run: |
+        echo 'ENV=prod' >> $GITHUB_ENV
+        echo 'STAGE=prod' >> $GITHUB_ENV
+
+    - name: Set NP ENV
+      shell: bash
+      if: inputs.is_prod != 'true' && (github.ref_name == 'np' || inputs.is_np == 'true')
+      run: |
+        echo 'ENV=non-prod' >> $GITHUB_ENV
+        echo 'STAGE=non-prod' >> $GITHUB_ENV
+
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ inputs.node_version }}
+        cache: 'npm'
+
+    - name: Setup NPM
+      uses: ./.github/actions/setup-npm
+      with:
+        VAULT_PATH: ${{ inputs.VAULT_PATH }}
+        VAULT_ROLE_ID: ${{ inputs.VAULT_ROLE_ID }}
+        VAULT_SECRET_ID: ${{ inputs.VAULT_SECRET_ID }}
+
+    - name: Install dependencies
+      shell: bash
+      run: npm ci --include=optional

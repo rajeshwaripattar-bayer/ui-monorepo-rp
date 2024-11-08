@@ -1,0 +1,25 @@
+.card {
+  border-radius: 0 !important;
+
+  @media (max-width: 1023px) {
+    margin: 24px 0px !important;
+  }
+  @media (max-width: 719px) {
+    border-width: 1px !important;
+    border-left: none !important;
+    border-right: none !important;
+    margin: 16px 0px !important;
+  }
+  :global(.lmnt-card-title) {
+    padding: 0px 16px !important;
+  }
+  .card_body {
+    padding-top: 12px;
+    padding-bottom: 4px;
+  }
+}
+.product_list_mobile {
+  :global(.mdc-list-divider) {
+    padding: 0px 16px !important;
+  }
+}

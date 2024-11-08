@@ -1,0 +1,118 @@
+{
+  "name": "channel-home",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/channel/home/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/channel/home",
+        "outputFileName": "bundle",
+        "index": "apps/channel/home/src/index.html",
+        "baseHref": "/",
+        "main": "apps/channel/home/src/faste.tsx",
+        "tsConfig": "apps/channel/home/tsconfig.app.json",
+        "assets": ["apps/channel/home/src/favicon.ico", "apps/channel/home/src/assets"],
+        "styles": ["apps/channel/home/src/styles.scss"],
+        "scripts": [],
+        "vendorChunk": false,
+        "webpackConfig": "webpack.config.js"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": false
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/channel/home/src/environments/environment.ts",
+              "with": "apps/channel/home/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": false
+        },
+        "browser": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": false,
+          "vendorChunk": true,
+          "main": "apps/channel/home/src/browser.tsx",
+          "outputFileName": "main",
+          "webpackConfig": "webpack.browser.config.js"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/webpack:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "channel-home:build",
+        "port": 3001,
+        "allowedHosts": "all"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "channel-home:build:development",
+          "ssl": true,
+          "sslKey": "./localhost-key.pem",
+          "sslCert": "./localhost.pem"
+        },
+        "production": {
+          "buildTarget": "channel-home:build:production",
+          "ssl": true,
+          "sslKey": "./localhost-key.pem",
+          "sslCert": "./localhost.pem"
+        },
+        "browser": {
+          "buildTarget": "channel-home:build:browser",
+          "port": 1233
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/channel/home/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/channel/home/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "tools/scripts",
+        "command": "./spectrum-deploy.sh channel/home channel-home {args.ENV}",
+        "parallel": true
+      }
+    },
+    "webpack-bundle-analyzer": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nx build --stats-json --skip-nx-cache --configuraion=production && webpack-bundle-analyzer dist/apps/channel/home/stats.json"
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional"
+      }
+    }
+  },
+  "tags": ["scope:channel-home", "type:app"]
+}

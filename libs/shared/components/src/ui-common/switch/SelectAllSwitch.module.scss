@@ -1,0 +1,10 @@
+.select_all_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 48px;
+
+  span:nth-child(2) {
+    margin-left: auto;
+  }
+}

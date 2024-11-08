@@ -1,0 +1,327 @@
+{
+  "gcPortalConfig": {
+    "uiCommon": {
+      "badgeThemeColor": [
+        {
+          "color": "orange",
+          "text": ["Available"]
+        },
+        {
+          "color": "#c2e0ff",
+          "text": ["Accepted"]
+        },
+        {
+          "color": "#b8f2c7",
+          "text": ["Enrolled"]
+        }
+      ]
+    },
+    "services": {
+      "seedServiceUrl": "https://seed-service-api-np.agro.services",
+      "acsCommonUrl": "https://acs2-common-ms-np.agro.services",
+      "nbmUrl": "https://nbm-api-np.agro.services",
+      "acsMyAccountUrl": "https://acs2-myaccount-ms-api-np.agro.services",
+      "climateApiParams": {
+        "dataLegitimacy": "ARTIFICIAL"
+      }
+    },
+    "brandFamily": "channel"
+  },
+  "nbmWidgetsConfig": {
+    "programTracking": {
+      "seed": {
+        "tabs": [
+          {
+            "title": "SEED SHOWCASE",
+            "id": "seedShowcase",
+            "access": ["seed:nbm:seed-showcase:read"]
+          },
+          {
+            "title": "DELARO SHOWCASE",
+            "id": "delaroShowcase",
+            "access": ["seed:nbm:delaro-showcase:read"]
+          }
+        ],
+        "actionButtonRedirectLink": "farmers/my-farmers",
+        "access": ["seed:nbm:delaro-showcase:read", "seed:nbm:seed-showcase:read"],
+        "noTitleColor": true,
+        "title": "Program Tracking"
+      },
+      "cp": {
+        "tabs": [
+          {
+            "title": "SEED SHOWCASE",
+            "id": "seedShowcase",
+            "access": ["seed:nbm:seed-showcase:read"]
+          },
+          {
+            "title": "DELARO SHOWCASE",
+            "id": "delaroShowcase",
+            "access": ["seed:nbm:delaro-showcase:read"]
+          }
+        ],
+        "actionButtonRedirectLink": "farmers/license-search",
+        "access": ["cp:nbm:delaro-showcase:read", "cp:nbm:seed-showcase:read"],
+        "noTitleColor": true,
+        "title": "Program Tracking"
+      }
+    },
+    "farmerProgramsColumns": [
+      {
+        "accessor": "preferred",
+        "header": "",
+        "displayType": "flag",
+        "defaultSort": "desc",
+        "defaultSortOrder": 0,
+        "access": [
+          "cp:nbm:delaro-showcase:read",
+          "seed:nbm:delaro-showcase:read",
+          "cp:nbm:seed-showcase:read",
+          "seed:nbm:seed-showcase:read",
+          "none:nbm:seed-showcase:read"
+        ]
+      },
+      {
+        "accessor": "name",
+        "header": "Farmer Name",
+        "displayType": "link",
+        "defaultSortOrder": 1
+      },
+      {
+        "accessor": "status",
+        "header": "Offer Status",
+        "displayType": "chip"
+      }
+    ]
+  },
+  "farmersModule": {
+    "farmerOffersColumns": [
+      {
+        "accessor": "checkEligibility",
+        "header": "Check Eligibility",
+        "displayType": "link"
+      },
+      {
+        "accessor": "name",
+        "header": "Program"
+      },
+      {
+        "accessor": "offerStatus",
+        "header": "Offer Status",
+        "displayType": "chip"
+      },
+      {
+        "accessor": "eligibleFields",
+        "header": "Eligible Fields"
+      },
+      {
+        "accessor": "enrolledFields",
+        "header": "Enrolled Fields"
+      }
+    ],
+    "aemPathMapper": {
+      "Seed Showcase": "/text-blocks/farmer-module/check-fields-modal---seed-showcase",
+      "Delaro Showcase": "/text-blocks/farmer-module/check-fields-modal---delaro"
+    },
+    "nbmProgramUrls": {
+      "Seed Showcase": "https://eng1e.seismic.com/i/NIK8PLUSSIGN7FlU9VBcY5brDnIn5itLHfUh5zPLUSSIGNt4UdPLUSSIGNPb71qzIryAYASg8wsDQMmw___K7F8NsjSEPLUSSIGN7WJ9ZbsdrEtY2UYNoOIoNJglVHHhLZ4QbV2SIEQUALSIGN",
+      "Delaro Showcase": "https://eng1e.seismic.com/i/kguqesz6F2wvaqSsFyF3Rj62L38Ub5Xt8yD01SfvWla8WsPLUSSIGNzZySPLEvlIwXZ2bTN2WxLLvgJXNJ2TFg0vYXTGvNxwYOlpje3mDpNOvg5ARgEQUALSIGN"
+    },
+    "farmerDetailFields": [
+      {
+        "displayValue": "firstName",
+        "displayName": "firstName"
+      },
+      {
+        "displayValue": "lastName",
+        "displayName": "lastName"
+      },
+      {
+        "displayValue": "streetAddress",
+        "displayName": "address"
+      },
+      {
+        "displayValue": "city",
+        "displayName": "city"
+      },
+      {
+        "displayValue": "state",
+        "displayName": "state"
+      },
+      {
+        "displayValue": "zipCode",
+        "displayName": "zipCode"
+      },
+      {
+        "displayValue": "phoneNumber",
+        "displayName": "phone"
+      },
+      {
+        "displayValue": "email",
+        "displayName": "email"
+      },
+      {
+        "displayValue": "licenseStatus",
+        "displayName": "licenseStatus"
+      },
+      {
+        "displayValue": "crtva",
+        "displayName": "contactId"
+      },
+      {
+        "displayValue": "growerSapId",
+        "displayName": "accountId"
+      }
+    ],
+    "farmerCropTotalsColumns": [
+      {
+        "accessor": "cropName",
+        "header": "Crop"
+      },
+      {
+        "accessor": "currentYearGrowerOrder",
+        "header": "{currentYear} Farmer Orders"
+      },
+      {
+        "accessor": "currentYearNetGPOS",
+        "header": "{currentYear} Reported GPOS"
+      },
+      {
+        "accessor": "priorYearGrowerOrder",
+        "header": "{priorYear} Reported GPOS"
+      },
+      {
+        "accessor": "priorYearGrowerOrderMinus1",
+        "header": "{priorYear-1} Reported GPOS"
+      }
+    ],
+    "farmerDashboardConfig": {
+      "seed": [
+        {
+          "tabs": [
+            {
+              "title": "FARMERS",
+              "colors": ["#006C67", "#C2CD23", "#6A706F"],
+              "usage": "licenseChart"
+            },
+            {
+              "title": "UNITS",
+              "colors": ["#006C67", "#C2CD23", "#6A706F"],
+              "usage": "unitsChart"
+            }
+          ],
+          "actionButtonRedirectLink": "farmers/my-farmers",
+          "title": "Bayer License Status",
+          "usage": "licenseStatus"
+        }
+      ],
+      "cp": [],
+      "lic": []
+    },
+    "farmerProductsOrderedColumns": [
+      {
+        "displayType": "expandable",
+        "sortable": false
+      },
+      {
+        "accessor": "hybrid",
+        "header": "Product",
+        "searchable": true
+      },
+      {
+        "accessor": "cropName",
+        "header": "Crop",
+        "filterable": true,
+        "searchable": true
+      },
+      {
+        "accessor": "currentYearGrowerOrder",
+        "header": "{currentYear} Confirmed Orders"
+      },
+      {
+        "accessor": "priorYearGrowerOrder",
+        "header": "{priorYear} Net Sales"
+      },
+      {
+        "accessor": "priorYearGrowerOrderMinus1",
+        "header": "{priorYear-1} Net Sales"
+      }
+    ],
+    "farmerListColumns": [
+      {
+        "accessor": "preferred",
+        "header": "",
+        "excludeFromDownload": true,
+        "displayType": "flag",
+        "defaultSort": "desc",
+        "defaultSortOrder": 0,
+        "access": [
+          "cp:nbm:delaro-showcase:read",
+          "seed:nbm:delaro-showcase:read",
+          "cp:nbm:seed-showcase:read",
+          "seed:nbm:seed-showcase:read",
+          "none:nbm:seed-showcase:read"
+        ]
+      },
+      {
+        "displayType": "link",
+        "defaultSortOrder": 1,
+        "accessor": "farmName",
+        "header": "Farm Name",
+        "id": "farmName",
+        "defaultSort": "asc",
+        "searchable": true
+      },
+      {
+        "accessor": "growerIrdId",
+        "header": "License ID",
+        "searchable": true
+      },
+      {
+        "accessor": "licenseStatus",
+        "header": "Bayer License Status",
+        "filterable": true,
+        "searchable": true
+      },
+      {
+        "accessor": "crtva",
+        "header": "Connect Tech ID",
+        "searchable": true
+      },
+      {
+        "accessor": "growerSapId",
+        "header": "Account ID",
+        "displayType": "link",
+        "searchable": true
+      },
+      {
+        "accessor": "city",
+        "header": "City",
+        "searchable": true
+      },
+      {
+        "accessor": "state",
+        "header": "State",
+        "searchable": true
+      },
+      {
+        "accessor": "cornZone",
+        "header": "Corn Zone",
+        "searchable": true
+      },
+      {
+        "accessor": "offer",
+        "header": "Offer",
+        "displayType": "chip",
+        "access": [
+          "cp:nbm:delaro-showcase:read",
+          "seed:nbm:delaro-showcase:read",
+          "cp:nbm:seed-showcase:read",
+          "seed:nbm:seed-showcase:read",
+          "none:nbm:seed-showcase:read"
+        ],
+        "searchable": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  button {
+    border-right: 0px;
+    min-width: 44px;
+  }
+  button:first-child {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+
+  button:last-child {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  :global(.lmnt.mdc-button.lmnt-button--xsmall) {
+    height: 32px !important;
+  }
+}

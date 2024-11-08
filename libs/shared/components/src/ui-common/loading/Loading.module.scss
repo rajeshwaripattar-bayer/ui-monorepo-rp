@@ -1,0 +1,12 @@
+.loading {
+  position: relative;
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+  line-height: 26px;
+
+  max-width: 540px;
+  @media (max-width: 599px) {
+    max-width: 361px;
+  }
+}

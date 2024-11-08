@@ -1,0 +1,36 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.card_title {
+  margin: -16px 0px;
+}
+.discount_summary_container {
+  width: 100%;
+}
+.discount_summary_list {
+  width: 100%;
+}
+.discount_summary_listitem {
+  padding: 0px;
+}
+.card {
+  border-radius: 0 !important;
+}
+.card_mobile {
+  border-radius: 0 !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+.button {
+  margin: 4px;
+}
+.card_actions_mobile {
+  justify-content: center;
+}
+.card_actions_mobile > div:first-child {
+  width: 100%;
+}

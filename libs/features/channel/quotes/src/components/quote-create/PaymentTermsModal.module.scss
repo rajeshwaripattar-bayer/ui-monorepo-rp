@@ -1,0 +1,27 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.payment-terms-container {
+  padding-top: 16px;
+}
+.farmer-name-section {
+  padding: 12px 0px;
+}
+
+@media (max-width: 599px) {
+  .footer_secondary_button {
+    width: 100%;
+  }
+  .footer_primary_button {
+    width: 100%;
+    margin-bottom: 8px !important;
+  }
+}
+
+.contingency{
+  margin-top: 80px;
+}

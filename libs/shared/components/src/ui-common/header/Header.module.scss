@@ -1,0 +1,32 @@
+.overline-text-wrapper {
+  margin: -15px 0px;
+  text-transform: capitalize;
+}
+.container {
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .desktopButtonGroup {
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: 719px) {
+    .buttonGroup {
+      margin-top: 16px;
+    }
+  }
+
+  @media (min-width: 720px) and (max-width: 1023px) {
+    .buttonGroup {
+      margin-top: 24px;
+    }
+  }
+}
+
+.header_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

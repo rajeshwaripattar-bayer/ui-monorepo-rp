@@ -1,0 +1,39 @@
+.contingency {
+  margin-top: 80px;
+}
+
+.loading {
+  margin-top: 200px;
+}
+
+.name-input-textfield {
+  padding-top: 0px;
+}
+.name-title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.expiration-date-section {
+  padding-top: 16px;
+}
+.expiration-date-title {
+  padding-top: 12px;
+  padding-bottom: 4px;
+}
+.billing-payer-list {
+  padding-top: 24px;
+}
+.non_discretionary_discount_section {
+  margin-top: 24px;
+}
+@media (max-width: 599px) {
+  .footer_view_quote_button,
+  .footer_cancel_button {
+    width: 100%;
+  }
+  .footer_add_products_button,
+  .footer_apply_button {
+    width: 100%;
+    margin-bottom: 8px !important;
+  }
+}

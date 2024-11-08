@@ -1,0 +1,20 @@
+.menu_container {
+  padding: 0px 16px !important;
+}
+
+.select_all_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 48px;
+
+  span:nth-child(2) {
+    margin-left: auto;
+  }
+}
+
+.button_container {
+  gap: 10px;
+  display: flex;
+  justify-content: flex-end;
+}

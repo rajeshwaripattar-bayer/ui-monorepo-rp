@@ -1,0 +1,19 @@
+.licenseSearchContainer {
+  .headerRow {
+    gap: 6px !important;
+    margin-bottom: 35px;
+    button {
+      padding: 0 !important;
+      margin-left: -2px;
+    }
+  }
+  .licenseSearchFormRow {
+    margin-bottom: 35px;
+  }
+  .licenseSearchFormCol {
+    margin-right: 15px;
+  }
+  .container_contingency {
+    min-height: 100px;
+  }
+}

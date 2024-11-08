@@ -1,0 +1,6 @@
+{
+  "faste": {
+    "entry": "dist/apps/channel/quotes/bundle.js",
+    "assets": ["dist/apps/channel/quotes/bundle.css"]
+  }
+}

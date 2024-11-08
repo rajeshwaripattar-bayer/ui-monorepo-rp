@@ -1,0 +1,17 @@
+.filter {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container {
+  position: absolute;
+  min-width: 240px !important;
+  max-height: 580px !important;
+  overflow-y: hidden !important;
+  top: 36px !important;
+
+  @media (max-width: 1023px) {
+    left: -200px !important;
+  }
+}

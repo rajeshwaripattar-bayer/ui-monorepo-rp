@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Address should render addressline 2 successfully, if passed 1`] = `
+<body>
+  <div>
+    <div>
+      <span
+        class="mdc-typography lmnt mdc-typography--body2 address"
+      >
+        <label>
+          CARL GREEN WAREHOUSE
+        </label>
+        <label>
+          2344 Test Address Dr
+        </label>
+        <label>
+          Round Cr
+        </label>
+        <label>
+          Kansas City, KS 66062
+        </label>
+        <label />
+      </span>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Address should render phone successfully, if passed 1`] = `
+<body>
+  <div>
+    <div>
+      <span
+        class="mdc-typography lmnt mdc-typography--body2 address"
+      >
+        <label>
+          CARL GREEN WAREHOUSE
+        </label>
+        <label>
+          2344 Test Address Dr
+        </label>
+        <label />
+        <label>
+          Kansas City, KS 66062
+        </label>
+        <label>
+          common.telephone.label: 574-556-2345
+        </label>
+      </span>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Address should render successfully 1`] = `
+<body>
+  <div>
+    <div>
+      <span
+        class="mdc-typography lmnt mdc-typography--body2 address"
+      >
+        <label>
+          CARL GREEN WAREHOUSE
+        </label>
+        <label>
+          2344 Test Address Dr
+        </label>
+        <label />
+        <label>
+          Kansas City, KS 66062
+        </label>
+        <label />
+      </span>
+    </div>
+  </div>
+</body>
+`;

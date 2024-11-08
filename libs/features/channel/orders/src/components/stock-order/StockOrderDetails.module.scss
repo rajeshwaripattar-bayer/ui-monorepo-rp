@@ -1,0 +1,33 @@
+.no_matching_data_contingency{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.container_contingency {
+  min-height: 35vh;
+  padding: 16px;
+}
+  
+
+.header {
+  padding: 24px 0px;
+
+  @media (max-width: 719px) {
+    padding: 24px 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.alert_container {
+  @media (max-width: 719px) {
+    padding: 16px;
+  }
+
+  @media (min-width: 720px) and (max-width: 1023px) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-bottom: 24px;
+  }
+}

@@ -1,0 +1,23 @@
+.container {
+  border: 1px solid rgba(38, 38, 38, 0.12);
+  min-width: 99.75%;
+}
+
+.sub_heading {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search {
+  width: 256px;
+  height: 40px;
+  border-radius: 4px, 4px, 0px, 0px;
+  border: 0px, 0px, 1px, 0px;
+  gap: 8px;
+}
+
+.trailing_top_bar_slot {
+  margin-left: 24px;
+}

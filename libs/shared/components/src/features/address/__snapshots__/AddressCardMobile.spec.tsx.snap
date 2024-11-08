@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddressCard should render successfully 1`] = `
+<body>
+  <div>
+    <div
+      class="lmnt lmnt-card mdc-card mdc-card--outlined lmnt-card--left-top lmnt-theme-surface-bg card"
+      style="height: auto;"
+    >
+      <div
+        class="lmnt mdc-card__content"
+      >
+        <div
+          class="lmnt lmnt-card-title lmnt-card-title--top-placement"
+        >
+          <div
+            class="lmnt-card-title__text"
+          >
+            <span
+              class="mdc-typography lmnt mdc-typography--subtitle1"
+            >
+              Ship From
+            </span>
+          </div>
+        </div>
+        <div
+          class="lmnt-card-body  mdc-typography--body2 lmnt-theme-surface-bg card_body"
+        >
+          <div>
+            <span
+              class="mdc-typography lmnt mdc-typography--body2 address"
+            >
+              <label>
+                CARL GREEN WAREHOUSE
+              </label>
+              <label>
+                2344 Test Address Dr
+              </label>
+              <label />
+              <label>
+                Kansas City, KS 66062
+              </label>
+              <label />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

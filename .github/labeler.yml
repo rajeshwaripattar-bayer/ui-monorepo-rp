@@ -1,0 +1,25 @@
+ENDEAVOR:
+- changed-files:
+  - any-glob-to-any-file:
+    - '.github/**/*'
+    - apps/channel/quotes/**/*
+    - libs/api/**/*
+    - libs/features/channel/**/*
+    - libs/hooks/**/*
+    - libs/redux-store/**/*
+    - libs/shared/**/*
+    - libs/types/**/*
+
+LODESTAR:
+- changed-files:
+  - any-glob-to-any-file:
+    - '.github/**/*'
+    - apps/mycrop/**/*
+    - apps/seedsman/**/*
+    - apps/widgets/**/*
+    - libs/api/**/*
+    - libs/features/common/farmers/*
+    - libs/hooks/**/*
+    - libs/redux-store/**/*
+    - libs/shared/**/*
+    - libs/types/**/*

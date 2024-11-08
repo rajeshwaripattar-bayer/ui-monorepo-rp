@@ -1,0 +1,29 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.container {
+  // left & right remaining 16px is coming from ListItem
+  @media (max-width: 1023px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 24px 8px; 
+  }
+}
+
+.product-footer-list-item {
+  height: 32px !important;  
+}
+.icon-align {
+  vertical-align: middle;
+}
+
+.discount_list_items {
+  padding: 0px 16px;
+}

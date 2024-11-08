@@ -1,0 +1,78 @@
+.modal_title {
+  left: 12px;
+  top: 10px;
+  position: absolute;
+  text-transform: capitalize;
+}
+.modal_search {
+  top: -1px;
+  width: 94%;
+  left: 2%;
+  position: absolute;
+  text-transform: capitalize;
+}
+.modal_back_button {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.modal_search_button {
+  margin-right: 16px !important;
+}
+
+.contingency_message {
+  padding: 80px 16px;
+}
+
+.desktop_modal {
+  z-index: 10;
+  section {
+    @media (min-width: 1024px) {
+      padding: 0px !important;
+    }
+  }
+}
+
+.create_quote_modal {
+  z-index: 10;
+
+  header {
+    margin-top: 0px !important;
+  }
+
+  :global(.mdc-dialog__title) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
+    min-height: 64px;
+  }
+
+  :global(.mdc-dialog__actions) {
+    border-top: 1px solid rgba(0, 0, 0, 0.12) !important;
+    min-height: 54px;
+    padding-top: 14px;
+    button {
+      margin: 0 4px;
+    }
+  }
+  :global(.mdc-notched-outline__leading) {
+    border-radius: 0 !important;
+  }
+  :global(.mdc-notched-outline__trailing) {
+    border-radius: 0 !important;
+  }
+}
+
+@media (max-width: 599px) {
+  :global(.lmnt.lmnt-modal .lmnt-dialog__actions__directional div:nth-child(2)) {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+:global(.lmnt-modal__actions.mdc-dialog__actions) {
+  margin: 0px;
+  padding: 12px 16px;
+}
+
+:global(.lmnt-modal .lmnt-snackbar) {
+  bottom: 100px;
+}

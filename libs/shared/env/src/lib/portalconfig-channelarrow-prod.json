@@ -1,0 +1,340 @@
+{
+  "gcPortalConfig": {
+    "salesYear": ["2024", "2025"],
+    "farmerTabs": ["Quotes"],
+    "orderTabs": ["Farmer", "Stock", "SeedGrowth"],
+    "orderConfig": {
+      "division": "17",
+      "salesYear": "2024",
+      "documentType": "ZU3O",
+      "salesOffice": "MCCS",
+      "salesOrg": "7O31",
+      "distributionChannel": "80",
+      "salesOrgId": "7O31"
+    },
+    "paymentTermsConfig": [
+      {
+        "paymentDueDate": "25",
+        "paymentTerm": "Z725",
+        "paymentDueMonth": "common.month_july.label"
+      },
+      {
+        "paymentDueDate": "25",
+        "paymentTerm": "ZNOV",
+        "paymentDueMonth": "common.month_november.label"
+      },
+      {
+        "paymentTerm": "ZJDF",
+        "paymentTermProgramNotes": "common.payment_term_JD_Notes.label"
+      },
+      {
+        "paymentTerm": "ZJD2",
+        "paymentTermProgramNotes": "common.payment_term_JD_Notes.label"
+      }
+    ],
+    "crops": ["Corn", "Soybean", "Sorghum"],
+    "seedYear": "2025",
+    "uiCommon": {
+      "badgeThemeColor": [
+        {
+          "color": "red",
+          "text": ["Failure", "Error", "Submitted with Errors", "Prepay Required", "Canceled"]
+        },
+        {
+          "color": "green",
+          "text": ["Converted", "Added", "Applied", "Open", "Delivered", "Partially Delivered"]
+        },
+        {
+          "color": "orange",
+          "text": ["Draft", "Credit Block"]
+        },
+        {
+          "color": "blue",
+          "text": ["Buyer Submitted"]
+        }
+      ]
+    },
+    "expirationDateOptions": [
+      {
+        "timePeriod": "week",
+        "duration": 2,
+        "description": "quotes.expiration_two_weeks.label",
+        "code": "two-week"
+      },
+      {
+        "timePeriod": "month",
+        "duration": 1,
+        "description": "quotes.expiration_one_month.label",
+        "code": "one-month"
+      },
+      {
+        "timePeriod": "month",
+        "duration": 2,
+        "description": "quotes.expiration_two_months.label",
+        "code": "two-month"
+      }
+    ],
+    "discounts": {
+      "nonDiscretionaryDiscount": {
+        "defaultPrepay": "Channel Brand"
+      }
+    },
+    "productsPageSize": 500,
+    "quotesPageSize": 500,
+    "displayNota": false,
+    "cropList": [
+      {
+        "cropName": "Corn",
+        "cropCode": "seed_corn"
+      },
+      {
+        "cropName": "Soybean",
+        "cropCode": "seed_soybean"
+      },
+      {
+        "cropName": "Soybeans",
+        "cropCode": "seed_soybean"
+      },
+      {
+        "cropName": "Sorghum",
+        "cropCode": "seed_sorghum"
+      }
+    ],
+    "brandFamily": "Channel"
+  },
+  "quotesModule": {
+    "quoteActions": ["edit", "duplicate", "print", "delete"]
+  },
+  "farmersModule": {
+    "farmerOffersColumns": [
+      {
+        "accessor": "checkEligibility",
+        "header": "Check Eligibility",
+        "displayType": "link"
+      },
+      {
+        "accessor": "name",
+        "header": "Program"
+      },
+      {
+        "accessor": "offerStatus",
+        "header": "Offer Status",
+        "displayType": "chip"
+      },
+      {
+        "accessor": "eligibleFields",
+        "header": "Eligible Fields"
+      },
+      {
+        "accessor": "enrolledFields",
+        "header": "Enrolled Fields"
+      }
+    ],
+    "farmerListNBMColumns": [
+      {
+        "accessor": "offer",
+        "header": "Offer",
+        "displayType": "chip",
+        "searchable": true
+      }
+    ],
+    "farmerDashboardConfig": {
+      "seed": [
+        {
+          "tabs": [
+            {
+              "title": "FARMERS",
+              "colors": ["#006C67", "#C2CD23", "#6A706F"],
+              "usage": "licenseChart"
+            },
+            {
+              "title": "UNITS",
+              "colors": ["#006C67", "#C2CD23", "#6A706F"],
+              "usage": "unitsChart"
+            }
+          ],
+          "actionButtonRedirectLink": "businessplan/farmerslist",
+          "showInfoText": false,
+          "title": "Farmer License Status",
+          "usage": "licenseStatus"
+        }
+      ],
+      "cp": [],
+      "lic": []
+    },
+    "farmerProductsOrderedColumns": [
+      {
+        "displayType": "expandable",
+        "id": "expander",
+        "sortable": false
+      },
+      {
+        "accessor": "hybrid",
+        "header": "Product",
+        "searchable": true
+      },
+      {
+        "accessor": "cropName",
+        "header": "Crop",
+        "filterable": ["Corn", "Soybeans"],
+        "searchable": true
+      },
+      {
+        "accessor": "currentYearGrowerOrder",
+        "header": "{currentYear} Confirmed Orders"
+      },
+      {
+        "accessor": "priorYearGrowerOrder",
+        "header": "{priorYear} Net Sales"
+      },
+      {
+        "accessor": "priorYearGrowerOrderMinus1",
+        "header": "{priorYear-1} Net Sales"
+      }
+    ],
+    "defaultLob": "seed",
+    "aemPathMapper": {
+      "Seed Showcase": "/text-blocks/farmer-module/check-fields-modal---seed-showcase",
+      "Delaro Showcase": "/text-blocks/farmer-module/check-fields-modal---delaro"
+    },
+    "farmerDetailFields": [
+      {
+        "displayValue": "firstName",
+        "displayName": "firstName"
+      },
+      {
+        "displayValue": "lastName",
+        "displayName": "lastName"
+      },
+      {
+        "displayValue": "streetAddress",
+        "displayName": "address"
+      },
+      {
+        "displayValue": "city",
+        "displayName": "city"
+      },
+      {
+        "displayValue": "state",
+        "displayName": "state"
+      },
+      {
+        "displayValue": "zipCode",
+        "displayName": "zipCode"
+      },
+      {
+        "displayValue": "phoneNumber",
+        "displayName": "phone"
+      },
+      {
+        "displayValue": "email",
+        "displayName": "email"
+      },
+      {
+        "displayValue": "licenseStatus",
+        "displayName": "licenseStatus"
+      },
+      {
+        "displayValue": "crtva",
+        "displayName": "contactId"
+      },
+      {
+        "displayValue": "accountId",
+        "displayName": "accountId"
+      }
+    ],
+    "climateServiceURL": "https://np.api.us01e.bayer.com/np-climate-api/program-eligibility/graphql",
+    "farmerDownloadReportNBMColumns": [
+      {
+        "displayName": "Offer",
+        "id": "offer"
+      }
+    ],
+    "farmerCropTotalsColumns": [
+      {
+        "accessor": "name",
+        "header": "Farmer Name",
+        "displayType": "link",
+        "searchable": true
+      },
+      {
+        "accessor": "partyStatus",
+        "header": "Farmer Status",
+        "searchable": true
+      },
+      {
+        "accessor": "sourceId",
+        "header": "Account ID",
+        "searchable": true
+      },
+      {
+        "accessor": "scoRStatus",
+        "header": "SCoR Status",
+        "searchable": true
+      },
+      {
+        "accessor": "contracts.contractStatus",
+        "header": "License Status",
+        "searchable": true
+      },
+      {
+        "accessor": "cyOrder",
+        "header": "Connect License",
+        "filterable": true,
+        "displayType": "boolean"
+      },
+      {
+        "accessor": "cyOrder",
+        "header": "{currentYear} Order",
+        "filterable": true,
+        "displayType": "boolean"
+      }
+    ],
+    "farmerListColumns": [
+      {
+        "displayType": "link",
+        "accessor": "name",
+        "header": "Farmer Name",
+        "id": "name",
+        "defaultSort": "asc",
+        "searchable": true
+      },
+      {
+        "accessor": "partyStatus",
+        "header": "Farmer Status",
+        "filterable": true,
+        "searchable": true
+      },
+      {
+        "accessor": "sourceId",
+        "header": "Account ID",
+        "searchable": true
+      },
+      {
+        "accessor": "relationshipStatus",
+        "header": "SCoR Status",
+        "searchable": true
+      },
+      {
+        "accessor": "contracts[0].contractStatus",
+        "header": "License Status",
+        "filterable": true,
+        "searchable": true
+      },
+      {
+        "accessor": "cyOrder",
+        "header": "Connect License",
+        "displayType": "boolean"
+      },
+      {
+        "accessor": "",
+        "header": "Actions",
+        "displayType": "actionMenu",
+        "actions": ["viewDetails"]
+      }
+    ],
+    "farmersProfile": {
+      "actions": ["quote"]
+    }
+  }
+}

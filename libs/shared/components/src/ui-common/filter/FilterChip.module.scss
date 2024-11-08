@@ -1,0 +1,70 @@
+.filter {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container {
+  position: absolute;
+  min-width: 240px !important;
+  max-height: 580px !important;
+  overflow-y: hidden !important;
+  top: 24px !important;
+}
+
+.header {
+  padding: 4px 12px 10px 12px;
+  height: 40px;
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+}
+
+.footer_menu {
+  padding: 6px 8px 6px 8px;
+  max-height: 40px;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+.footer_bottom_sheet {
+  text-align: right;
+}
+
+.content {
+  padding: 0px 16px 8px 16px;
+  max-height: 450px;
+  overflow-x: hidden;
+}
+
+.bottom_sheet {
+  width: 100%;
+
+  @media (min-width: 720px) {
+    width: 80%;
+    left: 10% !important;
+  }
+}
+
+.checkbox_list:not(:last-child) {
+  @media (max-width: 1023px) {
+    margin-bottom: 24px;
+  }
+}
+
+.close_icon::before {
+  --mdc-ripple-left: 10px !important;
+  --mdc-ripple-top: 10px !important;
+}
+
+.filter_switch {
+  padding: 8px 0px;
+  @media (max-width: 1023px) {
+    margin-bottom: 24px;
+  }
+  li {
+    padding-left: 0px !important;
+    margin-bottom: 8px !important;
+  }
+}

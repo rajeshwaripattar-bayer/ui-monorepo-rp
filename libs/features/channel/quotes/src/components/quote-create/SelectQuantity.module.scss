@@ -1,0 +1,18 @@
+.quantity-container {
+  margin: 16px 0px !important;
+}
+.quantity-text-field {
+  margin-bottom: 24px;
+}
+.warehouse-title {
+  padding: 12px 0px;
+}
+
+.alert_message {
+  @media (max-width: 719px) {
+    margin: 16px 0px !important;
+  }
+  @media (min-width: 720px) {
+    margin: 16px 24px !important;
+  }
+}

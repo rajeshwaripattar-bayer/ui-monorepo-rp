@@ -1,0 +1,32 @@
+.container {
+  padding-right: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content {
+  flex-basis: 85%;
+}
+
+.list {
+  padding: 0px !important;
+}
+
+.quantity_container {
+  padding: 16px;
+}
+
+.recommended_range{
+  display: flex; 
+  flex-direction: row; 
+  align-items: center
+}
+
+.recommended_range_loading{
+  width: 110px;
+}
+
+.discounted_price {
+  margin-left: auto;
+}

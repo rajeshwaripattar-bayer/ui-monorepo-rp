@@ -1,0 +1,184 @@
+name: Seedsman Farmers Module Tag
+
+on:
+  workflow_dispatch:
+    inputs:
+      commitHash:
+        description: 'Source Commit Hash'
+        required: false
+      tagSuffix:
+        type: choice
+        description: 'select the tag name for your deployment'
+        required: true
+        options:
+        - mycrop
+        - seedsman
+        - orders
+      email:
+        type: choice
+        description: 'select email for git'
+        required: true
+        options:
+        - dl-team-lodestar@bayer.com
+        - option2
+      team:
+        type: choice
+        description: 'select team for release document'
+        required: true
+        options:
+        - LODESTAR-DEVS
+        - option2
+      title:
+        description: 'title for release document'
+        required: true
+        default: C7 Farmers UI
+      platform:
+        type: choice
+        description: 'select platform for release approval document'
+        required: true
+        options:
+        - Customer
+        - option2
+      purpose:
+        type: choice
+        description: 'select purpose for release approval document'
+        required: true
+        options:
+        - New Features
+        - bug fixes
+      deployType:
+        type: choice
+        description: 'select deploy type for release approval document'
+        required: true
+        options:
+        - Manual
+      risks:
+        type: choice
+        description: 'select risks for release approval document'
+        required: true
+        options:
+        - Low
+        - High
+      vaultPath:
+        type: choice
+        description: 'select vault path for release approval document'
+        required: true
+        options:
+        - kv/data/lodestar/nbm/deploy
+        - kv/data/endeavor/example
+
+run-name: Tag and Create Release Approval doc for seedsman farmers module portal by @${{ github.actor }}
+
+env:
+  MODULE_NAME: seedsman-farmers-ui
+  NODE_VERSION: 20
+  COMMIT_HASH: ${{ github.event.inputs.commitHash || github.sha }}
+  VAULT_PATH: kv/data/lodestar/nbm/deploy
+  TEAM: LODESTAR-DEVS
+  EMAIL: dl-team-lodestar@bayer.com
+  TITLE: C7 Farmers UI
+  PLATFORM: Customer
+  PURPOSE: New Features
+  DEPLOY_TYPE: Manual
+  RISKS: Low
+  DEFAULT_VERSION: '0.0.0'
+  TAG_SUFFIX: 'seedsman'
+
+jobs:
+  deploy:
+    name: build-deploy
+    runs-on: ubuntu-latest
+    environment: lodestar
+    steps:
+      - name: Import Secrets
+        uses: hashicorp/vault-action@v3.0.0
+        with:
+          tlsSkipVerify: true
+          url: https://vault.agro.services
+          method: approle
+          roleId: ${{ secrets.VAULT_ROLE_ID }}
+          secretId: ${{ secrets.VAULT_ROLE_SECRET }}
+          secrets: |
+            ${{ env.VAULT_PATH }} npmAuthToken ;
+            ${{ env.VAULT_PATH }} clientId ;
+            ${{ env.VAULT_PATH }} clientSecret ;
+
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.COMMIT_HASH }}
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Configure NPM
+        run: |
+          npm config set //artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/:_authToken ${{ env.NPMAUTHTOKEN }}
+          npm config set @monsantoit:registry=https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+
+      - name: Set Git Credentials
+        run: |
+          git config --global user.email "${{ env.EMAIL }}"
+          git config --global user.name "${{ env.TEAM }}"
+
+      - name: Print Git describe tag
+        run: |
+          git describe --tags --match '*${{ env.TAG_SUFFIX }}' --abbrev=0 --always
+
+      - name: Install semver module
+        run: npm install semver
+
+      - name: Get Latest Tag and Parse
+        id: parsedTag
+        run: |
+          LATEST_TAG=$(git describe --tags --match '*${{ env.TAG_SUFFIX }}' --abbrev=0 --always)
+          if [ -z "$LATEST_TAG" ] || [[ ! "$LATEST_TAG" == *"${{ env.TAG_SUFFIX }}"* ]]; then
+            echo "No latest tag found containing: ${{ env.TAG_SUFFIX }}. Using default version to tag."
+            VERSION=${{ env.DEFAULT_VERSION }}
+          else
+            VERSION=$(echo $LATEST_TAG | sed -e 's/v//; s|-||g; s/${{ env.TAG_SUFFIX }}//g')
+            echo "Latest tag for ${{ env.TAG_SUFFIX }}: ${LATEST_TAG}"
+            echo "Parsed version for ${{ env.TAG_SUFFIX }}: ${VERSION}"
+          fi
+          echo "::set-output name=VERSION::${VERSION}"
+
+      - name: Increment Parsed Tag
+        id: IncrementedTag
+        run: |
+          NEW_VERSION=$(node -p "require('semver').inc('${{ steps.parsedTag.outputs.VERSION }}', 'patch')")
+          echo "New version for ${{ env.TAG_SUFFIX }}: ${NEW_VERSION}"
+          FORMATTED_VERSION="v${NEW_VERSION}-${{ env.TAG_SUFFIX }}"
+          echo "Formatted version for ${{ env.TAG_SUFFIX }}: ${FORMATTED_VERSION}"
+          echo "::set-output name=VERSION::${FORMATTED_VERSION}"
+
+      - name: Push Incremented Tag
+        id: PushTag
+        run: |
+          git checkout development
+          git fetch origin
+          git tag ${{ steps.IncrementedTag.outputs.VERSION }}
+          git push origin development ${{ steps.IncrementedTag.outputs.VERSION }}
+          git push origin development --follow-tags
+          LAST_COMMIT_SHA=$(git rev-parse development)
+          echo "::set-output name=RELEASE_DOC_SHA::${LAST_COMMIT_SHA}"
+
+      - name: Print github SHA
+        run: |
+          echo "Github SHA for release document: ${{ steps.PushTag.outputs.RELEASE_DOC_SHA }}"
+
+      - name: Get Changes Between Tags
+        id: changes
+        uses: simbo/changes-between-tags-action@v1
+        with:
+          tag-pattern: "^v?.*-${{ env.TAG_SUFFIX }}$"
+          validate-tag: 'false'
+          include-hashes: 'false'
+          line-prefix: '* '
+
+      - name: Create Deployment Document
+        run: |
+          npx @monsantoit/deploytool-cli add -d "${{ env.TITLE }} ${{ steps.IncrementedTag.outputs.VERSION }}" -t ${{ env.TEAM }} -c ${{ env.MODULE_NAME }} -v ${{ steps.PushTag.outputs.RELEASE_DOC_SHA }} --purpose "${{ env.PURPOSE }}" --clientId ${{ env.CLIENTID }} --clientSecret ${{ env.CLIENTSECRET }} --platform "${{ env.PLATFORM }}" --deployToolType ${{ env.DEPLOY_TYPE }} --risks ${{ env.RISKS }} --features "${{ steps.changes.outputs.changes }}"
+          echo "Tagged as: ${{ github.server_url }}/${{ github.repository }}/releases/tags/${{ github.run_id }}/${{ steps.IncrementedTag.outputs.VERSION }}"

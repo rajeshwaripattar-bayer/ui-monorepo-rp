@@ -1,0 +1,42 @@
+
+//deliver table
+.delivery_expanded-table-row {
+  padding: 8px 30px 16px 2.5%;
+}
+
+.address_list {
+  padding-top: 0px;
+}
+
+#expander {
+  width: 50px !important;
+}
+
+.ship_from_content_typography {
+  font-weight: 300;
+  padding-top: 12px;
+  font-size: 12px;
+}
+
+.delivery_address_table {
+  border: 0 !important;
+  tr {
+    background-color: #f5f5f5;
+    text-wrap: wrap !important;
+  }
+  th {
+    background-color: #f5f5f5;
+  
+  }
+}
+
+.delivery_entry_table {
+  margin-left: 10px;
+  border: 0 !important;
+  tr {
+    background-color: #f5f5f5;
+  }
+  th {
+    background-color: #f5f5f5;
+  }
+}

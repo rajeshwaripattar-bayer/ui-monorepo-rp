@@ -1,0 +1,20 @@
+.farmerWidgetContainer {
+  .infoSection {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoBody {
+    display: flex !important;
+    align-items: center !important;
+    min-height: 270px;
+    margin-top: 25px;
+    justify-content: center !important;
+  }
+
+  .cardBody {
+    min-height: 270px;
+  }
+}

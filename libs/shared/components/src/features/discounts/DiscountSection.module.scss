@@ -1,0 +1,54 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.card_title {
+  margin: -4px 0px;
+}
+.card_title_no_padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.card_title_no_top_bottom_padding {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.card_body_no_padding {
+  padding: 0px !important;
+}
+.discount_container {
+  width: 100%;
+}
+.add_edit_icon {
+  padding-top: 16px;
+}
+.discount_strategy_list {
+  width: 100%;
+}
+.discount_strategy_item {
+  padding: 0px;
+}
+.overline_text_wrapper {
+  margin: -15px 0px;
+  text-transform: capitalize;
+}
+.secondary_text_wrapper {
+  margin-top: -15px;
+}
+.card_no_border {
+  border: none !important;
+}
+.card {
+  border-radius: 0 !important;
+}
+.card_mobile {
+  border-radius: 0 !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+.warning_text {
+  color: #a65207;
+}

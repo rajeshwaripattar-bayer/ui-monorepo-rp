@@ -1,0 +1,21 @@
+.checkboxListFilterPanelContainer {
+  .title {
+    padding: 0px;
+  }
+  .optionsHeader {
+    padding: 6px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px 0px 8px 0px;
+    .headerText {
+      float: left;
+    }
+  }
+  .optionsHeader div:nth-child(2) {
+    float: right;
+  }
+  li {
+    padding-left: 0px !important;
+  }
+}

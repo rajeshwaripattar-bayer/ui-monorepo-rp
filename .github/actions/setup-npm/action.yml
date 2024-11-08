@@ -1,0 +1,40 @@
+name: Configure Package Manager
+description: Configures Package Manager for NBM repo usage.
+
+inputs:
+  VAULT_ROLE_ID:
+    description: Use secrets.VAULT_ROLE_ID
+    required: true
+  VAULT_SECRET_ID:
+    description: Use secrets.VAULT_SECRET_ID
+    required: true
+  VAULT_PATH:
+    description: Use env.VAULT_NON_PROD_PATH
+    required: false
+    default: kv/data/gc-agency/npm
+
+runs:
+  using: "composite"
+  steps:
+    - name: Import NPM Secrets
+      uses: hashicorp/vault-action@v3.0.0
+      with:
+        tlsSkipVerify: true
+        url: https://vault.agro.services
+        method: approle
+        roleId: ${{ inputs.VAULT_ROLE_ID }}
+        secretId: ${{ inputs.VAULT_SECRET_ID }}
+        secrets: |
+          ${{ inputs.VAULT_PATH }} TRANSIENT_TOKEN;
+          ${{ inputs.VAULT_PATH }} ARTIFACTORY_ACCESS_TOKEN;
+
+    - name: Configure NPM
+      shell: bash
+      run: |
+        npm config set //artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/:_auth ${{ env.TRANSIENT_TOKEN }}
+        npm config set //npm.platforms.engineering/:_authToken=${{ env.ARTIFACTORY_ACCESS_TOKEN }}
+        npm config set registry https://registry.npmjs.org
+        npm config set @global-commerce:registry https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+        npm config set @monsantoit:registry https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+        npm config set @element:registry https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+        npm config set @supernova:registry https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/

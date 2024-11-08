@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeliveryProductListMobile should render (snapshot test) successfully 1`] = `
+<body>
+  <div>
+    <div
+      class="lmnt lmnt-card mdc-card mdc-card--outlined lmnt-card--left-top lmnt-theme-surface-bg card"
+      style="height: auto;"
+    >
+      <div
+        class="lmnt mdc-card__content"
+      >
+        <div
+          class="lmnt lmnt-card-title lmnt-card-title--top-placement"
+          data-testid="title"
+        >
+          <div
+            class="lmnt-card-title__text"
+          >
+            <span
+              class="mdc-typography lmnt mdc-typography--subtitle1"
+            >
+              deliveries.products_in_delivery.label
+            </span>
+          </div>
+        </div>
+        <div
+          class="lmnt-card-body  mdc-typography--overline lmnt-theme-surface-bg card_body"
+          data-testid="orderId"
+        >
+          orders.order.label 0002222577
+        </div>
+        <ul
+          aria-multiselectable="false"
+          aria-orientation="vertical"
+          class="lmnt lmnt-list mdc-list lmnt-theme--bg product_list_mobile"
+          data-evolution="true"
+          role="listbox"
+        >
+          <div
+            class="wrapper-list-item"
+          >
+            <li
+              aria-checked="false"
+              class="lmnt mdc-list-item lmnt-theme--bg mdc-list-item--with-two-lines lmnt-list-item__no-hover lmnt-list-item--wrap "
+              role="option"
+              tabindex="0"
+            >
+              <span
+                class="mdc-list-item__ripple"
+              />
+              <span
+                class="lmnt mdc-list-item__content"
+              >
+                <span
+                  class="lmnt mdc-list-item__primary-text"
+                >
+                  PR108-20RIB VT2PRIB 80M BAG ELT500 N-B-E
+                </span>
+                <span
+                  class="lmnt mdc-list-item__secondary-text"
+                />
+              </span>
+              <span
+                class="lmnt mdc-list-item__end"
+              >
+                <span
+                  class="mdc-typography lmnt mdc-typography--caption"
+                >
+                  1 ST
+                </span>
+              </span>
+            </li>
+            <li
+              class="mdc-list-divider lmnt-list-divider"
+              role="separator"
+            />
+          </div>
+          <div
+            class="wrapper-list-item"
+          >
+            <li
+              aria-checked="false"
+              class="lmnt mdc-list-item lmnt-theme--bg mdc-list-item--with-two-lines lmnt-list-item__no-hover lmnt-list-item--wrap "
+              role="option"
+              tabindex="-1"
+            >
+              <span
+                class="mdc-list-item__ripple"
+              />
+              <span
+                class="lmnt mdc-list-item__content"
+              >
+                <span
+                  class="lmnt mdc-list-item__primary-text"
+                >
+                  189-64VT2PRIB 50U BOX BAS500 B
+                </span>
+                <span
+                  class="lmnt mdc-list-item__secondary-text"
+                >
+                  <span
+                    class="mdc-typography lmnt mdc-typography--caption"
+                    data-testid="batchName"
+                  >
+                    L42S7RMKP
+                  </span>
+                    •
+                  <span
+                    class="mdc-typography lmnt mdc-typography--caption"
+                    data-testid="seedSize"
+                  >
+                    R2
+                  </span>
+                </span>
+              </span>
+              <span
+                class="lmnt mdc-list-item__end"
+              >
+                <span
+                  class="mdc-typography lmnt mdc-typography--caption"
+                >
+                  1 SSU
+                </span>
+              </span>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+`;

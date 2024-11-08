@@ -1,0 +1,16 @@
+{
+  "name": "australia-home",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/australia/home/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/australia/home/jest.config.ts"
+      }
+    }
+  }
+}

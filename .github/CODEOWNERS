@@ -1,0 +1,10 @@
+## code changes will send PR to following users
+
+* @bayer-int/endeavor-code-reviewers @bayer-int/Lodestar
+
+apps/channel/* @bayer-int/endeavor-code-reviewers
+apps/mycrop/* @bayer-int/Lodestar
+apps/seedsman/* @bayer-int/Lodestar
+apps/widgets/* @bayer-int/Lodestar
+
+libs/features/common/farmers/* @bayer-int/Lodestar

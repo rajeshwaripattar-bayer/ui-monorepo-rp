@@ -1,0 +1,69 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.card-title {
+  margin: -16px 0px;
+}
+.card-title-no-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.card-body-no-padding {
+  padding: 0px !important;
+}
+.text-wrapper {
+  margin: -15px 0px;
+}
+.payer-list-container {
+  width: 100%;
+}
+.payer-list-list {
+  width: 100%;
+}
+.payer-list-listitem {
+  padding: 0px;
+}
+.overline-text-wrapper {
+  margin: -15px 0px;
+  text-transform: capitalize;
+}
+.secondary-text-wrapper {
+  margin-top: -15px;
+}
+
+.secondary-text-leading-icon {
+  margin-right: 4px;
+}
+.leading-button {
+  float: left;
+}
+.trailing-buttons {
+  overflow: hidden;
+}
+.button {
+  margin: 4px;
+}
+.card-no-border {
+  border: none !important;
+}
+.card {
+  border-radius: 0 !important;
+}
+.card-mobile {
+  border-radius: 0 !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+.card-actions-mobile {
+  justify-content: center;
+}
+.card-actions-mobile > div:first-child {
+  width: 100%;
+}
+.card-actions-container {
+  width: 100%;
+}

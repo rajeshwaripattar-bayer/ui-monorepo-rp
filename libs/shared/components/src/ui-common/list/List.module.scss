@@ -1,0 +1,28 @@
+.wrapper-list-item {
+  position: relative;
+  :global(.mdc-list-item__primary-text) {
+    width: 95% !important;
+  }
+}
+.trailing_block_action {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  display: inline;
+}
+
+.filter_container {
+  position: relative;
+  width: -webkit-fill-available;
+  height: 64px;
+  line-height: 64px;
+  top: 0px;
+  margin: 0px 16px;
+}
+
+.sorting_chip_container {
+  float: right;
+  @media (min-width: 720px) {
+    margin-right: 16px;
+  }
+}

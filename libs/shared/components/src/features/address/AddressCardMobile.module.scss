@@ -1,0 +1,23 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.card {
+  border-radius: 0 !important;
+  margin: 8px 0px;
+  .card_body {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  @media (max-width: 719px) {
+    border-width: 1px !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+}
+:global(.lmnt-card-title) {
+  padding: 0px 16px !important;
+}

@@ -1,0 +1,25 @@
+.table_container {
+  .search {
+    width: 256px;
+    height: 40px;
+    border-radius: 4px, 4px, 0px, 0px;
+    border: 0px, 0px, 1px, 0px;
+    gap: 8px;
+  }
+  .search input {
+    font-size: 0.875rem;
+  }
+  .flag_cell {
+    padding: 0;
+  }
+  .flag_header {
+    padding: 0;
+  }
+}
+.no_border {
+  border: 0;
+}
+
+.csv_downloader {
+  margin-left: 24px;
+}

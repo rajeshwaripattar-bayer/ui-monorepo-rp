@@ -1,0 +1,20 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.sub_header {
+  border: solid;
+  border-color: lightgrey;
+  border-width: thin;
+  // @media (max-width: 599px) {
+  //   border-left: none;
+  //   border-right: none;
+  // }
+  :global(.mdc-list-item--with-one-line) {
+    min-height: 48px;
+    height: auto !important;
+  }
+}

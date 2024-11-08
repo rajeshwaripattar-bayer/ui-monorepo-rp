@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  column-gap: 40px;
+  table {
+    th, td{
+      background:#F5F5F5;
+    }
+  }
+}
+
+.status_table {
+  flex: 0 0 235px;
+}
+
+.discounts_table {
+  flex: 1;
+}

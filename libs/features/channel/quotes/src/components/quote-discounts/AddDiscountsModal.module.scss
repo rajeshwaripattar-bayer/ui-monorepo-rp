@@ -1,0 +1,34 @@
+.container {
+  margin: 0px -24px !important;
+}
+.non_discretionary_discount_section {
+  margin-top: 16px;
+}
+.discretionary_discount_section_desktop {
+  margin-top: 24px;
+}
+@media (max-width: 599px) {
+  .footer_button {
+    width: 100%;
+  }
+  .footer_remove_button {
+    width: 100%;
+    margin-bottom: 8px !important;
+  }
+}
+
+.alert_message {
+  margin: 16px !important;
+
+  @media (min-width: 720px) {
+    margin-bottom: 24px !important;
+  }
+}
+
+.contingency {
+  margin-top: 80px;
+}
+
+.loading {
+  margin-top: 200px;
+}

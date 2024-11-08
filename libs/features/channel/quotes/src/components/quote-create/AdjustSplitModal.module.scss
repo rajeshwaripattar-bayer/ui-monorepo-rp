@@ -1,0 +1,28 @@
+.overline_text_wrapper {
+  margin: -20px 0px -16px 0px;
+  text-transform: capitalize;
+}
+.adjust_split_list_item {
+  min-height: 66px;
+  padding: 8px 104px 10px 0 !important;
+}
+.secondary_text_leading_icon {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.percentage {
+  margin: 12px 0 0 4px;
+}
+.adjust_split {
+  margin-top: 16px;
+  :global(.lmnt-text-field-inline-container) {
+    display: inline !important;
+  }
+}
+.trailing_block_action_field {
+  line-height: 60px;
+}
+
+.container_contingency {
+  margin: 16px 0px;
+}

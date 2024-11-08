@@ -1,0 +1,73 @@
+name: Deploy Channel Farmers to PROD
+on:
+  push:
+    branches:
+      - release
+    paths:
+      - '.github/workflows/channel-farmers-prod.yml'
+      - 'apps/channel/farmers/**'
+      - 'libs/**'
+  workflow_dispatch:
+    inputs:
+      workflow_02:
+        description: 'ًWorkflow 2 which will be triggered'
+        required: true
+        default: 'targetWorlkflow'
+
+      workflow_02_github_account:
+        description: 'GitHub Account Owner'
+        required: true
+        default: 'bayer-int'
+
+      workflow_02_repo_github:
+        description: 'repo-name'
+        required: true
+        default: 'uschannel-testAutomation'
+
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+
+env:
+  # secrets.ARTIFACTORY_NPM_TOKEN comes from the "globalcommerce" org
+  TRANSIENT_TOKEN: ${{ secrets.TRANSIENT_TOKEN }}
+  # secrets.AZURE_* and secrets.API_KEY come from the "globalcommerce" org
+  AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+  AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+  FASTE_TEAM_API_KEY: ${{ secrets.FASTE_TEAM_API_KEY_PROD }}
+  # set INPUT_TOKEN='' workaround for action bug
+  INPUT_TOKEN: ''
+  MODULE_NAME: channel-farmers
+
+jobs:
+  build_and_deploy_farmers_prod:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Configure NPM
+        run: |
+          npm config set //artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/:_auth $TRANSIENT_TOKEN
+          npm config set registry https://registry.npmjs.org
+          npm config set @finance-acs2:registry https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm config set @monsantoit:registry https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm config set @element:registry https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm config set @supernova:registry https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+      - run: npm ci
+      - name: Build Channel Farmers Module
+        run: |
+          npm run setSpectrumConfig entry=dist/apps/channel/farmers/bundle.js assets=dist/apps/channel/farmers/bundle.css
+          npm run channel:farmers:build
+      - run: npm install @monsantoit/spectrum-cli@^5.3.1 -g
+      - name: Publish Channel Farmers Module to PROD using Spectrum
+        run: spectrum faste publish --module-name $MODULE_NAME --module-version stable --ci --prod --api-key $FASTE_TEAM_API_KEY --client-id $AZURE_CLIENT_ID --client-secret $AZURE_CLIENT_SECRET
+      - name: Test
+        run: |
+          curl -H 'Accept: application/vnd.github.everest-preview+json' \
+          -H 'Authorization: Bearer ${{ secrets.ACTIONS_KEY }}' \
+          "https://api.github.com/repos/bayer-int/uschannel-testAutomation/dispatches" \
+          -d '{"event_type": "Selenium Automated Tests"}'
+      - uses: actions/checkout@v4

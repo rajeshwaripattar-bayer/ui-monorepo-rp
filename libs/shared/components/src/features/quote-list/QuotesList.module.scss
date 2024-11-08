@@ -1,0 +1,110 @@
+.grid {
+  padding: 0px !important;
+  margin-bottom: 50px;
+}
+
+.header {
+  @media (min-width: 1024px) {
+    padding: 48px 80px;
+  }
+}
+
+.content {
+  @media (max-width: 1023px) {
+    padding: 0px 16px;
+    position: relative;
+  }
+
+  @media (max-width: 719px) {
+    padding: 0px;
+  }
+}
+
+.container-contingency {
+  // TODO: This number needs to be tweaked for different devices once we have the final portal ready with any footer!
+  min-height: 480px;
+}
+
+.overline-text-wrapper {
+  margin: -15px 0px;
+  text-transform: capitalize;
+}
+
+.bottom-sheet {
+  width: 100%;
+
+  @media (min-width: 720px) {
+    width: 80%;
+    left: 10% !important;
+  }
+}
+
+.filter-container-mobile {
+  position: absolute;
+  width: -webkit-fill-available;
+  height: 64px;
+  line-height: 64px;
+  top: 0px;
+  margin: 0px 16px;
+}
+
+.quote-list-mobile {
+  width: 100%;
+  :global(.lmnt-list-item--wrap) {
+    min-height: 85px !important;
+  }
+}
+
+.sorting-chip-container {
+  float: right;
+  @media (min-width: 720px) {
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 719px) {
+  .filter-container-mobile {
+    margin: 0px 16px;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.mobile-create-quote-btn {
+  position: fixed;
+  bottom: 110px;
+  right: 16px;
+  border-radius: 10px;
+  @media (min-width: 600px) {
+    bottom: 20px;
+  }
+}
+@media (min-width: 720px) {
+  :global(.lmnt-table__cell-content) {
+    min-height: 48px;
+    height: auto !important;
+  }
+}
+
+.quotes_table {
+  tr:has(i[id='arrow_down']) {
+    background: #f5f5f5;
+  }
+
+  tr:has(div[id='quotes_expansion_panel']) {
+    border-top: none !important;
+  }
+  .quotes_expansion_panel {
+    width: 100%;
+    background-color: #f5f5f5;
+  }
+  :global(.lmnt-table__cell--nestable) {
+    padding: 0px;
+  }
+  tr > :nth-child(1) {
+    width: 56px;
+    padding-right: 0px;
+  }
+}

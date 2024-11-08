@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading should render successfully 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="loading undefined"
+      >
+        <div
+          aria-label="Progress Indicator"
+          class="lmnt mdc-linear-progress mdc-linear-progress--indeterminate lmnt-linear-progress--primary mdc-linear-progress--animation-ready"
+          role="progressbar"
+        >
+          <div
+            class="mdc-linear-progress__buffer"
+          >
+            <div
+              class="mdc-linear-progress__buffer-bar"
+              style="flex-basis: 100%;"
+            />
+            <div
+              class="mdc-linear-progress__buffer-dots"
+            />
+          </div>
+          <div
+            class="mdc-linear-progress__bar mdc-linear-progress__primary-bar"
+            style="transform: scaleX(1);"
+          >
+            <span
+              class="mdc-linear-progress__bar-inner"
+            />
+          </div>
+          <div
+            class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar"
+          >
+            <span
+              class="mdc-linear-progress__bar-inner"
+            />
+          </div>
+        </div>
+        <span
+          class="mdc-typography lmnt mdc-typography--caption"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="loading undefined"
+    >
+      <div
+        aria-label="Progress Indicator"
+        class="lmnt mdc-linear-progress mdc-linear-progress--indeterminate lmnt-linear-progress--primary mdc-linear-progress--animation-ready"
+        role="progressbar"
+      >
+        <div
+          class="mdc-linear-progress__buffer"
+        >
+          <div
+            class="mdc-linear-progress__buffer-bar"
+            style="flex-basis: 100%;"
+          />
+          <div
+            class="mdc-linear-progress__buffer-dots"
+          />
+        </div>
+        <div
+          class="mdc-linear-progress__bar mdc-linear-progress__primary-bar"
+          style="transform: scaleX(1);"
+        >
+          <span
+            class="mdc-linear-progress__bar-inner"
+          />
+        </div>
+        <div
+          class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar"
+        >
+          <span
+            class="mdc-linear-progress__bar-inner"
+          />
+        </div>
+      </div>
+      <span
+        class="mdc-typography lmnt mdc-typography--caption"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

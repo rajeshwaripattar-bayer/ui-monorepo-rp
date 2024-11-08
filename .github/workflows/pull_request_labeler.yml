@@ -1,0 +1,26 @@
+name: GC Agency Pull Request Labeler
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  label_the_PR:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Checkout Git
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - id: label-the-PR
+        uses: actions/labeler@v5

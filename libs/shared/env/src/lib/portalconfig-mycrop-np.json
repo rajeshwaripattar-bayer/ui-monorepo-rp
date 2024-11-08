@@ -1,0 +1,968 @@
+{
+  "gcPortalConfig": {
+    "services": {
+      "licServiceUrl": "https://licensee-api-np.agro.services",
+      "seedServiceUrl": "https://seed-service-api-np.agro.services",
+      "acsCommonUrl": "https://acs2-common-ms-np.agro.services",
+      "nbmUrl": "https://nbm-api-np.agro.services",
+      "climateApiParams": {
+        "dataLegitimacy": "ARTIFICIAL"
+      }
+    },
+    "crops": ["corn", "soybeans", "cotton", "canola", "sorghum"],
+    "uiCommon": {
+      "badgeThemeColor": [
+        {
+          "color": "orange",
+          "text": ["Available"]
+        },
+        {
+          "color": "#c2e0ff",
+          "text": ["Accepted"]
+        },
+        {
+          "color": "#b8f2c7",
+          "text": ["Enrolled"]
+        }
+      ]
+    },
+    "brandFamily": "national"
+  },
+  "nbmWidgetsConfig": {
+    "programTracking": {
+      "seed": {
+        "tabs": [
+          {
+            "title": "SEED SHOWCASE",
+            "id": "seedShowcase",
+            "access": ["seed:nbm:seed-showcase:read"]
+          },
+          {
+            "title": "DELARO SHOWCASE",
+            "id": "delaroShowcase",
+            "access": ["seed:nbm:delaro-showcase:read"]
+          }
+        ],
+        "actionButtonRedirectLink": "farmers/my-farmers",
+        "access": ["seed:nbm:delaro-showcase:read", "seed:nbm:seed-showcase:read"],
+        "noTitleColor": true,
+        "title": "Program Tracking"
+      },
+      "cp": {
+        "tabs": [
+          {
+            "title": "SEED SHOWCASE",
+            "id": "seedShowcase",
+            "access": ["cp:nbm:seed-showcase:read"]
+          },
+          {
+            "title": "DELARO SHOWCASE",
+            "id": "delaroShowcase",
+            "access": ["cp:nbm:delaro-showcase:read"]
+          }
+        ],
+        "actionButtonRedirectLink": "farmers/license-search",
+        "access": ["cp:nbm:delaro-showcase:read", "cp:nbm:seed-showcase:read"],
+        "noTitleColor": true,
+        "title": "Program Tracking"
+      }
+    },
+    "farmerProgramsColumns": [
+      {
+        "accessor": "preferred",
+        "header": "",
+        "displayType": "flag",
+        "defaultSort": "desc",
+        "defaultSortOrder": 0,
+        "access": [
+          "cp:nbm:delaro-showcase:read",
+          "seed:nbm:delaro-showcase:read",
+          "cp:nbm:seed-showcase:read",
+          "seed:nbm:seed-showcase:read",
+          "none:nbm:seed-showcase:read"
+        ]
+      },
+      {
+        "accessor": "name",
+        "header": "Farmer Name",
+        "displayType": "link",
+        "defaultSortOrder": 1
+      },
+      {
+        "accessor": "status",
+        "header": "Offer Status",
+        "displayType": "chip"
+      }
+    ]
+  },
+  "farmersModule": {
+    "farmerOffersColumns": [
+      {
+        "accessor": "checkEligibility",
+        "header": "Check Eligibility",
+        "displayType": "link"
+      },
+      {
+        "accessor": "name",
+        "header": "Program"
+      },
+      {
+        "accessor": "offerStatus",
+        "header": "Offer Status",
+        "displayType": "chip"
+      },
+      {
+        "accessor": "eligibleFields",
+        "header": "Eligible Fields"
+      },
+      {
+        "accessor": "enrolledFields",
+        "header": "Enrolled Fields"
+      }
+    ],
+    "zoneDetailsColumns": [
+      {
+        "accessor": "crop",
+        "header": "Crop"
+      },
+      {
+        "accessor": "cyZone",
+        "header": "{currentYear} Zone"
+      },
+      {
+        "accessor": "cyReassigned",
+        "header": "{currentYear} Reassigned",
+        "displayType": "boolean"
+      },
+      {
+        "accessor": "pyZone",
+        "header": "{priorYear} Zone"
+      },
+      {
+        "accessor": "pyReassigned",
+        "header": "{priorYear} Reassigned",
+        "displayType": "boolean"
+      }
+    ],
+    "farmerLicListColumns": [
+      {
+        "excludeFromDownload": true,
+        "displayType": "flag",
+        "defaultSortOrder": 0,
+        "access": [
+          "cp:nbm:delaro-showcase:read",
+          "seed:nbm:delaro-showcase:read",
+          "cp:nbm:seed-showcase:read",
+          "seed:nbm:seed-showcase:read",
+          "none:nbm:seed-showcase:read"
+        ],
+        "accessor": "preferred",
+        "header": "",
+        "defaultSort": "desc"
+      },
+      {
+        "displayType": "link",
+        "defaultSortOrder": 1,
+        "accessor": "farmName",
+        "header": "Farm Name",
+        "id": "farmName",
+        "defaultSort": "asc",
+        "searchable": true
+      },
+      {
+        "accessor": "growerIrdId",
+        "header": "Technology ID",
+        "searchable": true
+      },
+      {
+        "accessor": "licenseStatus",
+        "header": "Bayer License Status",
+        "filterable": true,
+        "searchable": true
+      },
+      {
+        "accessor": "gln",
+        "header": "GLN",
+        "displayType": "overflow",
+        "searchable": true
+      },
+      {
+        "accessor": "city",
+        "header": "City",
+        "searchable": true
+      },
+      {
+        "accessor": "state",
+        "header": "State",
+        "searchable": true
+      },
+      {
+        "accessor": "offer",
+        "header": "Offer",
+        "displayType": "chip",
+        "access": [
+          "cp:nbm:delaro-showcase:read",
+          "seed:nbm:delaro-showcase:read",
+          "cp:nbm:seed-showcase:read",
+          "seed:nbm:seed-showcase:read",
+          "none:nbm:seed-showcase:read"
+        ],
+        "searchable": true
+      }
+    ],
+    "myView": {
+      "SG": {
+        "lobDisplayName": "Seed Growth",
+        "logo": "https://d10dppcv5su67w.cloudfront.net/assets/themes/dad/images/logo-lob-seed-treatment.svg",
+        "backgroundImage": "https://d10dppcv5su67w.cloudfront.net/assets/themes/dad/images/bg-hero-dad-bioag.jpg"
+      },
+      "CP": {
+        "lobDisplayName": "Crop Protection",
+        "logo": "https://d10dppcv5su67w.cloudfront.net/assets/themes/dad/images/logo-lob-cp.svg",
+        "backgroundImage": "https://d10dppcv5su67w.cloudfront.net/assets/themes/dad/images/bg-hero-dad-cp.jpg"
+      },
+      "SEED": {
+        "lobDisplayName": "Seed",
+        "logo": "https://d10dppcv5su67w.cloudfront.net/assets/themes/dad/images/logo-lob-seed.svg",
+        "backgroundImage": "https://d10dppcv5su67w.cloudfront.net/assets/themes/dad/images/bg-hero-dad-seed.jpg"
+      },
+      "LIC": {
+        "lobDisplayName": "Licensing",
+        "logo": "https://d10dppcv5su67w.cloudfront.net/assets/themes/dad/images/logo-lob-lic.svg",
+        "backgroundImage": "https://d10dppcv5su67w.cloudfront.net/assets/themes/dad/images/bg-hero-dad-lic.jpg"
+      }
+    },
+    "farmerDownloadReportColumns": [
+      {
+        "displayName": "Farm Name",
+        "id": "farmName"
+      },
+      {
+        "displayName": "First Name",
+        "id": "firstName"
+      },
+      {
+        "displayName": "Last Name",
+        "id": "lastName"
+      },
+      {
+        "displayName": "Technology ID",
+        "id": "growerIrdId"
+      },
+      {
+        "displayName": "Enlist Tech ID",
+        "id": "crtva"
+      },
+      {
+        "displayName": "Bayer License Status",
+        "id": "licenseStatus"
+      },
+      {
+        "displayName": "Licensed by August 31",
+        "id": "licensedByAug31"
+      },
+      {
+        "displayName": "GLN",
+        "id": "gln"
+      },
+      {
+        "displayName": "Address Line",
+        "id": "streetAddress"
+      },
+      {
+        "displayName": "City",
+        "id": "city"
+      },
+      {
+        "displayName": "State",
+        "id": "state"
+      },
+      {
+        "displayName": "Zip Code",
+        "id": "zipCode"
+      },
+      {
+        "displayName": "County",
+        "id": "county"
+      },
+      {
+        "displayName": "Phone",
+        "id": "phoneNumber"
+      },
+      {
+        "displayName": "Email",
+        "id": "email"
+      },
+      {
+        "displayName": "{currentYear} Corn Zone",
+        "id": "CornCyZone"
+      },
+      {
+        "displayName": "{currentYear} Corn Zone Reassigned",
+        "id": "CornCyReassigned"
+      },
+      {
+        "displayName": "{priorYear} Corn Zone",
+        "id": "CornPyZone"
+      },
+      {
+        "displayName": "{priorYear} Offers",
+        "id": "offers"
+      },
+      {
+        "displayName": "{priorYear} Corn Zone Reassigned",
+        "id": "CornPyReassigned"
+      },
+      {
+        "displayName": "{currentYear} Soybeans Zone",
+        "id": "SoybeansCyZone"
+      },
+      {
+        "displayName": "{currentYear} Soybeans Zone Reassigned",
+        "id": "SoybeansCyReassigned"
+      },
+      {
+        "displayName": "{priorYear} Soybeans Zone",
+        "id": "SoybeansPyZone"
+      },
+      {
+        "displayName": "{priorYear} Soybeans Zone Reassigned",
+        "id": "SoybeansPyReassigned"
+      },
+      {
+        "displayName": "{currentYear} Cotton Zone",
+        "id": "CottonCyZone"
+      },
+      {
+        "displayName": "{currentYear} Cotton Zone Reassigned",
+        "id": "CottonCyReassigned"
+      },
+      {
+        "displayName": "{priorYear} Cotton Zone",
+        "id": "CottonPyZone"
+      },
+      {
+        "displayName": "{priorYear} Cotton Zone Reassigned",
+        "id": "CottonPyReassigned"
+      },
+      {
+        "displayName": "Offer",
+        "id": "offer",
+        "access": [
+          "cp:nbm:delaro-showcase:read",
+          "seed:nbm:delaro-showcase:read",
+          "cp:nbm:seed-showcase:read",
+          "seed:nbm:seed-showcase:read",
+          "none:nbm:seed-showcase:read"
+        ]
+      }
+    ],
+    "licenseFarmersTableColumns": [
+      {
+        "accessor": "accountName",
+        "header": "Farm Name",
+        "displayType": "link",
+        "displayConfig": {
+          "colId": "accountName",
+          "rowId": "irdId"
+        }
+      },
+      {
+        "accessor": "irdId",
+        "header": "Technology ID"
+      },
+      {
+        "accessor": "licenseStatus",
+        "header": "Bayer License Status",
+        "filterable": true
+      },
+      {
+        "accessor": "crtva",
+        "header": "Enlist Tech ID"
+      },
+      {
+        "accessor": "gln",
+        "header": "GLN",
+        "displayType": "overflow",
+        "displayConfig": {
+          "maxLength": 14
+        }
+      },
+      {
+        "accessor": "city",
+        "header": "City"
+      },
+      {
+        "accessor": "state",
+        "header": "State"
+      },
+      {
+        "accessor": "zipCode",
+        "header": "Zip Code"
+      },
+      {
+        "accessor": "contactName",
+        "header": "Contact Name"
+      }
+    ],
+    "farmerProductsOrderedColumns": [
+      {
+        "displayType": "expandable",
+        "sortable": false
+      },
+      {
+        "accessor": "hybrid",
+        "header": "Product",
+        "searchable": true
+      },
+      {
+        "accessor": "cropName",
+        "header": "Crop",
+        "filterable": true,
+        "searchable": true
+      },
+      {
+        "accessor": "currentYearGrowerOrder",
+        "header": "{currentYear} Farmer Orders"
+      },
+      {
+        "accessor": "currentYearNetGPOS",
+        "header": "{currentYear} Reported GPOS"
+      },
+      {
+        "accessor": "priorYearGrowerOrder",
+        "header": "{priorYear} Reported GPOS"
+      },
+      {
+        "accessor": "priorYearGrowerOrderMinus1",
+        "header": "{priorYear-1} Reported GPOS"
+      }
+    ],
+    "farmerLicProductsOrderedColumns": [
+      {
+        "accessor": "hybrid",
+        "header": "Product",
+        "searchable": true
+      },
+      {
+        "accessor": "cropName",
+        "header": "Crop",
+        "filterable": true,
+        "searchable": true
+      },
+      {
+        "accessor": "currentYearNetGPOS",
+        "header": "{currentYear} Reported GPOS"
+      },
+      {
+        "accessor": "priorYearGrowerOrder",
+        "header": "{priorYear} Reported GPOS"
+      },
+      {
+        "accessor": "priorYearGrowerOrderMinus1",
+        "header": "{priorYear-1} Reported GPOS"
+      }
+    ],
+    "farmerDashboardConfig": {
+      "seed": [
+        {
+          "infoText": "There may be a variance in the number of farmers shown between this widget and the My Farmer table due to farmers possibly being listed multiple times",
+          "tabs": [
+            {
+              "title": "FARMERS",
+              "colors": ["#52452E", "#6C5C43", "#9E9077", "#D1C8B7"],
+              "usage": "licenseChart"
+            }
+          ],
+          "actionButtonRedirectLink": "farmers/my-farmers",
+          "title": "Bayer License Status",
+          "usage": "licenseStatus"
+        }
+      ],
+      "cp": [
+        {
+          "actionButtonRedirectLink": "farmers/license-search",
+          "title": "Bayer License Search",
+          "actionButtonText": "view more",
+          "usage": "licenseSearch"
+        }
+      ],
+      "lic": [
+        {
+          "actionButtonRedirectLink": "farmers/license-search",
+          "title": "Bayer License Search",
+          "actionButtonText": "view more",
+          "usage": "licenseSearch"
+        }
+      ]
+    },
+    "farmerLicCropTotalsColumns": [
+      {
+        "accessor": "cropName",
+        "header": "Crop"
+      },
+      {
+        "accessor": "currentYearNetGPOS",
+        "header": "{currentYear} Reported GPOS"
+      },
+      {
+        "accessor": "priorYearGrowerOrder",
+        "header": "{priorYear} Reported GPOS"
+      },
+      {
+        "accessor": "priorYearGrowerOrderMinus1",
+        "header": "{priorYear-1} Reported GPOS"
+      }
+    ],
+    "aemPathMapper": {
+      "Seed Showcase": "/text-blocks/farmer-module/check-fields-modal---seed-showcase",
+      "Delaro Showcase": "/text-blocks/farmer-module/check-fields-modal---delaro"
+    },
+    "nbmProgramUrls": {
+      "Seed Showcase": "https://eng1e.seismic.com/i/NIK8PLUSSIGN7FlU9VBcY5brDnIn5itLHfUh5zPLUSSIGNt4UdPLUSSIGNPb71qw7QDm___AfDsGPLUSSIGNooSsStJFevgthxi8BwFh3wwDHrPLUSSIGNmgcv7gzaxFuY4ZY68oRKp3bw8wEQUALSIGN",
+      "Delaro Showcase": "https://eng1e.seismic.com/i/kguqesz6F2wvaqSsFyF3Rj62L38Ub5Xt8yD01SfvWla8WsPLUSSIGNzZySPLEvlIwXZ2bTN2WxLLvgJXNJ2TFg0vYXTGvNxwYOlpje3mDpNOvg5ARgEQUALSIGN"
+    },
+    "farmerDetailFields": [
+      {
+        "displayValue": "firstName",
+        "displayName": "firstName"
+      },
+      {
+        "displayValue": "lastName",
+        "displayName": "lastName"
+      },
+      {
+        "displayValue": "streetAddress",
+        "displayName": "address"
+      },
+      {
+        "displayValue": "city",
+        "displayName": "city"
+      },
+      {
+        "displayValue": "state",
+        "displayName": "state"
+      },
+      {
+        "displayValue": "zipCode",
+        "displayName": "zipCode"
+      },
+      {
+        "displayValue": "phoneNumber",
+        "displayName": "phone"
+      },
+      {
+        "displayValue": "email",
+        "displayName": "email"
+      },
+      {
+        "displayValue": "licenseStatus",
+        "displayName": "licenseStatus"
+      },
+      {
+        "displayValue": "growerIrdId",
+        "displayName": "technologyID"
+      },
+      {
+        "displayValue": "crtva",
+        "displayName": "crtva"
+      },
+      {
+        "displayValue": "gln",
+        "displayName": "gln"
+      }
+    ],
+    "farmerCropTotalsColumns": [
+      {
+        "accessor": "cropName",
+        "header": "Crop"
+      },
+      {
+        "accessor": "currentYearGrowerOrder",
+        "header": "{currentYear} Farmer Orders"
+      },
+      {
+        "accessor": "currentYearNetGPOS",
+        "header": "{currentYear} Reported GPOS"
+      },
+      {
+        "accessor": "priorYearGrowerOrder",
+        "header": "{priorYear} Reported GPOS"
+      },
+      {
+        "accessor": "priorYearGrowerOrderMinus1",
+        "header": "{priorYear-1} Reported GPOS"
+      }
+    ],
+    "licenseFormConfig": [
+      {
+        "validationRule": "^.{3,}$",
+        "validationMessage": "Must be at least 3 characters",
+        "checkValidation": true,
+        "label": "Farm Name",
+        "id": "name",
+        "type": "text",
+        "group": "row1"
+      },
+      {
+        "validationRule": "^.{3,}$",
+        "validationMessage": "Must be at least 3 characters",
+        "checkValidation": true,
+        "label": "Contact Name",
+        "id": "contactName",
+        "type": "text",
+        "group": "row1"
+      },
+      {
+        "label": "Technology Id",
+        "id": "accountNumber",
+        "type": "number",
+        "group": "row2"
+      },
+      {
+        "validationRule": "^\\d{13}$",
+        "validationMessage": "Must be 13 digits",
+        "checkValidation": true,
+        "label": "GLN",
+        "id": "gln",
+        "type": "number",
+        "group": "row2"
+      },
+      {
+        "validationRule": "^\\d{10}$",
+        "validationMessage": "Must be 10 digits",
+        "checkValidation": true,
+        "label": "Phone Number",
+        "id": "phoneNumber",
+        "type": "number",
+        "group": "row2"
+      },
+      {
+        "validationRule": "^.{3,}$",
+        "validationMessage": "Must be at least 3 characters",
+        "checkValidation": true,
+        "label": "City",
+        "id": "city",
+        "type": "text",
+        "group": "row3"
+      },
+      {
+        "options": [
+          {
+            "value": "AL",
+            "text": "Alabama"
+          },
+          {
+            "value": "AK",
+            "text": "Alaska"
+          },
+          {
+            "value": "AZ",
+            "text": "Arizona"
+          },
+          {
+            "value": "AR",
+            "text": "Arkansas"
+          },
+          {
+            "value": "CA",
+            "text": "California"
+          },
+          {
+            "value": "CO",
+            "text": "Colorado"
+          },
+          {
+            "value": "CT",
+            "text": "Connecticut"
+          },
+          {
+            "value": "DE",
+            "text": "Delaware"
+          },
+          {
+            "value": "DC",
+            "text": "District Of Columbia"
+          },
+          {
+            "value": "FL",
+            "text": "Florida"
+          },
+          {
+            "value": "GA",
+            "text": "Georgia"
+          },
+          {
+            "value": "HI",
+            "text": "Hawaii"
+          },
+          {
+            "value": "ID",
+            "text": "Idaho"
+          },
+          {
+            "value": "IL",
+            "text": "Illinois"
+          },
+          {
+            "value": "IN",
+            "text": "Indiana"
+          },
+          {
+            "value": "IA",
+            "text": "Iowa"
+          },
+          {
+            "value": "KS",
+            "text": "Kansas"
+          },
+          {
+            "value": "KY",
+            "text": "Kentucky"
+          },
+          {
+            "value": "LA",
+            "text": "Louisiana"
+          },
+          {
+            "value": "ME",
+            "text": "Maine"
+          },
+          {
+            "value": "MD",
+            "text": "Maryland"
+          },
+          {
+            "value": "MA",
+            "text": "Massachusetts"
+          },
+          {
+            "value": "MI",
+            "text": "Michigan"
+          },
+          {
+            "value": "MN",
+            "text": "Minnesota"
+          },
+          {
+            "value": "MS",
+            "text": "Mississippi"
+          },
+          {
+            "value": "MO",
+            "text": "Missouri"
+          },
+          {
+            "value": "MT",
+            "text": "Montana"
+          },
+          {
+            "value": "NE",
+            "text": "Nebraska"
+          },
+          {
+            "value": "NV",
+            "text": "Nevada"
+          },
+          {
+            "value": "NH",
+            "text": "New Hampshire"
+          },
+          {
+            "value": "NJ",
+            "text": "New Jersey"
+          },
+          {
+            "value": "NM",
+            "text": "New Mexico"
+          },
+          {
+            "value": "NY",
+            "text": "New York"
+          },
+          {
+            "value": "NC",
+            "text": "North Carolina"
+          },
+          {
+            "value": "ND",
+            "text": "North Dakota"
+          },
+          {
+            "value": "OH",
+            "text": "Ohio"
+          },
+          {
+            "value": "OK",
+            "text": "Oklahoma"
+          },
+          {
+            "value": "OR",
+            "text": "Oregon"
+          },
+          {
+            "value": "PA",
+            "text": "Pennsylvania"
+          },
+          {
+            "value": "RI",
+            "text": "Rhode Island"
+          },
+          {
+            "value": "SC",
+            "text": "South Carolina"
+          },
+          {
+            "value": "SD",
+            "text": "South Dakota"
+          },
+          {
+            "value": "TN",
+            "text": "Tennessee"
+          },
+          {
+            "value": "TX",
+            "text": "Texas"
+          },
+          {
+            "value": "UT",
+            "text": "Utah"
+          },
+          {
+            "value": "VA",
+            "text": "Virginia"
+          },
+          {
+            "value": "WA",
+            "text": "Washington"
+          },
+          {
+            "value": "WV",
+            "text": "West Virginia"
+          },
+          {
+            "value": "WI",
+            "text": "Wisconsin"
+          },
+          {
+            "value": "WY",
+            "text": "Wyoming"
+          }
+        ],
+        "label": "Select a state",
+        "id": "state",
+        "type": "select",
+        "group": "row3"
+      },
+      {
+        "validationRule": "^\\d{5,}$",
+        "validationMessage": "Must be at least 5 digits",
+        "checkValidation": true,
+        "label": "Zip",
+        "id": "zip",
+        "type": "number",
+        "group": "row3"
+      },
+      {
+        "disabled": true,
+        "label": "Country",
+        "id": "country",
+        "type": "text",
+        "value": "US",
+        "group": "row4"
+      },
+      {
+        "options": [
+          {
+            "value": "all",
+            "displayName": "All (Searching for all users could increase the time it takes to display results)"
+          },
+          {
+            "value": "Licensed",
+            "displayName": "Licensed"
+          }
+        ],
+        "id": "licenseStatus",
+        "type": "radio",
+        "value": "Licensed",
+        "group": "row5"
+      }
+    ],
+    "farmerListColumns": [
+      {
+        "excludeFromDownload": true,
+        "displayType": "flag",
+        "defaultSortOrder": 0,
+        "access": [
+          "cp:nbm:delaro-showcase:read",
+          "seed:nbm:delaro-showcase:read",
+          "cp:nbm:seed-showcase:read",
+          "seed:nbm:seed-showcase:read",
+          "none:nbm:seed-showcase:read"
+        ],
+        "accessor": "preferred",
+        "header": "",
+        "defaultSort": "desc"
+      },
+      {
+        "displayType": "link",
+        "defaultSortOrder": 1,
+        "accessor": "farmName",
+        "header": "Farm Name",
+        "id": "farmName",
+        "defaultSort": "asc",
+        "searchable": true
+      },
+      {
+        "accessor": "growerIrdId",
+        "header": "Technology ID",
+        "searchable": true
+      },
+      {
+        "accessor": "licenseStatus",
+        "header": "Bayer License Status",
+        "filterable": true,
+        "searchable": true
+      },
+      {
+        "accessor": "crtva",
+        "header": "Enlist Tech ID",
+        "searchable": true
+      },
+      {
+        "accessor": "gln",
+        "header": "GLN",
+        "displayType": "overflow",
+        "searchable": true
+      },
+      {
+        "accessor": "city",
+        "header": "City",
+        "searchable": true
+      },
+      {
+        "accessor": "state",
+        "header": "State",
+        "searchable": true
+      },
+      {
+        "accessor": "cornZone",
+        "header": "Corn Zone",
+        "searchable": true
+      },
+      {
+        "accessor": "offer",
+        "header": "Offer",
+        "displayType": "chip",
+        "access": [
+          "cp:nbm:delaro-showcase:read",
+          "seed:nbm:delaro-showcase:read",
+          "cp:nbm:seed-showcase:read",
+          "seed:nbm:seed-showcase:read",
+          "none:nbm:seed-showcase:read"
+        ],
+        "searchable": true
+      }
+    ]
+  }
+}

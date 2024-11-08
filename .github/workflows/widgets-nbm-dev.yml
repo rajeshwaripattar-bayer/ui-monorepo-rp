@@ -1,0 +1,76 @@
+name: Widgets NBM Module NP Deploy
+
+on:
+  push:
+    branches: development
+    paths:
+        - '.github/workflows/widgets-nbm-dev.yml'
+        - 'apps/widgets/**'
+
+  workflow_dispatch:
+    inputs:
+      commitHash:
+        description: 'Source Commit Hash'
+        required: false
+
+run-name: Deploy Widgets NBM module by @${{ github.actor }}
+
+env:
+  MODULE_NAME: nbm-program-tracking-widget
+  NODE_VERSION: 20
+  COMMIT_HASH: ${{ github.event.inputs.commitHash || github.sha }}
+  VAULT_PATH: kv/data/lodestar/nbm/deploy
+
+jobs:
+  deploy:
+    name: build-deploy
+    runs-on: ubuntu-latest
+    environment: lodestar
+    steps:
+      - name: Import Secrets
+        uses: hashicorp/vault-action@v3.0.0
+        with:
+          tlsSkipVerify: true
+          url: https://vault.agro.services
+          method: approle
+          roleId: ${{ secrets.VAULT_ROLE_ID }}
+          secretId: ${{ secrets.VAULT_ROLE_SECRET }}
+          secrets: |
+            ${{ env.VAULT_PATH }} npmAuthToken ;
+            ${{ env.VAULT_PATH }} apiKey ;
+            ${{ env.VAULT_PATH }} clientId ;
+            ${{ env.VAULT_PATH }} clientSecret ;
+
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.COMMIT_HASH }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Configure NPM
+        run: |
+          npm config set //artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/:_authToken ${{ env.NPMAUTHTOKEN }}
+          npm config set @monsantoit:registry=https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm config set @supernova:registry=https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm config set @faste-lite:registry=https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm config set @c7:registry=https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm config set @element:registry=https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm ci
+
+      - name: Build Widgets NBM Module
+        run: |
+          npm run setSpectrumConfig entry=dist/apps/widgets/nbm/bundle.js assets=dist/apps/widgets/nbm
+          npm run widgets:nbm:build:np
+
+      - name: Install spectrum cli 
+        run: |
+          npm install @monsantoit/spectrum-cli@^5.3.1 -g
+
+      - name: Spectrum Deploy
+        run: |
+          spectrum faste publish --module-name ${{ env.MODULE_NAME }} --module-version stable --ci --api-key ${{ env.APIKEY }} --client-id ${{ env.CLIENTID }} --client-secret ${{ env.CLIENTSECRET }}
+        id: spectrum-deploy

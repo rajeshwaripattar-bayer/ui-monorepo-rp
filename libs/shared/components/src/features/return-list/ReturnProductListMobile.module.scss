@@ -1,0 +1,12 @@
+.card {
+  border-radius: 0 !important;
+  margin-bottom: 20px;
+
+  @media (max-width: 719px) {
+    border-width: 1px !important;
+  }
+}
+.header {
+  width: auto;
+  padding: 12px 8px 12px 16px;
+}

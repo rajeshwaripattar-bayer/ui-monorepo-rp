@@ -1,0 +1,21 @@
+.myViewContainer {
+  width: 100%;
+
+  .imageBackground {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #e9e8e3;
+
+    .inner {
+      padding: 12px 80px 20px 48px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,2084 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Changed
+- Us/fix/13756(channel-quotes) fix jest setup
+- Breakout billing section from quote details
+- Merge pull request #424 from bayer-int/dependabot/npm_and_yarn/npm_and_yarn-65970af51f
+- Bump the npm_and_yarn group with 6 updates
+- Merge pull request #434 from bayer-int/13985-Fix-Quote-Save
+- Us/fix/13985(common-quotes) Fix for parallel calls
+- Us/fix/13985(common-quotes) Fix save getting enabled by default when there is no name for Quote
+- Merge pull request #433 from bayer-int/293-commonFarmers-minorRefactors
+- Merge branch 'development' into 293-commonFarmers-minorRefactors
+- Update configData.ts
+- Resolve merge conflicts
+- Merge branch 'development' into 293-commonFarmers-minorRefactors
+- 293 common farmers minor refactors
+- Merge pull request #429 from bayer-int/14510-noPrintOptionOnDraftQuote
+- Update libs/shared/components/src/features/quote-list/QuotesList.tsx
+- Us/bug/14510(channel-quotes) Print option can be removed for quotes in draft status
+
+## [0.0.13-seedsman] - 2024-09-25
+
+### Added
+- Add default CODEOWNERS file
+
+### Changed
+- US/features/ (common-farmers) fixed common farmers redirect issue from farmers list page
+- Merge pull request #412 from bayer-int/13986-fix-crash-after-discarded-edit
+- Resolved conflicts & accounted for ProductsSelection refactor
+- Us/bug/13986(channel-quotes) added/corrected guards for undefined values
+- Merge pull request #436 from bayer-int/14439-noPrintOptionOnDraftQuote
+- Us/bug/14439(channel-quotes) Expiration date is not getting updated in Mobile View
+- Merge pull request #437 from bayer-int/14438-farmerListExportfileWithSearchCriteria
+- Us/bug/14438(channel-farmers) Exported file for farmer list does not result as per the search criteria
+
+## [0.0.12-seedsman] - 2024-09-25
+
+### Added
+- Add biome + git hooks
+- Add commands
+- Add commands
+- Add biome + git hooks
+
+### Changed
+- 408-farmers more validations
+- Merge pull request #435 from bayer-int/415-commonFarmers-widgetBug
+- US/features/415 (common-farmers) use isFetching boolean for farmer details hook and units rtk query
+- 408 commonfarmers info page
+- Us/hotfix/XXXXX(common-quotes) Remove token log
+- Merge pull request #432 from bayer-int/quick-demo-fix
+- US/Feature/Cahnnel farmers - xxxx - updated sorting options
+- Merge pull request #427 from bayer-int/386-commonFarmers-downloadFix
+- Merge branches '386-commonFarmers-downloadFix' and 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 386-commonFarmers-downloadFix
+- US/features/386 (common-farmers) add type check for get coloumns
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 386-commonFarmers-downloadFix
+- US/features/386 (common-farmers) remove csv download from my farmers and shared table component
+- US/features/386 (common-farmers) fix lint errors
+- US/features/386 (common-farmers) convert to xlsx instead of csv
+- US/features/386 (common-farmers) conver number type to string while downloading csv
+- Merge pull request #431 from bayer-int/14133-View-Farmer-Deliveries
+- Us/feature/14133 (channel-farmers) View Farmer Deliveries
+- Merge pull request #425 from bayer-int/413-commonFarmers-allowDupFvIdInWidget
+- Renames
+- 413 common farmers allow dup fv id in widget
+- 14142 apply all revisit
+- Us/hotfix/XXXXX(common-quotes) Fix Import gc/slices
+- Merge develop
+- Merge pull request #430 from bayer-int/13537-Farmer-Returns
+- US/Feature (channel Farmers) 13537-View Grower Returns
+- US/Feature (channel Farmers) 13537-View Grower Returns
+- Us/hotfix/XXXXX(common-quotes) Fix Import for Farmer module store
+- Merge pull request #423 from bayer-int/14527-Product-Section
+- Us/feature/14527(common-quotes) Fixes after merge
+- Us/feature/14527(common-quotes) Minor cleanup
+- Us/feature/14527(common-quotes) Fix Product Section
+- Merge branch 'development' into 14527-Product-Section
+- Us/feature/14527(common-quotes) Fix a bug with Edit
+- Us/feature/14527(common-quotes) Move a file in util
+- Merge branch 'development' into 14527-Product-Section
+- Us/feature/14527(common-quotes) Working Second pass
+- Us/feature/14527(common-quotes) Working first pass
+- Us/hotfix/XXXXX(common-quotes) Fix Title
+- Merge pull request #421 from bayer-int/channel-orders-base
+- Us/feature/XXXXX(common-orders) Working
+- Us/feature/XXXXX(common-orders) Partially working
+- US/Feature/channel quotes feature added
+- Merge branch 'channel-orders-base' of github.com:bayer-int/gc-agency-ui-monorepo into channel-orders-base
+- Merge pull request #367 from bayer-int/13845-blankPageIsDisplayedWhileApplyingFilters
+- Us/bug/13845(channel-orders) White blank page is displayed when filter is applied on Orders page
+- US Feature (Channel orders) channel order code
+- US Feature Channel Order added
+- Deployment testing
+- Deployment testing
+- Merge branch 'development' into channel-orders-base
+- US/Feature/added
+- Get latest
+- Us/feature/xxxxx(channel-orders) Update status for mock
+- Us/feature/xxxxx(channel-orders) Fix Header
+- Us/feature/xxxxx(channel-orders) Working Order Details page
+- Us/feature/xxxxx(channel-orders) create types and rtk query for order details
+- Us/feature/xxxxx(channel-orders) Added redux store setup for Channel Orders
+- Extended table row added
+- US/feature/orders list
+- Merge branch 'development' into channel-orders-base
+- US/Feature/order
+- Merge branch 'development' into channel-orders-base
+- US/Feature order list
+- Merge branch 'development' into channel-orders-base
+- US/Feature/Orders page added
+- US/feature/orders
+- US/Channel/Feature/Orders page added
+- Merge branch 'development' into channel-orders-base
+- US/Feature/Orders base code setup
+- Channel Orders base code
+- Merge pull request #415 from bayer-int/14384-expirationDateSelectionIsResettingToDefault
+- Us/bug/14384(channel-quotes) Expiration Date selection is resetting to default
+- Merge pull request #420 from bayer-int/412-commonFarmers-climateProxy
+- Sync portalconfig
+- Merge branch 'development' into 412-commonFarmers-climateProxy
+- Merge branch 'development' into 412-commonFarmers-climateProxy
+- 412 common farmers climate proxy
+- Merge pull request #359 from bayer-int/dependabot/npm_and_yarn/npm_and_yarn-ef09145272
+- Bump the npm_and_yarn group with 5 updates
+- Merge pull request #422 from bayer-int/14415-sortingIssueOnFarmersPage
+- Us/bug/14415(channel-farmers) Sorting issue on Farmers page
+- Us/bug/14415(channel-farmers) Sorting issue on Farmers page
+- Merge pull request #410 from bayer-int/14218-add-products-pagination-bug
+- Us/bug/14218(channel-quotes) change function name for readability
+- Us/bug/14218(channel-quotes) address parallel pagination
+- Us/bug/14218(channel-quotes) address parallel pagination
+- Us/bug/14218(channel-quotes) address parallel pagination
+- Us/bug/14218(channel-quotes) address parallel pagination in get products endpoint
+- Merge pull request #400 from bayer-int/14039-Discount-Mobile
+- Us/fix/14509(common-quotes) Fix issue with Qty for Mobile
+- Us/feature/14039(common-quotes) Fix bug
+- Us/feature/14039(common-quotes) Changes for Discount Rate Mobile
+- US/Feature/(Channel Quotes)14038 Print quote on mobile
+- US/Feature/(Channel Quotes)14038 Print quote on mobile
+- Merge pull request #419 from bayer-int/403-commonFarmers-widgetDisplay
+- 403 common farmers widget display
+- Merge pull request #418 from bayer-int/407-commonFarmers-licFarmerslist
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 407-commonFarmers-licFarmerslist
+- Merge pull request #413 from bayer-int/407-commonFarmers-licFarmerslist
+- US/Feature/(Channel Quotes)14038 Print quote on mobile
+- Merge pull request #416 from bayer-int/14414-Fix-Discount-Label
+- Us/fix/14414(common-quotes) Fix Discount Label after Product removed
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into development
+- Us/hotfix/XXXXX(common-quotes) Fix Farmers module global reducer
+- Merge pull request #402 from bayer-int/14294-productPageQtyChangingOnMouseScroll
+- Us/bug/14294(channel-quotes) Scrolling on the add product page after adding quantity its getting changed with Quantity
+- Us/bug/14294(channel-quotes) Scrolling on the add product page after adding quantity its getting changed with Quantity
+- Merge pull request #406 from bayer-int/14145-exclusion-bug
+- Us/bug/14145/(channel-quotes) address exlusion badge not showing
+- Merge pull request #408 from bayer-int/384-commonFarmers-r2vMfWidget
+- 384 common farmers r2v mf widget
+- US Feature (channel quotes) print quotes mobile testing
+- US/Feature(channel quotes) print mobile issue testing
+- US/Feature(channel quotes) print mobile issue testing
+- US/Feature(channel quotes) print mobile issue testing
+- Merge pull request #411 from bayer-int/HotFix-Mobile-Add-Product-Refetch-Cart
+- US/HotFix/XXXX (Channel-quotes) Force Refetch Cart On Add Products - Mobile
+- Merge pull request #403 from bayer-int/14265-expirationDateIsGettingBlankInQuoteDetailsAfterQuoteCreation
+- Us/bug/14265(channel-quotes) Expiration date is getting blank in quote details after quote creation
+- Us/enhancement/14385/(common) Restructure api
+- US/features/407 (common-farmers) add logic to retun lic columns based on lob
+- US/features/407 (common-farmers)fix lint errors
+- US/features/400 (common-farmers) add logic to populate lic farmers details structure
+- US/features/400 (common-farmers) add logic to return lic farmers
+- Merge pull request #407 from bayer-int/400-commonFarmers-fetchLicFarmers
+- US/features/400 (common-farmers) remove unused api slice
+- US/features/400 (common-farmers) add logic to get lic farmers
+- Us/hotfix/XXXXX(common-quotes) Change from $ to USD
+- Us/hotfix/XXXXX(common-quotes) Add products page size configurable
+- Us/hotfix/XXXXX(common-quotes) Revert Select Products Table conditional pagination
+- Merge pull request #399 from bayer-int/14038-print-quote-on-mobile
+- US Feature/(Channel Quotes) 14038 PDF for Print Quote on mobile
+- Merge branch 'development' into 14038-print-quote-on-mobile
+- Merge pull request #398 from bayer-int/12997---Adjust-Brand-Discount-Fixes
+- US/fix/12997 (Channel-Quotes) Adjust Brand Discount fixes
+- Merge pull request #395 from bayer-int/14004-saving-quote-bug
+- Merge branch 'development' into 14004-saving-quote-bug
+- Us/bug/14004(channel-quotes) QuoteDetails edit / view mode bug
+- Merge pull request #388 from bayer-int/14218-Fix-Quotes-Refreshes
+- Us/fix/14218(common-quotes) Fix Table to not re render on sort by change
+- US Feature/(Channel Quotes) 14038 PDF for Print Quote on mobile
+- US Feature/(Channel Quotes) 14038 PDF for Print Quote on mobile
+- US Feature/(Channel Quotes) 14038 PDF for Print Quote on mobile
+- Merge pull request #391 from bayer-int/14329-refactor-redux-store
+- Us/fix/xxxxx(common-quotes) Fix Recommended Range loader
+- Us/refactor/14329/(common) merge development with base
+
+### Fixed
+- Fix
+- Fix shared libs
+
+### Removed
+- Remove extra import
+
+## [0.0.11-seedsman] - 2024-09-13
+
+### Added
+- Add missing portal config
+
+### Changed
+- Merge pull request #375 from bayer-int/14199-RecommendedRange
+- Us/fix/13574(common-quotes) Bug fix
+- Us/feature/14199(common-quotes) Minor fix
+- Merge branch 'development' into 14199-RecommendedRange
+- Us/feature/14199(common-quotes) Minor fix
+- Us/feature/14199(common-quotes) Handle API failure
+- Us/feature/14199(common-quotes) Finalize Loaders
+- Us/feature/14199(common-quotes) Test Loaders
+- Us/feature/14199(common-quotes) Improve RecommendedRange calls
+- Us/fix/14329/(common)
+- Us/fix/14329/(common)
+- Merge branch 'development' into 14329-refactor-redux-store
+- US/features/(common-farmers) change public path
+- Merge pull request #387 from bayer-int/388-commonFarmers-publicpathIssue
+- US/features/388 (common-farmers) add module federation host to read from dynamic path
+- US/features/388 (common-farmers) add dynamic public port for mycrop and nbm widget
+- US/features/388 (common-farmers) add dynamic public path script for seedsman
+- Merge pull request #386 from bayer-int/390-syncPortalParams
+- 390 sync portal params
+- Merge pull request #385 from bayer-int/344-commonFarmers-dfsNomContractChange
+- 344 common farmers dfs nomination contract change
+- Merge pull request #389 from bayer-int/14087-inEditModeAdjustBrandDiscountButtonNeedTwoClicksAfterQuoteNameIsChanged
+- Us/fix/14087(common-quotes) Updated fix
+- Us/bug/14087(channel-quotes) In Edit mode, Adjust Brand discount button needs two clicks after quote name is changed
+- Merge pull request #394 from bayer-int/14266-Brand-Discount-API-failure
+- US/fix/14266 (Channel-quotes) Brand discount api failure
+- Merge pull request #392 from bayer-int/13774-Integrate-with-Digital-Finance-API
+- US Feature (channle farmers) - 13774 Finance API integration
+- Merge pull request #384 from bayer-int/13774-Integrate-with-Digital-Finance-API
+- US Feature (channle farmers) - 13774 Finance API integration
+- US Feature (channle farmers) - 13774 Finance API integration
+- Merge branch 'development' into 13774-Integrate-with-Digital-Finance-API
+- US Feature (channle farmers) - 13774 Finance API integration
+- US Feature (channle farmers) - 13774 Finance API integration
+- Merge branch 'development' into 13774-Integrate-with-Digital-Finance-API
+- US Feature (channle farmers) - 13774 Finance API integration
+- Merge branch 'development' into 13774-Integrate-with-Digital-Finance-API
+- US/Feature/13774(Channel Farmer) Integrate with Digital Finance API for Credit Info
+- Merge pull request #366 from bayer-int/13474-positionSnackMessagesBarAboveFAB
+- Us/bug/13474(channel-farmers/channel-quotes) Position Snack messages Bar above FAB
+- Us/bug/13474(channel-farmers/channel-quotes) Position Snack messages Bar above FAB
+- Merge pull request #371 from bayer-int/14086-review-quote-bug
+- Us/fix/14086(channel-quotes) reset loading state on error
+- Us/fix/14086(channel-quotes) reset loading state on error
+- Merge pull request #380 from bayer-int/14040-paginationNotImplementedOnAddProductsPage
+- Us/bug/14040(channel-quotes) Pagination not implemented on Add Products page
+- Merge pull request #381 from bayer-int/XXXXX-Fix-Update-Qty-Mobile
+- Us/fix/XXXXX(common-quotes) Fix qty comparison for Mobile
+- 359-farmers update header in farmers list page
+- Refactor redux store system
+- Merge pull request #382 from bayer-int/Get-Disc-Budget-API-Call-Attributes-From-Config
+- Us/fix/XXXX-(Channel-quotes) Make API calls with dynamic attribute values
+- Merge pull request #379 from bayer-int/321-commonFarmers-updateZoneHistoryTable
+- 321 common farmers update zone history table
+- Merge pull request #383 from bayer-int/343-commonFarmers-seedsmanMfFix
+- US/features/343 (common-farmers) fix seedsman mf config
+- Merge pull request #378 from bayer-int/343-commonFarmers-MfWidgetCleanedVersion
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 343-commonFarmers-MfWidgetCleanedVersion
+- Merge pull request #373 from bayer-int/xxxx_connect_id
+- US/Feature/xxxx(Channel Farmers) Connect Id added
+
+## [0.0.10-seedsman] - 2024-09-06
+
+### Changed
+- 383-farmers fix customerDetails api body cache issue
+- Merge pull request #365 from bayer-int/13801-Fix-Table-Sort
+- Merge branch 'development' into 13801-Fix-Table-Sort
+- Merge pull request #368 from bayer-int/14042-Reapply-Brand-Discount-After-Delete
+- US/fix/14042 (Channel-quotes) Readd Discount after removing
+- Merge pull request #363 from bayer-int/14094-Fix-Table-Not-Reloading
+- Us/fix/14094-14113(common-quotes) Fix Table not reloading data
+- Us/fix/XXXXX(common-quotes) Fix 'momentarily no product message on edit quote '
+- Merge pull request #364 from bayer-int/14083-negative-payer-split
+- Us/feature/14084 (channel-quotes) - rejects negative numbers on payer split
+- Merge pull request #362 from bayer-int/00000-fix-minor-bug
+- Merge branch 'development' into 00000-fix-minor-bug
+- Us/fix/00000(channel-quotes) check for isEmpty (undefined / null)
+- Us/fix/13801(common-quotes) Minor changes
+- Us/fix/13801(common-quotes) Fix 'Sorting taking place on struck out unit price'
+- Minor lint config update
+- US/features/343 (common-farmers) remove nbm widgets from features
+- US/features/343 (common-farmers) fix lint error
+- US/features/343 (common-farmers) show info on widget when on error
+- US/features/343 (common-farmers) add translation initialization logic
+- US/features/343 (common-farmers) add type check for new added program tracking column
+- US/features/343 (common-farmers) removed unused files and move config to portal parameters
+- US/features/343 (common-farmers) change nbmWidget remote url to non-prod deployed one
+- US/features/343 (common-farmers) minor change
+- US/features/343 (common-farmers) add non-prod deployment file
+- US/features/343 (common-farmers) added start script for nbm widget in package.json
+- US/features/343 (common-farmers) added nbm MF widget in dashboard
+- US/features/343 (common-farmers) minor changes to link MF remote to mycrop app host
+- US/features/343 (common-farmers) add nbmWidget to the host in mycrop
+- US/features/343 (common-farmers) create remote MF widget for nbm
+- Merge pull request #361 from bayer-int/14085-quotes-without-products-save-bug
+- Us/fix/14085(channel-quotes) update logic for better readability
+- Us/bug/14085(channel-quotes) disallow saving quote with missing products
+- Merge pull request #356 from bayer-int/13712---farmer-search-fix
+- US/Bug/12425,13751(channel quotes) conflict fix in abandonQuotes
+- Us/bug/13935(channel-quotes) Create quote dialog will be displayed after clicking on back navigation button in farmers page
+- Merge pull request #355 from bayer-int/13752_expiration_date
+- Us/bug/13752(channel-quotes) quote expiry date on edit
+- Us/bug/13752(channel-quotes) expiration date
+- Merge pull request #353 from bayer-int/13468-product-exclusion-view-quote
+- Us/feature/13468(channel-quotes) undo package-lock changes
+- Merge branch 'development' into 13468-product-exclusion-view-quote
+- Us/feature/13468(channel-quotes) cleanup
+- Merge branch 'development' into 13468-product-exclusion-view-quote
+- Us/feature/13468(channel-quotes) fix mobile viewas
+- Us/feature/13468(channel-quotes) fix max width bug + add exlusion flag to mobile add products
+- Us/feature/13468(channel-quotes) add mobile quantity check + cleanup
+
+## [0.0.9-seedsman] - 2024-09-03
+
+### Changed
+- 346 farmers updated to new customerId apis
+- Merge pull request #352 from bayer-int/288-commonFarmers-refactorStore
+- 288 common farmers refactor store
+- Merge pull request #350 from bayer-int/13783-Fix-Favorite
+- Us/fix/13783(common-quotes) Remove favorite sort
+- Us/fix/XXXXX(common-quotes) Remove console
+- Us/fix/XXXXX(common-quotes) Improve recommended range API calls
+- Us/fix/13783(common-quotes) Fix "Wrong product is getting favorited/unfavorited"
+- Merge pull request #351 from bayer-int/13266-sort-order-resets-on-filter
+- Merge branch 'development' into 13266-sort-order-resets-on-filter
+- Us/bug/13266(channel-quotes) fixed to not price when pricing is unavailable.
+- Us/bug/13266(channel-quotes) removed id requorement for tables and faste sortBy cache
+- Us/bug/13266(channel-quotes) removed unneccessary linter directive
+- Merge branch 'development' into 13266-sort-order-resets-on-filter
+- Us/bug/13266(channel-quotes) added ids to retain filtering and sorting state.
+- Us/bug/13266(channel-quotes) added faste cache and ids to retain filtering and sorting state.
+- Us/bug/13266(channel-quotes) moved sort state to table specific context
+- Us/bug/13266(channel-quotes) moved __mocks__ to common location.
+- Update exiting filter fix
+- Us/bug/13266(channel-quotes) wip - updated to capture sort state from the element Table.
+- Merge pull request #336 from bayer-int/13881-Fix-Remove-Product
+- 13881-Fix-Remove-ProductMerge branch 'development' into 13881-Fix-Remove-Product
+- Merge branch 'development' into 13881-Fix-Remove-Product
+- Us/fix/13881(common-quotes) Minor improvements
+- Us/fix/13881(common-quotes) Fix remove product for mobile
+- Merge pull request #354 from bayer-int/13414---Create-quote-data-retention
+- Us/fix/13414 (channel-quotes) Create Quote data retention
+- Merge branch 'development' into 13712---farmer-search-fix
+- Merge pull request #342 from bayer-int/13904-Fix-Search-API-Fail
+- Us/fix/13904(common-quotes) Fix Search endpoint failure
+- US/Bug/12425,13751(channle quotes) added no search result msg in mobile and changes in abandan modal for discard
+- Merge pull request #349 from bayer-int/XXXX-Fix-Add-Discounts-Apply
+- Us/fix/XXXXX(common-quotes) Fix apply discount not working for desktop
+- Merge pull request #339 from bayer-int/13934-exclusion-alert-when-no-products
+- Merge branch 'development' into 13934-exclusion-alert-when-no-products
+- Merge pull request #348 from bayer-int/13712---farmer-search-fix
+- US/Bug/12735(channel Quotes)UI Issues on real mobile device
+- Merge pull request #347 from bayer-int/13712---farmer-search-fix
+- US/Bug/12735(channel Quotes)UI Issues on real mobile device
+- Merge pull request #346 from bayer-int/13712---farmer-search-fix
+- US/Feature/Channel Quotes - deployment issue fixed
+- US/Feature/Channel Quotes - deployment issue fixed
+- Merge pull request #343 from bayer-int/kmani1-patch-5
+- Testing Token issue
+- Merge pull request #335 from bayer-int/13879_quote_name_counter
+- Us/bug/13879(channel-quotes) quote name counter
+- Merge pull request #340 from bayer-int/13570-Optimize-Recommended-Range-API-Calls
+- Us/feature/13570(common-quotes) Fix after merge
+- Merge branch 'development' into 13570-Optimize-Recommended-Range-API-Calls
+- Merge pull request #338 from bayer-int/13712---farmer-search-fix
+- US/Bug/12735(channel Quotes) real mobile related defect fix
+- US/Bug/12735(channel Quotes) real mobile related defect fix
+- US/Bug/12735(channel Quotes) real mobile related defect fix
+- US/Bug/12735(channel Quotes) real mobile related defect fix
+- US/Feature/13571(channel quotes) - Prefix Program Name for display Product level Discretionary Discounts
+- US/Bug/13614,13617(Channel-Quotes)-Show locationCode - locationName in the dropdown
+- US/Bug/13614,13712(Channel-Quotes)-Sales Hierarchy info missing
+- Merge branch 'development' into 13614-sales-hierarchy-info-missing
+- US/Bug/13614,13712(Channel-Quotes)-Sales Hierarchy info missing
+- US/Bug/13614,13712(Channel-Quotes)-Sales Hierarchy info missing
+- US/Bug/13614,13712(Channel-Quotes)-Sales Hierarchy info missing
+- Merge pull request #332 from bayer-int/13468-product-exclusion-view-quote
+- Us/feature/13468(channel-quotes) update logic
+- Us/feature/13468(channel-quotes) cleanup
+- Us/feature/13468(channel-quotes) update stylesheet
+- Us/feature/13468(channel-quotes) update logic
+- Us/feature/13570(common-quotes) Fix for Mobile
+- Us/feature/13570(common-quotes) Optimize Mars API and Table to avoid display loader
+- Us/bug/13934 (channel-quotes) added rejected check updated canOrder check
+- Us/bug/13934 (channel-quotes) now checks for entries when calculation hasExclusions
+- Merge pull request #337 from bayer-int/13844-whiteBlankPageOnRemoveAndAddAllProducts
+- Us/bug/13844(channel-quotes) White blank page displayed on removing all products followed by adding all crop products in edit mode
+- Merge pull request #333 from bayer-int/13753-addProductsQuantitySortingIsNotWorkingProperly
+- Us/bug/13753(channel-quotes) Add products - quantity sorting is not working properly
+- Merge pull request #329 from bayer-int/13470-API-Errors
+- Merge branch 'development' into 13470-API-Errors
+- Merge pull request #331 from bayer-int/13539_remove_counter
+- Us/bug/13525(channel-quotes) restrict to 35 chars remove counter
+- Merge pull request #322 from bayer-int/13468-product-exclusion-view-quote
+- Us/feature/13468(channel-quotes) remove console
+- Us/feature/13468(channel-quotes) cleanup alert code with view quotes
+- Merge branch 'development' into 13468-product-exclusion-view-quote
+- Us/feature/13468(channel-quotes) add alert
+- Us/feature/13468(channel-quotes) update onBlur for max value
+- Us/feature/13468(channel-quotes) update product on blur
+- Us/feature/13468(channel-quotes) remove console.log
+- Us/feature/13468(channel-quotes) Product Exclusions on View Quote
+- Us/feature/13470(common-quotes) Minor CSS fixes
+- Us/feature/13470(common-quotes) 24B Handle Discounts exceeded scenario
+- Merge branch 'development' into 13470-API-Errors
+- Merge pull request #330 from bayer-int/13539_Edit_Quote_name_35Char_max
+- Us/bug/13525(channel-quotes) restrict to 35 chars
+- Us/feature/13470(common-quotes)  Handle Qty update from Add Discounts modal
+- Us/feature/13470(common-quotes) Fix issues with rejected entries
+- Merge branch 'development' into 13470-API-Errors
+- Merge pull request #297 from bayer-int/13545_Change_Quantity
+- Us/feature/13545(common-quotes) Fix Notification so it won't reload page
+- Us/bug/13525(channel-quotes) draft quantity added to cartslice
+- Merge branch 'development' into 13545_Change_Quantity
+- Us/bug/13525(channel-quotes) quantity field types
+- Us/bug/13202(channel-quotes) created types
+- Us/bug/13525(channel-quotes) quantity field updates
+- Us/bug/13202(channel-quotes) created types
+- Us/bug/13525(channel-quotes) quantity field updates
+- Us/feature/13470(common-quotes) Added translations
+- Us/fix/13511(common-quotes) Fix 'Changing qty. using the qty. field arrows doesn't take effect'
+- Us/feature/13470(common-quotes) Minor fixes
+- Merge branch 'development' into 13470-API-Errors
+- Merge pull request #201 from bayer-int/updated_Snapshots
+- Updated snapshot
+- Merge pull request #327 from bayer-int/13539_Quote_name_35Char_max
+- Us/bug/13539(channel-quotes) quote name max char 35
+- Merge pull request #325 from bayer-int/13711-farmerListIsNotSortedOnMobileView
+- Us/bug/13711(channel-farmers) Farmer list is not sorted on mobile view
+- Merge pull request #328 from bayer-int/13614-sales-hierarchy-info-missing
+- US/Bug/13572(channel-quotes)Seed Year added in product search API
+- Merge pull request #323 from bayer-int/13576_exp_date
+- Us/bug/13576(channel-quotes) fix props
+- Us/bug/13576(channel-quotes) fix props
+- Merge pull request #326 from bayer-int/13710-incorrectSortingOnQuotesPageInMobileView
+- Us/bug/13710(channel-quotes) Incorrect sorting on Quotes page in mobile view
+
+### Fixed
+- Fix intermittant sortig loss
+
+### Removed
+- Removed the exit flow from the if conditional
+
+## [0.0.8-seedsman] - 2024-08-23
+
+### Changed
+- US/features/ (common-farmers) add logic to disable nbm widget
+
+## [0.0.7-seedsman] - 2024-08-22
+
+### Added
+- Added sales year in API url
+- Added sales year in API url
+- Added sales year in API url
+- Add react import to jsx
+
+### Changed
+- 336-farmers updated orderdetails api and remove Azure token mechanism
+- 301-farmers blank page issue fix after climate login
+- Merge pull request #321 from bayer-int/quick-fix
+- US/Bug/Channel Quotes removed contact info
+- Merge pull request #320 from bayer-int/quick-fix
+- US/Bug/typo error (channel quotes) replaced -- instead of ==
+- Merge pull request #309 from bayer-int/13466-navigateCreateQuoteBackToFarmersProfile
+- Us/bug/13466(channel-farmers/channel-quotes) Navigated to the quote list page on starting quote creation from farmer details page
+- Us/bug/13466(channel-farmers/channel-quotes) Navigated to the quote list page on starting quote creation from farmer details page
+- Us/bug/13466(channel-farmers/channel-quotes) Navigated to the quote list page on starting quote creation from farmer details page
+- Us/bug/13466(channel-farmers/channel-quotes) Navigated to the quote list page on starting quote creation from farmer details page
+- Us/bug/13466(channel-farmers/channel-quotes) Navigated to the quote list page on starting quote creation from farmer details page
+- Merge pull request #318 from bayer-int/335-commonFarmers-addMFErrorBoundary
+- 335 common farmers add mf error boundaries
+- Merge pull request #313 from bayer-int/300-commonFarmers-dashboardWidget
+- US/features/300 (common-farmers) minor chnage
+- US/features/300 (common-farmers) minor change
+- US/features/300 (common-farmers) minor chnage
+- US/features/300 (common-farmers) add custom color render to badge
+- US/features/300 (common-farmers) modify export
+- US/features/300 (common-farmers) remove unused variables
+- US/features/300 (common-farmers) minor change
+- US/features/300 (common-farmers) minor change
+- US/features/300 (common-farmers) add refetch functionality
+- US/features/300 (common-farmers) minor change
+- US/features/300 (common-farmers) add phoenix translations
+- US/features/300 (common-farmers) remove unused variables and add comments
+- US/features/300 (common-farmers) change logic to match updated api calls
+- US/features/300 (common-farmers) minor change
+- US/features/300 (common-farmers) minor change
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 300-commonFarmers-dashboardWidget
+- US/features/300 (common-farmers) add logic to fetch delaro and seedshowcase data
+- US/features/300 (common-farmers) minor change
+- US/features/300 (common-farmers) minor change
+- US/features/300 (common-farmers) minor change
+- US/features/300 (common-farmers) add logic to make real calls for dashboard data
+- US/features/300 (common-farmers) fix getProgramStatus query
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 300-commonFarmers-dashboardWidget
+- US/features/300 (common-farmers) minor change
+- US/features/300 (common-farmers) add mock data
+- US/features/300 (common-farmers) add base template for farmers program widget
+- US/features/300 (common-farmers) remove redundant import
+- US/features/300 (common-farmers) added dashboard widget library
+- Merge pull request #310 from bayer-int/13467-product-exclusions-add-product
+- Us/feature/13467(channel-quotes) Product Exclusions on Add Products
+- Merge pull request #315 from bayer-int/13469-POC-for-iPad-UX-Issues
+- Merge branch 'development' into 13469-POC-for-iPad-UX-Issues
+- Merge pull request #311 from bayer-int/13469-POC-for-iPad-UX-Issues
+- Merge pull request #295 from bayer-int/13627-farmersProfile-bug-fix
+- Us/fix/13627(channel-farmers) Add key value for tabs list
+- Merge pull request #294 from bayer-int/13626-quotes-bug-fix
+- Merge branch 'development' into 13626-quotes-bug-fix
+- Us/fix/13626(channel-quotes) Allow for undefined brandFamily
+- US/Prod Deployment/channel quotes
+- US/BUG/13469(channel quotes) added fixed width for expandable column
+- US/BUG/13469(channel quotes) added fixed width for expandable column
+- Merge branch '13445-quote-search-issue' into 13469-POC-for-iPad-UX-Issues
+- US/BUG/13662(channel quotes) cart type added
+- US/BUG/13662(channel quotes) cart type added
+- US/BUG/13662(channel quotes) cart type added
+- US/feature/13662(Channel-Quotes)-added cart type attribute
+- US/feature/13469(Channel-Quotes)-POC for iPad UX Issues
+- Us/bug/13539(channel quotes)-added max length for quote name
+- Us/feature/13617(channel quotes)-removed hardcoded warehouse code
+- Merge branch 'development' into 13445-quote-search-issue
+- Us/feature/13617(channel quotes)-removed hardcoded warehouse code
+- Merge branch 'development' into 13445-quote-search-issue
+- Merge branch 'development' into 13445-quote-search-issue
+- Us/feature/13617(channel-quotes)-removed hardcoded warehouse code
+- US/Feature/13469(channel quotes) POC for iPad UX Issues
+- US/feature/13469(Channel-Quotes)-POC for iPad UX Issues
+- Us/feature/13470(common-quotes) 11,12,18+. Handle Entry updates Errors
+- Us/feature/13470(common-quotes) 10. Handle Edit quote Save API failed
+- Us/feature/13470(common-quotes) 6B. Handle Discretionary Discounts update API failures
+- Us/feature/13470(common-quotes) 6A. Handle Brand Discounts update API failures
+- Us/feature/13470(common-quotes) Added new codes prop to Contingency component
+- Merge branch 'development' into 13470-API-Errors
+- Merge pull request #305 from bayer-int/prod-deployment
+- Us/feature/prod-deployment(channel-farmers)
+- Merge pull request #306 from bayer-int/release
+- Merge pull request #304 from bayer-int/development
+- Merge pull request #303 from bayer-int/prod-deployment
+- Us/feature/prod-deployment(channel-farmers)
+- Merge pull request #302 from bayer-int/prod-deployment
+- Us/feature/prod-deployment(channel-farmers)
+- Us/feature/prod-deployment(channel-farmers)
+- Us/feature/prod-deployment(channel-farmers)
+- Revert tag name patch
+- Merge pull request #296 from bayer-int/304-commonFarmers-useRealDfsProgramData
+- Merge branch 'development' into 304-commonFarmers-useRealDfsProgramData
+- Merge pull request #299 from bayer-int/13445-quote-search-issue
+- Conflict fix
+- Conflict fix
+- Defect fix
+- Merge pull request #298 from bayer-int/13202_CURRENT_EXPIRATION_DATE
+- Us/bug/13202(channel-quotes) need to check if expiration date has changed from cart
+- Us/bug/13202(channel-quotes) update expiration date from cart
+- Us/bug/13202(channel-quotes) merge from development
+- Us/bug/13202(channel-quotes) show current expiration date option
+- Merge pull request #288 from bayer-int/291-commonFarmers-refactorPagesToTS
+- Merge branch 'development' into 291-commonFarmers-refactorPagesToTS
+- Update import order
+- 291 common farmers refactor pages to TS
+- 304 common farmers use real dfs program data
+- Us/feature/13470(common-quotes) 4. Fix Products API failure
+- Us/feature/13470(common-quotes) Fix edit and duplicate error/retry messages
+- Us/feature/13470(common-quotes) Code cleanup and improvements
+- Us/feature/13470(common-quotes) 8. Handle Adjust Split Apply API fail
+- Merge pull request #291 from bayer-int/13581_Quantity_Focus
+- Us/bug/13581(channel-quotes) remove autofocus
+- Merge pull request #293 from bayer-int/13473-RemoveNonPilotActionMenuOptionsButtonColumns
+- Us/bug/13473(channel-farmers/channel-quotes)Remove non-pilot action menu options, buttons, columns
+- Us/bug/13473(channel-farmers/channel-quotes)Remove non-pilot action menu options, buttons, columns
+- 312-farmers update program checkfields links
+- Merge pull request #282 from bayer-int/13464-Fix-Delete-Quote-Farmers-Effect
+- Us/fix/13464(channel-quotes) reset quotes API before leaving module
+- Us/feature/xxxxx(channel-quotes) Fix scroll position for quote details page
+- Merge pull request #285 from bayer-int/13498-Fix-Entries-Quotes-Expanded
+- Us/feature/13498(channel-quotes) Update Quotes expanded table to not include rejected quotes
+- Merge pull request #292 from bayer-int/XXXXX-Channel-Quotes-UAT-Feedback
+- Us/fix/xxxxx(channel-quotes) fixes
+- Us/fix/xxxxx(channel-quotes) Renames
+- Us/fix/xxxxx(channel-quotes) Fix Add products button UX
+- Us/feature/13611(channel-quotes) Reposition Quote Summary section and remove Brand Discounts section
+- Us/feature/13610(channel-quotes) Move Adjust brand discounts button
+- Us/feature/13607(channel-quotes) Update CTA for add discounts
+- Us/feature/13609(channel-quotes) Apply to all always false
+- Us/feature/13608(channel-quotes) Do not recalculate discount value upon switching unit
+- Merge pull request #290 from bayer-int/12425-Save-as-draft-changes
+- US/UAT/Defect fix
+- Merge branch 'development' into 12425-Save-as-draft-changes
+- Merge pull request #289 from bayer-int/13529-applying-filters-to-quote-crashes-app
+- Us/bug/13529(channel-quotes) added check for column.accessor when gathering selectedOptions
+- Merge pull request #279 from bayer-int/314-commonFarmers-add2024Programs
+- Merge branch 'development' into 314-commonFarmers-add2024Programs
+- 314 common farmers add 2024 programs
+- Merge pull request #281 from bayer-int/13382-displayDashDashWhenRecRangeOrRecDiscountNotAvailable
+- Us/bug/13382(channel-quotes)When Recommended Range and/or Recommended discount are blank show ‘NA’ in those fields
+- Merge pull request #283 from bayer-int/313-commonFarmers-FVLINKUI
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 313-commonFarmers-FVLINKUI
+- Merge pull request #284 from bayer-int/48-commonFarmers-checkEligibility
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 48-commonFarmers-checkEligibility
+- US/features/48 (common-farmers) modify nomination query to updated query
+- US/features/48 (common-farmers) change hard coded fv id to dynamic while nominating
+- US/features/48 (common-farmers) store field view session data in faste store
+- US/features/48 (common-farmers) add logic to show view fields conditionally
+- Merge pull request #287 from bayer-int/iPad-View-POC
+- Us/feature/xxxxx(channel-quotes) iPad Table POC
+- Merge pull request #280 from bayer-int/13496-clear-quote-name-does-not-work
+- Us/bug/13496(channel-quotes) removed blank lines
+- Us/bug/13496(channel-quotes) simplifies previos fix
+- Us/bug/13496(channel-quotes) Fixes bug when the clear quote name button is clicked
+- Merge pull request #278 from bayer-int/13382-displayNAWhenRecRangeOrRecDiscountNotAvailable
+- Us/bug/13382(channel-quotes)When Recommended Range and/or Recommended discount are blank show ‘NA’ in those fields
+- Merge pull request #256 from bayer-int/13051_ADD_DISCOUNT_QUANTITY
+- Us/bug/13051(channel-quotes) quantity fix to update onBlur not onChange
+- Merge pull request #277 from bayer-int/13381-allColumnsSortingOnAddProducts
+- Us/bug/13381(channel-quotes)Sorting not working correctly on Add Products dialog
+- Attempt fix
+- Attempt fix
+- Attempt fix
+- Attempt path fix
+- Merge pull request #272 from bayer-int/296-farmers-addModuleFederation
+- Camelcase MF host name to avoid bug with kebabcase
+- Inline method
+- Dynamically set publicPath
+- Merge branch 'development' into 296-farmers-addModuleFederation
+- Rename method
+- Switch public path to auto
+- 296 farmers add module federation
+- US/features/313 (common-farmers) add logic to not trigger refetch if query uninitialized
+- US/features/313 (common-farmers) add phoenix translation to fv link/unlink status messages
+- US/features/313 (common-farmers) add logic to show unlick pending/success/error indicator
+- US/features/313 (common-farmers) minor change
+- US/features/313 (common-farmers) remove skip logic for useFarmerOffers
+- US/features/313 (common-farmers) add loading/error indicator to link fv modal
+- US/features/313 (common-farmers) add translation to modal helper text/tooltip
+- US/features/313 (common-farmers) made search sticky
+- US/features/313 (common-farmers) add translations to link/unlink fieldview button text
+- US/features/313 (common-farmers) remove fv unlink warning message
+- US/features/313 (common-farmers) add warning indication for fv unlink message
+- US/features/313 (common-farmers) fix lint error
+- US/features/313 (common-farmers) modify fv link/unlink button style
+- Merge pull request #276 from bayer-int/13441-createQuoteFromFarmerDetailWhenQuoteListIsEmpty
+- Us/bug/13441(channel-farmers)Create Quote button on ‘You don't have any quotes yet’ message on Farmers page Quotes tab not working
+- Us/bug/13441(channel-farmers)Create Quote button on ‘You don't have any quotes yet’ message on Farmers page Quotes tab not working
+- Merge pull request #275 from bayer-int/13463-Fix-No-Quotes-Message
+- Us/fix/xxxxx(channel-quotes) Fix unwanted cart delete
+- Us/fix/13463(channel-quotes) Fix no quotes message after loading
+- Merge pull request #273 from bayer-int/13417-Improve-Add-Discounts
+- Us/feature/13417(channel-quotes) Fix apply button disabled
+- Us/feature/13417(channel-quotes) Fix rounded percentage
+- Us/feature/13417(channel-quotes) Fix apply button disabled
+- Us/feature/13417(channel-quotes) Fix switch and close not getting disabled
+- Us/feature/13417(channel-quotes) Fix issue with disable applyall and clear discount
+- Us/feature/13417(channel-quotes) Reset draft discounts
+- Us/feature/13417(channel-quotes) Improve and fix Add Discounts
+- Merge pull request #274 from bayer-int/13393-Fix-Avg-Price
+- Us/fix/13393(channel-quotes) Fix Avg price not showing
+- Merge pull request #271 from bayer-int/13318-viewDetailsOnFarmerPageShouldLeadToFarmerProfile
+- Us/bug/13318(channel-farmers)View Details on Farmer Page should lead to Farmer Profile
+- Merge pull request #270 from bayer-int/13446-farmer-title-and-search-overlap
+- Us/fix/13446(channel-farmers) added z-index to .farmer_search
+- Merge pull request #268 from bayer-int/13381-priceColumnSortinOnAddProducts
+- Us/bug/13381(channel-quotes)Sorting not working correctly on Add Products dialog
+- Us/fix/xxxxx(channel-quotes) Fix Edit quote for mobile
+
+### Fixed
+- Fix mf import for arrow build
+
+### Removed
+- Remove all imports in entry file to delay shared lib dependency
+- Remove unused eslint comment
+
+## [0.0.6-seedsman] - 2024-08-08
+
+### Added
+- Add 2024 to Quote List query
+- Add back in offers
+
+### Changed
+- Apply patch for tag fix
+- Fix duplicate quote discounts + extra bugs
+- Farmers farmerslist sort by farmer name on initial load
+- Us/fix/xxxxx(channel-farmers) Revert licenseStatus
+- Us/fix/13385(channel-quotes) updated snackbar messages to use translations
+- Merge pull request #266 from bayer-int/13273-createQuoteFromFarmerProfile
+- Us/bug/13273(channel-farmers/channel-quotes)Create Quote from Farmer Profile page
+- Us/fix/xxxxx(channel-quotes) Fix CartId missing
+- Us/fix/xxxxx(channel-quotes) Fix QuoteList crashing due to state being undefined
+- Merge pull request #261 from bayer-int/13273-createQuoteFromFarmerProfile
+- Merge branch '13273-createQuoteFromFarmerProfile' of ssh://github.com/bayer-int/gc-agency-ui-monorepo into 13273-createQuoteFromFarmerProfile
+- Us/feature/13273(common-quotes) Update UX for Create button in Header
+- Us/bug/13273(channel-farmers/channel-quotes)Create Quote from Farmer Profile page
+- Us/bug/13273(channel-farmers/channel-quotes)Create Quote from Farmer Profile page
+- Us/bug/13273(channel-farmers/channel-quotes)Create Quote from Farmer Profile page
+- Us/bug/13273(channel-farmers/channel-quotes)Create Quote from Farmer Profile page
+- Us/bug/13273(channel-farmers/channel-quotes)Create Quote from Farmer Profile page
+- Fixed typo error
+- Merge pull request #262 from bayer-int/qoutes-fix
+- Resolved review commends
+- Resolved review commends
+- US/Review comments fixed
+- Merge branch 'development' into qoutes-fix
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into development
+- Reverted back table changes
+- Fix for Discretionary discounts link & add Products link
+- Fix for Discretionary discounts link & add Products link
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into development
+- Fix for Discretionary discounts link & add Products link
+- 13411 fix search api sequence
+- Merge pull request #259 from bayer-int/13265-Fix-Quote-List-Message
+- Us/fix/13265(channel-quotes) Use quotes page size from domain def
+- Us/fix/13265(channel-quotes) Fix "You don't have quotes yet" error message displayed before the page is loaded properly
+- Merge pull request #264 from bayer-int/13385-incorrect-snackbar-message
+- Us/fix/13385(channel-quotes) corrected snackbar messages
+- Merge pull request #260 from bayer-int/13394-Discount-Per-Unit-Fix
+- Us/fix/13394(channel-quotes) Fix to display discount per unit
+- Us/fix/13413(channel-quotes) Fix CBUS: Page goes blank after clicking on Adjust split button.
+- Us/fix/13413(channel-quotes) Fix Quote name reset after leaving Create Quote Modal
+- US/features/ (common-farmers) minor change to fix build error for mycrop
+- Merge pull request #246 from bayer-int/323-commonFarmers-mobile
+- US/features/323 (common-farmers) convert farmer to row and made type to generic
+- US/features/323 (common-farmers) minor change
+- US/features/323 (common-farmers) remove unused column
+- US/features/323 (common-farmers) use getFarmerName
+- US/features/323 (common-farmers) minor change
+- US/features/323 (common-farmers) minor change
+- US/features/323 (common-farmers) fix lint errors
+- US/features/323 (common-farmers) modify mobile view for farmers table to accomodate mycrop needs
+- Merge pull request #258 from bayer-int/13085-discounts-change-when-adding-payer-or-terms
+- Us/bug/13085(common-quotes) added calls to updateBrandDiscounts to payer handlers
+- Merge pull request #257 from bayer-int/XXXXX-Review-Quote-Fix
+- Us/fix/13387(channel-quotes) Fix empty cart error
+- Us/fix/13386(channel-quotes) Fix unwanted DELETE cart API calls
+- Merge pull request #255 from bayer-int/qoutes-fix
+- US/Defect fix
+- Merge branch 'development' into qoutes-fix
+- Farmers update check fields modal conditions
+- US/Defect fix
+- Merge branch 'development' into qoutes-fix
+- Merge pull request #254 from bayer-int/13097-Fix-Select-Products-Search
+- Us/fix/13097(common-quotes) Fix warehouse not changing upon search
+- Us/fix/13097(common-quotes) Fix "Add product search not working correctly"
+- US/Defect fix
+- Merge pull request #250 from bayer-int/13194-badValuesAllowedInPercentSplitField
+- Us/bug/13194(channel-quotes) bad values can be entered in percent split field
+- Us/bug/13194(channel-quotes) bad values can be entered in percent split field
+- Merge pull request #252 from bayer-int/305-commonFarmers-useRealFvId
+- 305 common farmers use real FV ID
+- Merge pull request #249 from bayer-int/290-commonFarmers-moveComponetsToTS
+- 290 common farmers move components to ts
+- Merge pull request #242 from bayer-int/13099-Fix-Duplicate-Discard
+- Us/fix/13055(common-quotes) Fix "Apply button Add discount dialog is enabled without any changes"
+- Us/fix/xxxxx(common-quotes) Fix an issue with Mobile duplicate
+- Us/fix/13099(common-quotes) Fix an issue where duplicated>discarded quotes comes in Quotes List as draft
+- Merge pull request #248 from bayer-int/12994-Block-While-In-Edit
+- Us/fix/12994(common-quotes) Display Abandon modal when user clicks away using navigation options while in Edit
+- Merge pull request #251 from bayer-int/Move-Quotes-2025
+- Us/feature/xxxxx(common-quotes) Increase product count to 100
+- Us/feature/xxxxx(common-quotes) Add cartId to Product Search after crop switch
+- Us/feature/xxxxx(common-quotes) Move sales year to 2025
+- Merge pull request #247 from bayer-int/13165-filter-section-displays-white-page
+- Us/bug/13154(common-quotes) fixed filtering when the number of filtered rows is less than the number of rows on the page.
+- Merge pull request #245 from bayer-int/227-commonFarmers-fvWrite
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 227-commonFarmers-fvWrite
+- Create general-guideline.md
+- Merge pull request #241 from bayer-int/302-commonFarmers-addRemoveRenameCols
+- 302 common farmers add remove rename columns
+- Merge pull request #243 from bayer-int/12428-actionMenuButtonNotClosing
+- Us/feature/12428(channel-quotes) Action Menu Button not closing after clicking on the any action
+- Merge pull request #244 from bayer-int/13100-cursorMovesWhileInsertingChars
+- Us/bug/13100(channel-quotes) Cursor moves to end of text when inserting characters
+- US/features/227 (common-farmers) remove unused param from gc portal config
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 227-commonFarmers-fvWrite
+- Merge pull request #237 from bayer-int/13125-Fix-Mobile-Button-Placement
+- Conflict fixed
+- Merge pull request #240 from bayer-int/deploy-channel-farmers
+- Conflict fix
+- US/UX gap related changes
+- US/UX gap related fix
+- US/UX Gap related changes
+- Fix merge conflict issue
+- 303-farmers read cliamate api params from portal params
+- Merge pull request #232 from bayer-int/13154-API-Error-Scenarios
+- Conflict fix
+- Merge pull request #233 from bayer-int/12674_UI_UX_GAPS_QUOTES
+- Us/feature/12674(channel-quotes) styling fixes
+- Merge branch 'development' into 12674_UI_UX_GAPS_QUOTES
+- Us/feature/12674(channel-quotes) updates to get the changes working
+- Us/feature/12674(channel-quotes) background color for crop header
+- Us/feature/12674(channel-quotes) rename button
+- Us/feature/12674(channel-quotes) updated readme
+- Us/feature/12674(channel-quotes) product header background for crop
+- Us/feature/12674(channel-quotes) rename
+- Us/feature/12674(channel-quotes) table expansion icon change
+- Merge pull request #235 from bayer-int/12343-mobileViewEditQuoteWarehouseSelection
+- Us/bug/12343(channel-quotes) In mobile view in edit quote, there is no way for the user to change the warehouse selected for a product
+- Us/bug/12343(channel-quotes) In mobile view in edit quote, there is no way for the user to change the warehouse selected for a product
+- Merge pull request #238 from bayer-int/deploy-channel-farmers
+- Merge branch 'development' into deploy-channel-farmers
+- US/create quote payload changes
+- Merge pull request #239 from bayer-int/13195-addDiscountThrowingAnError
+- Us/bug/13195(channel-quotes) Add discount throwing an error
+- Us/feature/13154(common-quotes) No RecommendedRange Refetch on error
+- Us/feature/13154(common-quotes) 7A(fix) Cleanup contingency
+- Us/feature/13154(common-quotes) Use new Alert with action
+- Merge branch 'development' into 13154-API-Error-Scenarios
+- Us/feature/13154(common-quotes) Fix exception
+- Us/feature/13154(common-quotes) 15A. Handle when Get Payment terms fails
+- Us/feature/13154(common-quotes) Added new default Contingency message
+- Us/feature/13154(common-quotes) Got rid of type
+- Us/feature/13154(common-quotes) 7A. Handle Remove product from cart failed.
+- Us/feature/13154(common-quotes) Added custom className for Contingency
+- Us/feature/13154(common-quotes) Modified retry mutation response to indicate success status
+- Us/fix/xxxxx(common-quotes) Fix Quote Details margin issues
+- Us/feature/13154(common-quotes) 3. Contingency State Edit Quote (API Failure)
+- Us/feature/13154(common-quotes) 2. Contingency State Duplicate Quote (API Failure)
+- Us/feature/13154(common-quotes) Fix result
+- Us/feature/13154(common-quotes) Create RTK utility fun to enable retry on Mutations
+- Us/feature/13154(common-quotes) Create new Contingency component
+- Us/fix/xxxxx(common-quotes) Fix Quote List error not showing
+- Us/feature/13125(common-quotes) Adjusted padding around the info container
+- Us/feature/13125(common-quotes) fixed button for mobile displays
+- US/features/227 (common-farmers) minor change
+- US/features/227 (common-farmers) fix lint errors and minor chnages
+- Merge changes
+- US/features/227 (common-farmers) add logic to link/unlink fv accounts
+- US/features/227 (common-farmers) minor change
+- US/features/227 (common-farmers) add logic to link and check field view status
+- US/features/227 (common-farmers) modify grower fv accounts url to nbm
+- Merge pull request #236 from bayer-int/13125-Improve-Alert-Component
+- Us/feature/13125(common-quotes) refactored action button defaults
+- Us/feature/13125(common-quotes) fixed button text color
+- Us/feature/13125(common-quotes) cleaned up action button type. added unit tests
+- Merge branch '13125-Improve-Alert-Component' of github.com:bayer-int/gc-agency-ui-monorepo into 13125-Improve-Alert-Component
+- Us/feature/13125(common-quotes) Add Alert action button props and styling
+- Us/feature/13125(common-quotes) Add Alert action button props and styling
+- Us/feature/13125(common-quotes) Add button to Alert component
+- Merge pull request #224 from bayer-int/12428-actionMenuOptionsForMobileViewQuotePage
+- Merge branch 'development' into 12428-actionMenuOptionsForMobileViewQuotePage
+- Us/feature/12428(channel-quotes) For mobile view the menu option from Actions button on View quote page needs to be implemented, us/feature/13086(channel-quotes) Quote list mobile view the create quote button is visible on former selection page
+- Us/feature/12428(channel-quotes) For mobile view the menu option from Actions button on View quote page needs to be implemented, us/feature/13086(channel-quotes) Quote list mobile view the create quote button is visible on former selection page
+- Us/feature/12428(channel-quotes) For mobile view the menu option from Actions button on View quote page needs to be implemented, us/feature/13086(channel-quotes) Quote list mobile view the create quote button is visible on former selection page
+- Us/feature/12428(channel-quotes) For mobile view the menu option from Actions button on View quote page needs to be implemented, us/feature/13086(channel-quotes) Quote list mobile view the create quote button is visible on former selection page
+- Us/feature/12428(channel-quotes) For mobile view the menu option from Actions button on View quote page needs to be implemented, us/feature/13086(channel-quotes) Quote list mobile view the create quote button is visible on former selection page
+- Us/feature/12428(channel-quotes) For mobile view the menu option from Actions button on View quote page needs to be implemented, us/feature/13086(channel-quotes) Quote list mobile view the create quote button is visible on former selection page
+- Us/feature/12428(channel-quotes) For mobile view the menu option from Actions button on View quote page needs to be implemented, us/feature/13086(channel-quotes) Quote list mobile view the create quote button is visible on former selection page
+- Us/feature/12428(channel-quotes) For mobile view the menu option from Actions button on View quote page needs to be implemented, us/feature/13086(channel-quotes) Quote list mobile view the create quote button is visible on former selection page
+- Us/feature/12428(channel-quotes) For mobile view the menu option from Actions button on View quote page needs to be implemented
+- Merge pull request #231 from bayer-int/12562-checkboxRemainSelectedEvenWhenFiltersAreNotApplied
+- Us/bug/12562(channel-quotes) Filter checkbox remain selected even when filters are not applied
+- Us/bug/12562(channel-quotes) Filter checkbox remain selected even when filters are not applied
+- Merge pull request #234 from bayer-int/292-commonFarmers-nbmApiChanges
+- 292 common farmers nbm api changes
+- Merge pull request #229 from bayer-int/deploy-channel-farmers
+- US/Farmer related defect fix
+- Merge branch 'development' into deploy-channel-farmers
+
+### Removed
+- Remove debugging and fix dropdown
+- Remove localhost config and DRY
+
+## [0.0.5-seedsman] - 2024-07-26
+
+### Added
+- Added extra attribute while adding payer info
+
+### Changed
+- Us/fix/xxxxx(common-quotes) Fix Unwanted Cart cleanup on unhandled exceptions
+- US/Farmers search issue fixed
+- US/Defect fix
+- US/Defect fix
+- Merge branch 'development' into deploy-channel-farmers
+- Merge pull request #228 from bayer-int/308-commonFarmers-bug
+- US/features/308 (common-farmers) added a transformer for previous page state in farmer info
+- US/features/308 (common-farmers) minor chnage
+- US/features/308 (common-farmers) minor change
+- US/features/308 (common-farmers) fix lint errors
+- US/features/308 (common-farmers) change entitlements to check
+- US/features/308 (common-farmers) minor change
+- US/features/308 (common-farmers) remove undefined values while merging objects
+- US/Defect fix
+- US/Defect fix
+- Merge pull request #227 from bayer-int/deploy-channel-farmers
+- Merge pull request #223 from bayer-int/12989-Fix-Quote-Actions
+- Merge branch 'development' into 12989-Fix-Quote-Actions
+- Us/fix/12995(common-quotes) 'Quote total doesn't reset when edited brand discounts are discarded'
+- Us/fix/xxxxx(common-quotes) Fix import issue
+- Us/fix/12989(common-quotes) Fetch new cart only for Add Farmer step
+- Us/fix/12989(common-quotes) Fix Abandon refetch new Cart
+- Us/fix/12989(common-quotes) Fix "Old quote information continues to be displayed after quote duplication"
+- Us/fix/12999(common-quotes) Go back one page after quote delete from quote details
+- Merge pull request #219 from bayer-int/12344-Fix-Add-Product-Issue
+- Merge branch 'development' into 12344-Fix-Add-Product-Issue
+- Us/fix/12344(common-quotes) Fix product re-add issue
+- Us/fix/xxx(common-quotes) Minor typo fixes
+- Us/fix/xxx(common-quotes) Minor refactor
+- Us/fix/xxx(common-quotes) Fix delay with Brand Discount program GET call
+- Merge pull request #221 from bayer-int/12987-Fix-Add-Discounts-Close
+- Us/fix/12987(common-quotes) Fix "Add Discounts cancel Icon is not working"
+- Merge pull request #212 from bayer-int/209-farmers-field-status
+- Wrap call arg in array
+- Encapsulate climate specifics in query module
+- Merge branch 'development' into 209-farmers-field-status
+- Fix calls
+- Merge branch 'development' into 209-farmers-field-status
+- 209-farmers field enrollment summary update typescript type
+- Merge branch 'development' into 209-farmers-field-status
+- 209-farmers field enrollment summary gql integration
+- Merge branch 'development' into 209-farmers-field-status
+- Rafactoring
+- Summary query
+- 209-farmers refactoring
+- US/Common-ui/search related defect fix
+- Farmers YML file added for Farmers module deployment
+- Merge pull request #215 from bayer-int/12954-Improved-Snackbar
+- Merge branch 'development' into 12954-Improved-Snackbar
+- Merge pull request #217 from bayer-int/272-commonFarmers-devUtils
+- 272 common farmers dev utils
+- Merge pull request #216 from bayer-int/243-commonFarmers-monorepoMocks
+- 243 common farmers monorepo mocks
+- Merge pull request #222 from bayer-int/lint-fixes
+- US/features/ (common-farmers) minor chnage
+- US/features/ (common-farmers) fix lint and typescript errors
+- Minor change
+- US/features/(common-farmers) fix lint errors
+- Merge pull request #220 from bayer-int/261-commonFarmers-l360Connection
+- US/features/261 (common-farmers) add logic to connect to location 360 apis via cpg api
+- Merge pull request #218 from bayer-int/268-commonFarmers-tableConfigRefactor
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 268-commonFarmers-tableConfigRefactor
+- Merge pull request #206 from bayer-int/Expiration_Date_Issue
+- Us/feature/12176(channel-farmers) merge conflicts
+- Used util function
+- Expiration date format changes
+- Use expiration date instead of time
+- US/features/268 (common-farmers) update local portal config
+- US/features/268 (common-farmers) minor change
+- US/features/268 (common-farmers) minor change
+- US/features/268 (common-farmers) add condition to filter columns if no access
+- US/features/268 (common-farmers) add id field hard code to expandable function
+- Merge branch 'development' into 12954-Improved-Snackbar
+- Merge pull request #213 from bayer-int/271-commonFarmers-styleLinks
+- Merge branch 'development' into 271-commonFarmers-styleLinks
+- Merge pull request #211 from bayer-int/270-commonFarmers-refactorEntitlements
+- Fix tag patterns
+- 270 refactor entitlements
+- Cleanup DRY violations
+- 271 common farmers style links
+- Us/feature/12954(common-quotes) Update QuotesList to set notification for Delete
+- Us/feature/12954(common-quotes) Refactor to use new Snackbar and common appSlice
+- Us/feature/12954(common-quotes) Make appSlice shared
+- Us/feature/12954(common-quotes) Create prop driven Snackbar
+- Merge pull request #210 from bayer-int/212-commonFarmers-fieldViewAccounts
+- US/features/212 (common-farmers) update local portal params
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 212-commonFarmers-fieldViewAccounts
+- Merge pull request #214 from bayer-int/12610-doubleSnackbarDisplayedOnFavoritingUnfavoritingProdcuts
+- Us/bug/12610(channel-quotes) Double snackbar displayed on favoriting/unfavoriting prodcuts
+- Reverted adding composite true
+- Merge pull request #207 from bayer-int/276-gc-enableTsComposite
+- 276 gc enable ts composite
+- Merge pull request #209 from bayer-int/Channel-Farmers-Profile
+- Us/fix/xxx(common-farmers) QL Mobile
+- Fixed code review comments
+- Merge branch 'Channel-Farmers-Profile' of github.com:bayer-int/gc-agency-ui-monorepo into Channel-Farmers-Profile
+- Us/fix/xxx(common-farmers) Fix typos
+- Quote List API payload changes
+- Us/fix/xxx(common-farmers) Remove transform response
+- Us/fix/xxx(common-farmers) Minor Fixes
+- Us/fix/xxx(common-quotes) Fix Quotes List for Mobile
+- Merge branch 'Channel-Farmers-Profile' of github.com:bayer-int/gc-agency-ui-monorepo into Channel-Farmers-Profile
+- Us/fix/xxx(common-farmers) Fix Discount Panel for Brand discounts
+- Merge branch 'development' into Channel-Farmers-Profile
+
+### Removed
+- Removed console log
+- Remove file
+
+## [0.0.4-seedsman] - 2024-07-16
+
+### Added
+- Add prop from PR 247
+- Add Mock data for Channel Farmer Query
+
+### Changed
+- Merge pull request #205 from bayer-int/12839-display-brand-discounts-product-level
+- Brand discounts are not displaying at product level
+- Brand discounts are not displaying at product level
+- Brand discounts are not displaying at product level
+- US/Feature/Farmers Profile Page
+- US/Feature/Farmer List Mobile
+- Merge branch 'Channel-Farmers-Profile' of github.com:bayer-int/gc-agency-ui-monorepo into Channel-Farmers-Profile
+- Us/feature/12891(common-farmers) Fix rendering issues
+- Us/feature/12891(common-farmers) Fix issue with quotes refresh for each farmer
+- Us/feature/12891(common-quotes) Fix recursive import issue and cleanup
+- Us/feature/12682(common-quotes) Move and use shared useQuoteActions hook
+- Us/feature/12682(common-farmers) Add new API for Commerce Cloud API base URL
+- Us/feature/12891(common-farmers) Rename API reducer path for CC and fix serializableCheck issue
+- US/Feature/Farmer List Mobile
+- US/Feature/Farmers Profile
+- US/Fetaure/Farmer Profile
+- Merge pull request #189 from bayer-int/274-local-portal-params
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into 274-local-portal-params
+- Merge pull request #204 from bayer-int/247-commonFarmers-useUiPagination
+- 247 common farmers use table pagination
+- Merge pull request #203 from bayer-int/108-commonFarmers-fieldViewUnlink
+- Create a new env called local that wraps dev adding in portal config
+- Refactoring
+- Merge branch 'development' into 274-local-portal-params
+- 274-commonfarmers update loading mock portal params code for sms
+- 274-commonfarmers update loading mock portal params code
+- 274-farmers import mock data files dynamically
+- 274- farmers update constant imports
+- Merge branch 'development' into 274-local-portal-params
+- 274- farmers refactor loading local portal params
+- Merge branch 'development' into 274-local-portal-params
+- Linting changes
+- Changes for local faststore
+- Merge branch 'development' into 259-remove-sms-orders
+- 259-farmers remove commented code
+- 259-farmers remove commented code
+- Merge branch 'development' into 259-remove-sms-orders
+- 259-farmers update api urls to service
+- Move from velocity to agro service
+- Merge branch 'Channel-Farmers-Profile' of github.com:bayer-int/gc-agency-ui-monorepo into Channel-Farmers-Profile
+- Us/feature/12736(channel-farmers) changed header action button alignment for tablet
+- US/Feature/farmer Details
+- Us/feature/12682(common-farmers) Enable Search and Filter Mobile
+- Farmer profile page changes
+- Farmer profile page changes
+- Merge branch 'development' into Channel-Farmers-Profile
+- Farmer profile page changes
+- US/Feature/Farmer Details
+- US/Feature/Farmer Details
+- Merge branch 'development' into Channel-Farmers-Profile
+- Filter and search integrated in farmer details page
+- Merge branch '12683-Farmer-Profile-Quotes-Filter-Search' into Channel-Farmers-Profile
+- Reverted back tsconfig base
+- Refactoring quote list table
+- Refactoring quote list table
+- US/Feature/Farmers PRofile
+- US/features/212 (common-farmers) minor change
+- US/features/212 (common-farmers) add params to gcPortalConfig
+- US/features/212 (common-farmers) add params to gcPortalConfig
+- US/features/212 (common-farmers) read brandFamily from gcProtalConfig
+- US/features/212 (common-farmers) added modal titles from translations
+- US/features/212 (common-farmers) fix more lint errors
+- US/features/212 (common-farmers) fix lint errors
+- US/features/212 (common-farmers) minor modifications
+- US/features/212 (common-farmers) minor style change
+- US/features/212 (common-farmers) minor style changes
+- US/features/212 (common-farmers) change how federationId is passed
+- US/features/212 (common-farmers) minor change
+- US/features/212 (common-farmers) add search mechansim to link field view account modal
+- US/features/212 (common-farmers) minor style changes to link field view modal
+- US/features/212 (common-farmers) modify logic to render grower accounts in link account modal
+- US/features/212 (common-farmers) add logic to fetch dealer associted grower field view accounts
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 108-commonFarmers-fieldViewUnlink
+- Merge pull request #199 from bayer-int/12683-Farmer-Profile-Quotes-Filter-Search
+- Us/feature/12683(common-farmers) Update faste store key format
+- Us/feature/12683(common-farmers) Modify MyFarmers to use updated Table
+- Us/feature/12683(channel-farmers) Modify Table to support Search and refactor QuotesList
+- Us/feature/12683(channel-farmers) Modify Table to support Filters
+- Merge pull request #185 from bayer-int/11607-sorting-alphanumeric-quote-details-products
+- Sorting-alphanumeric-quote-details-products
+- Sorting-alphanumeric-quote-details-products
+- Merge pull request #194 from bayer-int/12736_Header_Refactor
+- Us/feature/11959(channel-quotes) added undefined checks
+- Updated from development
+- Merge pull request #193 from bayer-int/SubHeader-Component
+- US/Feature/XXXX (Channel-Farmers) SubHeader component
+- Merge pull request #186 from bayer-int/chetna23-update-readme
+- Update README.md
+- Merge pull request #196 from bayer-int/recommended-range-api-integration
+- Merge branch 'development' into recommended-range-api-integration
+- Range related defect fixed
+- Merge pull request #191 from bayer-int/XXXX-Fix-Add-Products-Issues
+- Us/fix/12706(channel-quotes) Fix 'Changes made in edit quote are saved even when changes are discarded'
+- Us/fix/xxxx(channel-quotes) Optimize Select Product for Edit
+- Us/fix/12673,12707(channel-quotes) Fix issues related to Product table
+- Merge pull request #190 from bayer-int/11504-12663-preselecting-products-and-warehouse
+- Preselecting products and warehouse on create and edit mode of quote
+- Merge pull request #197 from bayer-int/12711-crop-level-discount-sign-issue
+- Crop level discount has both $ and % signs
+- Merge pull request #188 from bayer-int/UI-UX-Alignment-Refactor
+- US/Refactor/XXXX (Channel-quotes) Add Disc quantity Modal mobile footer buttons
+- US/refactor/XXXX (Channel Quotes) Discounts Code Refactor
+- Merge pull request #187 from bayer-int/12323-Fix-Save-Button-State
+- Us/fix/xxx(channel-quotes) Fix product count not updated during create quote for Mobile
+- Us/fix/12323(channel-quotes) Fix 'In Edit mode save button is enabled without any changes'
+- Merge pull request #198 from bayer-int/224-commonFarmers-monorepoGraphQL
+- Merge branch 'development' into 224-commonFarmers-monorepoGraphQL
+- 224 common farmers monorepo graphQL
+- Us/feature/12736(channel-quotes) renamed props
+- Us/feature/11959(channel-quotes) updated ut
+- Us/feature/12736(channel-quotes) renamed props
+- US/features/108 (common-farmers) minor change
+- US/features/108 (common-farmers) add logic to unlink
+- US/features/108 (common-farmers) add unlink field view modal
+- US/features/108 (common-farmers) minor change
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 108-commonFarmers-fieldViewUnlink
+- Merge pull request #192 from bayer-int/12545-display-disounts-refactor-code
+- Refactored the code remove circular dependency
+- Merge pull request #195 from bayer-int/107-commonFarmers-fieldViewLink
+- US/features/108 (common-farmers) add field view icon to link/unlink button
+- US/features/107 (common-farmers) fix lint errors
+- US/features/107 (common-farmers) minor style change
+- US/features/107 (common-farmers) add tool tip to field view link modal
+- US/features/107 (common-farmers) coonect logic to link field view account
+- US/features/107 (common-farmers) add radio button logic in link field view modal
+- US/features/107 (common-farmers) add loading mechanism indicator to fetch feildview accounts
+- US/features/107 (common-farmers) add link fieldview modal
+- US/features/107 (common-farmers) manage field view link modal state
+- US/features/107 (common-farmers) add field view button component
+- Merge pull request #184 from bayer-int/242-commonFarmers-hooksToTypescript
+- US/features/257 (common-farmers) rewrite hooks in typescript
+- Merge pull request #137 from bayer-int/11959_update_textField
+- Us/feature/11959(channel-quotes) updating condition
+- Merge pull request #183 from bayer-int/12545-display-disounts-quote-view-detail
+- Display discounts on quote edit and detail page
+- Display discounts on quote edit and detail page
+- Display discounts on quote edit and detail page
+- 259 remove sms orders
+- Filter empty row
+- Merge pull request #182 from bayer-int/12609-Fix-Discount-Percentage
+- Merge branch 'development' into 12609-Fix-Discount-Percentage
+- Merge branch 'development' into 12609-Fix-Discount-Percentage
+- Us/fix/12563(channel-quotes) Fix "Apply button on "Add Discount" dialog doesn't show the discounted unit price when its 0"
+- Us/fix/12609(channel-quotes) Fix qty multiplication with percentage discount during Edit quote
+- Merge pull request #178 from bayer-int/recommended-range-api-integration
+- Fixed conflicts
+- Merge pull request #180 from bayer-int/12155-Brand-Discount-API-Integration-All-Flows
+- US/feature/12155 (Channel-Quotes) Code refactor
+- Merge branch 'development' into 12155-Brand-Discount-API-Integration-All-Flows
+- US/feature/12155 (Channel-quotes) Brand discounts create / edit flow integration
+- Merge branch 'development' into 12155-Brand-Discount-API-Integration-1
+- Merge branch 'development' into 12155-Brand-Discount-API-Integration-1
+- Us/feature/12155 (channel-quotes) url fix
+- Us/feature/12155 (Channel-quotes) Brand Discount API integration
+- Merge pull request #179 from bayer-int/257-commonFarmers-brandFamilyChange
+- US/features/257 (common-farmers) remove transformer for getGrowerPrograms..
+- US/features/257 (common-farmers) change field names in getGrowerprograms
+- US/features/257 (common-farmers) modify to pass brandFamily instead of brand
+- Us/feature/recommended range- conflict fix
+- Merge pull request #177 from bayer-int/12066-Common-Farmers-Overview
+- Us/feature/12066(channel-farmers) Fix AUTH issue for Create quote
+- Us/feature/12066(channel-farmers) Fix after merge
+- Merge branch 'development' into 12066-Common-Farmers-Overview
+- Us/feature/12066(channel-farmers) Working Common Farmers for all Portals
+- Us/feature/12066(channel-farmers) Working(partially) Common Farmers for all Portals
+- Us/feature/recommeded range code review fix
+- US/Feature/Recommeded Range changes
+- Merge pull request #173 from bayer-int/12162-subtotal-not-reflecting-applied-discount
+- Product subtotal is not reflecting applied discount
+- Merge pull request #172 from bayer-int/232-commonFarmers-typesAndClients
+- US/features/232 (common-farmers) rename azure-client and move to types
+
+### Removed
+- Removed Quote List folder
+- Removed unused imports
+- Remove unused file
+- Remove unnecessary code
+- Removed console
+
+## [0.0.3-seedsman] - 2024-06-28
+
+### Added
+- Add refactor of crop zones
+
+### Changed
+- Make pushing to prod easier
+- US/Feature/Recommeded Range changes
+- Merge branch 'development' into recommended-range-api-integration
+- Merge pull request #176 from bayer-int/233-commonFarmers-bugFixes
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 233-commonFarmers-bugFixes
+- Merge pull request #175 from bayer-int/233-commonFarmers-bugFixes
+- US/features/233 (common-farmers) minor change
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 233-commonFarmers-bugFixes
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into development
+- Merge pull request #174 from bayer-int/233-commonFarmers-bugFixes
+- US/features/233 (common-farmers) minor change
+- US/features/233 (common-farmers) change the design of review program details link
+- Merge pull request #165 from bayer-int/232-commonFarmers-reduceAliasNames
+- Merge branch 'development' into 232-commonFarmers-reduceAliasNames
+- US/features/232 (common-farmers) reduce aliases for farmers and accounts
+- Recommended range added
+- US/Feature Recommended range
+- Fix bad ref
+- 248-farmers-fix type issue
+- Merge pull request #167 from bayer-int/12066-Farmers-LandingPage
+- Us/feature/12066(channel-farmers) Revert commented API calls
+- Us/feature/12066(channel-farmers) init commit for Farmers Channel Arrow
+- Merge pull request #160 from bayer-int/12397-Fix-Add-Products-Bug
+- Us/fix/12397(channel-quotes) Fix Product quantity resets to 0 as they are added during edit quote process
+- Us/fix/12397(channel-quotes) Fix Product quantity resets to 0 as they are added during create quote process
+- 248 merge farmers monorepo
+- Merge pull request #170 from bayer-int/233-commonFarmers-nominationModalLink
+- US/features/233 (common-farmers) fix lint errors
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 233-commonFarmers-nominationModalLink
+- Merge pull request #161 from bayer-int/USER_STORY_256
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into USER_STORY_256
+- Merge pull request #164 from bayer-int/11607-sorting-alphanumeric
+- 11607-sorting-alphanumeric
+- 11607-sorting-alphanumeric
+- 11607-sorting-alphanumeric
+- Merge pull request #163 from bayer-int/12424-Apply-All-Disabled-Mobile
+- Us/feature/12424(channel-quotes) Disable Apply all switch in mobile
+- Merge pull request #162 from bayer-int/12426-Fix-Cart-To-Create-Quote
+- Us/fix/12426(channel-quotes) Fix "Quote Name and products from edit quote workflow are carried over to create quote workflow"
+- Merge pull request #169 from bayer-int/12483-Fix-View-Quote
+- Us/fix/12483(channel-quotes) Fix "View quote for most quote is displaying blank white page" after CC deployment
+- US/features/256 (common-farmers) remove aem service url from mock json
+- US/features/256 (common-farmers) remove c7translations url from gcportalconfig
+- US/features/256 (common-farmers) read aem url from hostname
+- US/features/256 (common-farmers) read translations url from hostname
+- US/features/233 (common-farmers) move program review url title to internationalization
+- US/features/233 (common-farmers) read redirect link for review program details from params
+- US/features/233 (common-farmers) add style to review program details link
+- US/features/233 (common-farmers) add initial layout for review program details
+- Crop summary is broken
+- US/Feature Recommended range
+- Recommended API integration
+- 244 merge monorepo utils
+- Us/fix/XXX(channel-quotes) Fix issue with no entries check
+- Merge pull request #155 from bayer-int/235-commonFarmers-bugFix
+- US/features/235 (common-farmers) minor change
+- US/features/235 (common-farmers) get brand from farmers module
+- Us/feature/XXX(channel-quotes) Enable review mode for DUPLICATE quote
+- Us/fix/12299(channel-quotes) Fix issue where quote name getting erased
+- Merge pull request #157 from bayer-int/12317-custom-alert-component
+- Create custom alert component
+- Create custom alert component
+- Create custom alert component
+- Us/fix/12317(channel-quotes) Fix CSS and minor changes with Alert
+- Create custom alert component
+- Merge remote-tracking branch 'origin/development' into 12317-custom-alert-component
+- Create custom alert component
+- Create custom alert component
+
+### Fixed
+- Fix gha
+- Fix for demo, skip query when data undefined
+- Fix deref
+- Fix invalid deref
+
+## [0.0.2-seedsman] - 2024-06-17
+
+### Added
+- Add hypen replace cmd
+- Add prod envs that are used globally
+
+### Changed
+- Merge pull request #153 from bayer-int/252-commonFarmers-prodInternationalization
+- 252 commonFarmers prod internationalization
+- Us/feature/12155 (Channel-quotes) Brand Discount API integration
+- Us/feature/12373(channel-quotes) Make UI work with bayerDiscounts field in Cart and QuoteDetails
+- Recommeded range APi integration
+- Merge branch 'development' into recommended-range-api-integration
+- Merge pull request #143 from bayer-int/12157-Review-Quote
+- Us/fix/12322(channel-quotes) Fix User can click save quote multiple times
+- Us/fix/x(channel-quotes) Fix an issue where extra current cart can occur in certain situations
+- Us/fix/x(channel-quotes) Fix an issue where sometime Quote List gets stuck in loading
+- Us/feature/12157(channel-quotes) Review Quote workflow Desktop & Mobile
+- Merge pull request #145 from bayer-int/12159-Fix-Apply-All-Discount-Bug
+- Us/fix/12159(channel-quotes) Fix apply all disabled with same discount amount
+- Merge pull request #151 from bayer-int/tag-issue
+- Uncomment deployment ticket creation
+- Merge pull request #150 from bayer-int/tag-issue
+- Merge pull request #149 from bayer-int/tag-fix
+- Fix type issue after NX update
+- Merge pull request #148 from bayer-int/deployment-issue
+- Version updated
+- Merge pull request #147 from bayer-int/build-fix
+- Revert build.yml file trigger
+- Update nx version
+- US/features/build-fix add new lock-file
+- Merge pull request #146 from bayer-int/deployment-issue
+- Deployment check
+- Merge pull request #144 from bayer-int/240-commonFarmers-addProdEnvVars
+- Merge pull request #142 from bayer-int/211-commonFarmers-nominate
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 211-commonFarmers-nominate
+- Merge pull request #139 from bayer-int/211-commonFarmers-nominate
+- US/features/211 (common-farmers) modify import location change for store
+- US/features/211 (common-farmers) fix lint errors
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 211-commonFarmers-nominate
+- Merge pull request #140 from bayer-int/recommended-range-api-integration
+- Merge pull request #138 from bayer-int/Quotes-UI-Fixes
+- Us/fix/XXXX (Channel-quotes) UI Fixes
+- US/features/211 (common-farmers) remove unnecessary code
+- US/features/211 (common-farmers) add logic to post nomination data
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 211-commonFarmers-nominate
+- US/features/211 (common-farmers) enable chip to nbm offer colum
+- US/features/211 (common-farmers) modify banner colors for nomination ack banner
+- US/features/211 (common-farmers) minor change
+- US/features/211 (common-farmers) minor change
+- US/features/211 (common-farmers) add redirect to enrollement page upon nomination success
+- US/features/211 (common-farmers) fix linting errors
+- US/features/211 (common-farmers) add nomination acknowledgement block
+- US/features/211 (common-farmers) add useFarmerNomination hook and link post nomination func upon proceed button click
+- Mars api integration
+- Updated EDS New Version
+- Us/feature/11798(channel-quotes) Disable Apply discount button if net…
+- Us/feature/11793(channel-quotes) Display discount details expansion p…
+
+### Removed
+- Remove nx version upgrade at file level
+
+## [0.0.1-seedsman] - 2024-06-07
+
+### Added
+- Added product header
+- Add redirect link to farmer info from license search table row
+- Add logic to handle licenseStatus filter
+- Add logic to handle table pagination
+- Add default pageSize and currentPage values to form
+- Add custom filter handler
+- Add pagination fetch mechanism on search table
+- Add total items to be recieved dynamically to common table
+- Add logic to enable manual pagination to common table
+- Add manual search loading indicator for search
+- Add useLazyQuery for all farmers to fetch on search button click
+- Add products fixes
+- Add license form table on click license search to common farmers
+- Add new QuoteDetails route
+- Added test cases
+- Added test cases
+- Added test case
+- Added translation for Table component
+- Added instructions for running against faste
+- Added Translation
+- Added sonar propertied
+- Added nI18 for translation
+
+### Changed
+- Merge pull request #136 from bayer-int/commonFarmers-prod-deploy
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into commonFarmers-prod-deploy
+- Merge pull request #135 from bayer-int/commonFarmers-prod-deploy
+- US/features/(common-farmers) add nx package
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into commonFarmers-prod-deploy
+- Merge pull request #125 from bayer-int/200-commonFarmers-moveRtkToMonorepo
+- Fix tests
+- Merge branch 'development' into 200-commonFarmers-moveRtkToMonorepo
+- Merge pull request #132 from bayer-int/commonFarmers-prod-deploy
+- Merge pull request #131 from bayer-int/commonFarmers-prod-deploy
+- Rename fetch to fetchStore for clarity
+- Rename from dekalb to national
+- Rename to reflect query function
+- 200 commonFarmers move RTK to monorepo
+- US/features/(common-farmers) modify tagging name convention
+- US/features/(common-farmers) add git checkout command to tag yml
+- US/features/common-farmers fix tags push branch
+- 228 farmers info fix
+- Merge pull request #129 from bayer-int/12149-Segmented-Button-Logic-Fix
+- Us/fix/xxx(channel-quotes) Fix Occasional deletes not working with UI
+- Us/fix/12149(channel-quotes) Fix Segmented button switch and new discount apply
+- Merge pull request #128 from bayer-int/12131-Adjust-Add-Discount-Button-Label
+- Us/fix/x(channel-quotes) Filter out any in active discounts from all calculations
+- Us/feature/12132(channel-quotes) Disable Apply discount button once clicked
+- Us/feature/12131(channel-quotes) Remove discounted value from Add button for single discount Mobile
+- Us/feature/12131(channel-quotes) Fix hook related warning
+- Us/fix/XXXX (Channel-Quotes) UI Fixes
+- Merge pull request #127 from bayer-int/REMOVE-REJECTED-LINE-ITEMS
+- US/Feature/Removed deleted products from product list
+- Fix merge conflict problems
+- Merge pull request #124 from bayer-int/11795-Brand-Discount
+- Us/refactor/11795 (Channel-quotes) conflict resolution
+- Merge branch 'development' into 11795-Brand-Discount
+- Merge branch 'development' into 11795-Brand-Discount
+- US/fix/11795 (Channel-quotes) UI fixes
+- Us/feature/11795 (Channel-Quotes) Brand Discount Create / Edit Flow
+- Merge pull request #122 from bayer-int/11486_Quote_Delete_Scenarios
+- Us/bug/11486(channel-quotes) added delete scenario on quolist list action
+- Us/bug/11486(channel-quotes) removed extra check
+- Us/bug/11486(channel-quotes) quote delete scenarios
+- Us/bug/11486(channel-quotes) quote delete scenarios
+- Merge pull request #126 from bayer-int/12127-Remove-Discount-Mobile
+- Merge branch 'development' into 12127-Remove-Discount-Mobile
+- 11959 update qty add discounts mob
+- Merge pull request #123 from bayer-int/206-commonFarmers-dashboardWidgets
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 206-commonFarmers-dashboardWidgets
+- 105 farmers additonalinfo
+- US/features/206 (common-farmers) add farmerDashboardConfig to mock
+- US/features/206 (common-farmers) minor change
+- US/features/206 (common-farmers) add translation title to license search widget
+- US/features/206 (common-farmers) minor change
+- US/features/206 (common-farmers) handle nomination modal onclose logic
+- US/features/206 (common-farmers) add license search widget
+- US/features/206 (common-farmers) modify dashboard widget config and logic to be dynamic based on line of business
+- Us/feature/12127(channel-quotes) Enable remove discount with notification for Mobile
+- Us/feature/12128(channel-quotes) Fix issue with net price calculation
+- Us/feature/12128(channel-quotes) Default discount to percentage
+- Us/feature/11959(channel-quotes) styled button
+- Us/feature/11959(channel-quotes) styled button
+- Us/feature/11959(channel-quotes) changed button variant
+- Resolved merge conflicts
+- Merge pull request #119 from bayer-int/10563_search_undefined_checks
+- Us/bug/10563(channel-quotes) check for undefined
+- Merge pull request #118 from bayer-int/11790-DUPLICATE-QUOTE
+- US/Feature/Edit quote added
+- US/Feature/Edit quote added
+- US/Feature/Duplicate Quote review comments
+- US/Feature/Duplicate quote creation
+- 11753 - Add discounts qty modal related changes
+- Merge pull request #117 from bayer-int/127-commonFarmers-nominationModal
+- US/features/127 (common-farmers) move offer status to useFarmerOfferHook
+- 210 farmers fix sms
+- US/Feature/Duplicate quote creation
+- Unit test config
+- Merge pull request #116 from bayer-int/127-commonFarmers-nominationModal
+- US/features/127 (common-farmers) fix lint errors
+- Merge pull request #112 from bayer-int/127-commonFarmers-nominationModal
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 127-commonFarmers-nominationModal
+- 205 farmers fieldstatus
+- US/features/127 (common-farmers) minor changes
+- US/features/127 (common-farmers) fixed license search page title
+- US/features/127 (common-farmers) add logic to filter program offers based on dealer entitlement
+- US/features/127 (common-farmers) minor change
+- US/features/127 (common-farmers) add error message and retry logic to nomination modal
+- US/features/127 (common-farmers) add loading indicator to nomination modal
+- US/features/127 (common-farmers) add dompurify package to validate xss attacks
+- US/features/127 (common-farmers) minor change
+- US/features/127 (common-farmers) add aemPath mapper to fetch text based on selected program
+- US/features/127 (common-farmers) add api store for aem
+- US/features/127 (common-farmers) add initial nomination modal
+- Us/feature/11959(channel-quotes) show remove product only for mobile
+- Us/feature/11959(channel-quotes) undefined checks
+- Us/feature/11959(channel-quotes) remove product from add discounts
+- Us/feature/11959(channel-quotes) update quantity from add discounts
+- 32 farmers offers col fix
+- Merge pull request #101 from bayer-int/11174-DISCOUNTS-DESKTOP
+- Us/feature/11174(channel-quotes) Fix decimal issue
+- Us/feature/11174(channel-quotes) Update Quote Details Product List Table
+- Merge branch '11174-DISCOUNTS-DESKTOP' of github.com:bayer-int/gc-agency-ui-monorepo into 11174-DISCOUNTS-DESKTOP
+- Us/feature/11174(channel-quotes) Integrate API calls
+- Us/feature/11174(channel-quotes) Update net price on Apply button
+- Us/feature/11174(channel-quotes) Update cache on Discounts changes
+- US/Feature/Add Discount Qty added
+- Us/fix/11174-Discount-Desktop (Channel-quotes) mock brand discounts
+- US/Feature/Added Discount Qty Modal
+- Merge branch '11174-DISCOUNTS-DESKTOP' of github.com:bayer-int/gc-agency-ui-monorepo into 11174-DISCOUNTS-DESKTOP
+- Merge branch '11174-DISCOUNTS-DESKTOP' of github.com:bayer-int/gc-agency-ui-monorepo into 11174-DISCOUNTS-DESKTOP
+- US/fix/11174 (Channel-Quotes) Discount Desktop Modal fixes
+- US/Feature/Added discount Qty modal
+- Us/feature/11174(channel-quotes) changed props for Product Header
+- Us/feature/11174(channel-quotes) Display brand discounts
+- Us/feature/11174(channel-quotes) Display data from budget endpoint
+- Merge branch 'development' into 11174-DISCOUNTS-DESKTOP
+- Us/feature/11174(channel-quotes) Added Discounts Mobile
+- Merge branch 'development' into 11174-DISCOUNTS-DESKTOP
+- Us/feature/11174(channel-quotes) Added Discounts API integrations
+- Us/feature/11174(channel-quotes) Added SegmentedButtonColumn
+- Merge branch 'development' into 11174-DISCOUNTS-DESKTOP
+- Us/feature/11174(channel-quotes) Added IconButtonColumn
+- Us/feature/11174(channel-quotes) Enable native Select props for edit column
+- Us/feature/11174(channel-quotes) Enable native Textfield props for edit column
+- Us/feature/11174(channel-quotes) Enabled ability to disable switch conditionally in Table
+- Us/feature/11174(channel-quotes) Simplified Table editable column references
+- Us/fix/11174(channel-quotes) Table changes for decimal textfield
+- Us/fix/11174(channel-quotes) Init work for Discretionary Discounts Desktop
+- Merge pull request #106 from bayer-int/114-commonFarmers-offers
+- US/features/114 (common-farmers) add farmer offers table translation
+- US/features/114 (common-farmers) remove hardcoded value
+- US/features/114 (common-farmers) fix unit tests
+- US/features/114 (common-farmers) connect nbm api to farmer offers table
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 114-commonFarmers-offers
+- US/features/114 (common-farmers) add chips styling
+- US/features/114 (common-farmers) add chip style data type to common table
+- US/features/114 (common-farmers) add sample data to farmers table
+- US/features/114 (common-farmers) minor change
+- US/features/114 (common-farmers) add table configuration
+- US/features/114 (common-farmers) add initial farmer offers table config
+- Unit test
+- Merge pull request #103 from bayer-int/11627_Discretionary_Budgets_Query
+- Us/feature/11627(channel-quotes) refactored
+- Us/feature/11627(channel-quotes) refactored
+- Us/feature/11697(channel-quotes) api for discretionary discount budgets
+- Merge pull request #102 from bayer-int/Non-discretionary-discount-component
+- Merge branch 'development' into Non-discretionary-discount-component
+- Us/refactor/non-discre-discount(channel-quotes) code refactor
+- Us/fix/non-disc-discount (channel-quotes) ui design fix
+- Us/feature/non-discretionary-discount (channel-quotes) Non-discretionary discount
+- Us/feature/11627(channel-quotes) product header
+- Merge pull request #105 from bayer-int/Discretionary-Discount
+- Us/feature/discretionary-discount (Channel-quotes)
+- 32 farmers fix nbm column issue
+- 32 farmers nbm column
+- US/Feature/Segment Button
+- Merge pull request #95 from bayer-int/Discount-Section-Component
+- Us/refactor/discount-section(channel-quotes) refactor code
+- Us/fix/discount-section (Channel-quotes) fix callback parameter
+- Us/feature/(channel-quotes) discount section component
+- Merge pull request #94 from bayer-int/172-farmers-refactor-utils-into-monorepo
+- Merge branch 'development' into 172-farmers-refactor-utils-into-monorepo
+- Merge pull request #97 from bayer-int/10563_QuoteList_Search_refactor
+- Us/feature/10563(channel-quotes) refactored again
+- Merge pull request #91 from bayer-int/171-commonFarmers-prodDeploy
+- Merge branch 'development' of https://github.com/bayer-int/gc-agency-ui-monorepo into 171-commonFarmers-prodDeploy
+- US/features/171 (common-farmers) add corteva field to licnese search results
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into 171-commonFarmers-prodDeploy
+- US/features/171 (common-farmers) remove on push trigger for prod deployment
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) add seedsman prod deployment yml files
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor chnage
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) add cmdb to validate approved commit for spectrum
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) add step to show approved commit
+- US/features/171 (common-farmers) add prod flag to spectrum deploy script
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) test mycrop prod deploy
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) add release approval document
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minro change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) add test tag yml file
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) add workflow inputs
+- Minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor chnage
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor chaneg
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) minor changes
+- US/features/171 (common-farmers) minor test
+- US/features/171 (common-farmers) minro change
+- US/features/171 (common-farmers) minor change
+- US/features/171 (common-farmers) add full clone to tag yml file
+- US/features/171 (common-farmers) minor change to test
+- US/features/171 (common-farmers) add initial tag script to test
+- US/features/171 (common-farmers) add mycrop prod deploy yml file
+- Merge pull request #92 from bayer-int/QUOTES-REFETCH-ISSUES
+- Us/fix/(channel-quotes) Fix issue where multiple quotes create using same cart
+- Us/fix/11608(channel-quotes) Fix select product sorting issue desktop
+- Merge branch 'development' into QUOTES-REFETCH-ISSUES
+- Us/fix/(channel-quotes) Fix modal props on initial render
+- Us/fix/(channel-quotes) Remove name auto focus during edit and fix where multiple edit on same quote not working
+- Us/fix/11474(channel-quotes) Fix issue where products in cart from abandoned edit quote are already added in the new quote creation
+- Us/fix/(channel-quotes) Use Cart entry endpoint for single update
+- Us/fix/(channel-quotes) Fixed multiple storage locations save issue
+- Us/fix/(channel-quotes) Significantly improved delete product and edit qty experience
+- Us/fix/(channel-quotes) Fix quotes invalidation upon create/edit
+- Userstory 140 allapps intl translation
+- US/features/172 (common-farmers) update test
+- US/features/172 (common-farmers) lint and refactor utils into monorepo
+- Merge pull request #93 from bayer-int/11045-Edit-Quote-Initial-State-Mobile
+- Merge branch 'development' into 11045-Edit-Quote-Initial-State-Mobile
+- Merge pull request #89 from bayer-int/11045-Edit-Quote-Initial-State-Mobile
+- Merge pull request #80 from bayer-int/USERSTORY-169
+- US/features/169 (common-farmers) remove unused function, imports
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into USERSTORY-169
+- US/features/171 (common-farmers) remove unused function
+- US/features/171 (common-farmers) merge with development branch
+- US/features/169 (common-farmers) pass farmer state to farmerInfo page from license search page
+- Attempt three on git prefix feature test
+- Another try to test git prefix
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into USERSTORY124-LICENSE-FORM-TABLE
+- Minor change
+- Modify common table to use custom filter handler
+- Minor change
+- Modify form validation and licneseStatus param fetch call
+- Minor change
+- Minor change
+- US/FEATURES/USERSTORY124(common-farmers) add transfromer to licnese search fetch logic and add table to search results
+- US/features/USERSTORY124(common-farmers) add license search all farmers api rtk query hook
+- US/Feature/Deployment issue fixed
+- Quote Details Edit Expiration Date Fix
+- Merge branch 'development' into 11045-Edit-Quote-Initial-State-Mobile
+- Merge pull request #90 from bayer-int/UI-Quotes-Refactor-Fixes
+- Us/fix/11558 (channel-quotes) Add products default sorting fix
+- Us/refactor/xxxx (Channel-quotes)
+- Merge pull request #83 from bayer-int/10563_QuoteList_Search_fixes
+- Merge branch 'development' into 10563_QuoteList_Search_fixes
+- Us/feature/10563(channel-quotes) refactored
+- Us/feature/10563(channel-quotes) refactored
+- Us/feature/10563(channel-quotes) refactored
+- Us/feature/10563(channel-quotes) addes consts
+- Us/feature/10563(channel-quotes) added types
+- Us/feature/10563(channel-quotes) search fields displayed only
+- Quote Details Edit Expiration Date Fix
+- US/Feature/removed feature branch name from dev yml
+- US/Feature/Demofix
+- US/Feature/Demofix
+- US/Feature/Defect fix
+- Merge pull request #88 from bayer-int/STORAGE-LOCATION-FIX
+- Us/fix/XXXXX(channel-quotes) Fix storage location update from Edit quote
+- Merge pull request #86 from bayer-int/QuoteList-Mobile-Sort-Fix
+- Merge fix
+- Merge branch 'development' into Quotes-UI-fixes
+- Merge pull request #82 from bayer-int/11044-ADD-PRODUCTS-MOBILE
+- US/FEature/CodeReview/ConflictFix
+- Merge pull request #79 from bayer-int/10991-PRODUCT-FAVORITES
+- Merge pull request #84 from bayer-int/Quotes-UI-fixes
+- Us/feature/11476(channel-quotes) Fix minor error handling issue with Select Quantity
+- Us/feature/11476(channel-quotes) Fix add product issue
+- Us/feature/11476(channel-quotes) Minor enhancements
+- Us/feature/11476(channel-quotes) Edit quote remove product fix
+- Us/feature/11044(channel-quotes) Enable add products for mobile
+- Merge branch 'development' into 10991-PRODUCT-FAVORITES
+- Us/feature/10991(channel-quotes) Minor corrections
+- Us/feature/10991(channel-quotes) Enable favorites for Mobile
+- Us/feature/10991(channel-quotes) Use translations
+- Us/feature/10991(channel-quotes) Enable product sort mobile
+- Us/feature/10991(channel-quotes) Enabled favorite list mobile
+- Us/feature/10991(channel-quotes) Enabled favorite filter
+- Us/feature/10991(channel-quotes) Improved editable Table
+- Us/feature/10991(channel-quotes) Added Notification for favorite
+- Us/feature/10991(channel-quotes) Enabled favorite products show/add/remove
+- Quotes List Sorting Fixes
+- US/Feature/Conflict Fix
+- Merge pull request #85 from bayer-int/11045-Edit-Quote-Initial-State-Mobile
+- Merge branch 'development' into 11045-Edit-Quote-Initial-State-Mobile
+- Us/feature/11049(channel-quotes) fetch selleable locations
+- US/Feature/QuoteName attribute changed
+- Merge branch 'development' into 11045-Edit-Quote-Initial-State-Mobile
+- Apply call implemented
+- Us/fix/XXXX-(channel-quotes) UI Fixes
+- Merge pull request #77 from bayer-int/11046_Adjust_Split_input
+- Us/feature/11046(channel-quotes) Adjust split input
+- Merge pull request #76 from bayer-int/11045-Edit-Quote-Initial-State-Mobile
+- Merge branch 'development' into 11045-Edit-Quote-Initial-State-Mobile
+- US/Feature/Small fix for deployment
+- Merge pull request #73 from bayer-int/10955_ChannelArrow_Crop_Order_Order_Details
+- Us/feature/10955(channel-quotes) Added sorting of crops based on crop list
+- Merge pull request #74 from bayer-int/kmani1-patch-4
+- US/Feature/updated yml file
+- Merge pull request #72 from bayer-int/11045-Edit-Quote-Initial-State-Mobile
+- US/Feature/Edit Quote Mobile & Defect Fix
+- US/Feature/Edit Quote Mobile & Defect Fix
+- US/Feature/Edit Quote Mobile & Defect Fix
+- US/Feature/Edit Quote Mobile & Defect Fix
+- US/Feature/Edit Quote Mobile & Defect Fix
+- US/Feature/Edit Quote Mobile & Defect Fix
+- US/Feature/Edit Quote Mobile & Defect Fix
+- US/Feature/Edit Quote Mobile & Defect Fix
+- US/Feature/Edit Quote Mobile & Defect Fix
+- US/Feature/Edit Quote Mobile & Defect Fix
+- Merge pull request #70 from bayer-int/APRIL-23-DEMO
+- Merge pull request #68 from bayer-int/11041-EDIT-QUOTE-ADD-PRODUCTS-TESTS
+- Package lock file changes
+- Us/feature/11041(channel-quotes) Added more tests cases for Select Product Modal
+- Us/feature/11041(channel-quotes) Added test cases for Select Product and related components
+- Us/feature/11041(channel-quotes) Fixed Warehouse update
+- Us/feature/11041(channel-quotes) Made Table and props more readable and maintainable
+- Us/feature/11041(channel-quotes) Refactored Table to difference between read vs edit mode
+- Merge branch 'development' into APRIL-23-DEMO
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into development
+- US/Feature/Edit Quote Mobile & Defect Fix
+- US/Feature/Edit Quote Initial State changes
+- Merge pull request #67 from bayer-int/Payment-term-selection-fix
+- Us/fix/(channel-quotes)payment-term-fix
+- Merge branch 'development' into APRIL-23-DEMO
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into development
+- Merge pull request #66 from bayer-int/USERSTORY-128-nbm-page
+- Prgram enrollment inital page
+- US/Feature/EDIT Quote fix
+- US/FEature/Payment Term issue fixed
+- US/FEature/Payment Term issue fixed
+- Merge pull request #62 from bayer-int/Edit-Quote-Name-Date
+- US/Feature/QuoteName update changes
+- US/Feature/QuoteName update changes
+- US/Feature/QuoteName update
+- US/Feature/QuoteName update
+- Merge branch 'APRIL-23-DEMO' into Edit-Quote-Name-Date
+- US/Feature/QuoteName update
+- Us/feature/xxxxx(channel-quotes) Fix updated quote not showing
+- US/Feature/QuoteName update
+- Us/feature/EditQuote(channel-quotes) Edit quote name and Expiration date
+- Us/feature/EditQuote(channel-quotes) Edit quote name and Expiration date
+- Merge pull request #64 from bayer-int/11041-EDIT-QUOTE-ADD-PRODUCTS
+- Us/feature/11041(channel-quotes) Fix rendering issue when upon storage selection table was re rendering
+- Us/feature/xxxxx(channel-quotes) Fix issue after merge
+- Merge pull request #58 from bayer-int/10890-Quote-List-Changes
+- US/FEature/Edit Quotes conflict fix
+- Merge pull request #63 from bayer-int/11041-EDIT-QUOTE-ADD-PRODUCTS
+- Us/feature/CSS fix
+- Us/feature/11041(channel-quotes) Open Add product modal
+- Us/feature/11041(channel-quotes) Removed consoles
+- Us/feature/11041(channel-quotes) Fix after merge
+- Merge branch 'development' into 11041-EDIT-QUOTE-ADD-PRODUCTS
+- Us/feature/11041(channel-quotes) Improved Warehouse selection and add products
+- Us/feature/11041(channel-quotes) Add ability to select warehouse for all row
+- Us/feature/11041(channel-quotes) Enable Add Products to edited quotes
+- Us/feature/11041(channel-quotes) Enable Delete
+- Us/feature/11041(channel-quotes) Fix edit on ProductList
+- Us/feature/11041(channel-quotes) Enable editing in ProductListDesktop
+- Us/feature/11041(channel-quotes) Fixed types
+- Us/feature/11041(channel-quotes) Make Table editable(kind of)
+- US/feature/removed console
+- US/Feature/Update Quote API integration
+- US/Feature/removed package-lock.json
+- US/Feature/Update Quote API integration
+- US/Feature/Update Quote API integration
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into development
+- US/Feature/save quotes changes
+- US/Feature/Farmers API integration
+- US/Feature/Farmers API integration
+- US/Feature/Conflict Fix
+- US/Features/Farmers API integration
+- US/Feature Quotes Defect fix
+- US/Feature Quotes Defect fix
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into development
+- US/DEPLOY/DYNAMIC-DEPLOY-CONFIG-CHANGES
+- Us/feature/EditQuote(channel-quotes) Edit quote name and Expiration date
+- Us/feature/EditQuote(channel-quotes) Edit quote name and Expiration date
+- Merge pull request #60 from bayer-int/USERSTORY123-LICENSESEARCH-FORM
+- US/FEATURE/USERSTORY123(common-farmers) add licenseformconfig to mock json
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into USERSTORY123-LICENSESEARCH-FORM
+- US/FEATURE/USERSTORY123(common-farmers) add useMemo, useCallback hooks to license search page
+- US/FEATURE/USERSTORY123(common-farmers) add unit test for license search page and add diable logic for search
+- US/FEATURE/USERSTORY123(common-farmers) add validation to search button
+- US/FEATURE/USERSTORY123(common-farmers) add validation logic to input fields
+- US/feature/USERSTORY123(common-farmers) add menu height for form select menu
+- US/feature/USERSTORY123(common-farmers) add select input type to license form
+- US/feature/USERSTORY123(common-farmers) add action buttion for license search form
+- US/feature/USERSTORY123(common-farmers) add radio button input field
+- US/feature/USERSTORY123(common-farmers) add more props to input fields
+- US/feature/123(common-farmers) add license search form base layout
+- Merge pull request #61 from bayer-int/11168-Desktop-Quote-Billing-Edit-fixes
+- Us/fix/11168(Channel-quotes) Edit Billing fixes
+- Us/feature/EditQuote(channel-quotes) Edit quote name and Expiration date
+- Us/feature/EditQuote(channel-quotes) Edit quote name and Expiration date
+- Merge pull request #59 from bayer-int/11168-Edit-Quote-Desktop-Billing-Section
+- Edit Quote - Desktop - Billing Section
+- Us/feature/XXX(channel-quotes) Modal refactor for Edit Quote
+- Load farmers module lodestar
+- Us/feature/EditQuote(channel-quotes) Edit quote name and Expiration date
+- Us/feature/EditQuote(channel-quotes) Edit quote name and Expiration date
+- Merge pull request #57 from bayer-int/Edit-Quote-Foundation
+- Merge branch 'development' into Edit-Quote-Foundation
+- Merge pull request #56 from bayer-int/10782-PRODUCT-FILTERS
+- Us/feature/10782(channel-quotes) Enable Filters for Select Products Modal Mobile
+- Us/feature/10782(channel-quotes) Enable Filters for Select Products Modal
+- Save Edit Mode in store and reuse QuoteCreate Modal
+- Merge branch 'development' into Edit-Quote-Foundation
+- Merge pull request #54 from bayer-int/10889-Remove-Payer
+- US/Feature/10889 (Channel-Quotes) Remove payer clean up
+- US/feature/10889 (Channel-Quotes) Remove Payer Feature
+- Merge branch 'development' into 10889-Remove-Payer
+- US/feature/10889 (Channel-quotes) Remove payer changes
+- Merge branch 'development' into 10889-Remove-Payer
+- US/feature/10889 (channel-quotes) Remove Payer Functionality
+- Enable edit mode for Quotes
+- Initial Foundational Changes
+- US/fix/ (Channel-quotes) UI Fixes
+- Merge pull request #48 from bayer-int/10922-UI-UNIT-TEST-FRAMEWORK
+- Merge branch 'development' into 10922-UI-UNIT-TEST-FRAMEWORK
+- US/Feature Snackbar issue fix
+- US/Feature Snackbar issue fix
+- US/Feature CSS Fix for Demo
+- US/Feature CSS Fix for Demo
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into development
+- US/fix/Create Quote (Channel-quotes) Merge Fixes
+- US/Feature/CSS Fix
+- Us/feature/quote list css fix
+- Merge pull request #52 from bayer-int/10780-SELECT-PRODUCT-DESKTOP
+- US/Add products conflict fix
+- Us/feature/demo/conflict-fix
+- Us/feature/demo/conflict-fix
+- US/Quote List changes on Feedback
+- Merge pull request #51 from bayer-int/10883-Add-Payer-Flow-Changes
+- Us/refactor/10883 (Channel-quotes) Refactor store
+- Us/fix/10883-10882 (Channel-quotes) View Quotes Button on Create Quote
+- Us/feature/10883 (Channel-Quotes) Add Payer Flow Changes
+- Merge pull request #50 from bayer-int/10890-Quote-List-Changes
+- US/Quote List changes on Feedback
+- US/Quote List changes on Feedback
+- US/Quote List changes on Feedback
+- US/Quote List changes on Feedback
+- US/Quote List Changes & Feedback
+- Merge branch 'development' into 10890-Quote-List-Changes
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into development
+- US/Quote List Changes & Feedback
+- Us/feature/10780(channel-quotes) Formate fixes
+- Us/feature/10780(channel-quotes) Update name and expire date
+- Us/feature/10780(channel-quotes) Enable Select Product for Desktop
+- Merge pull request #49 from bayer-int/10884-Select_Quantity
+- Us/feature/10884(channel-quotes) rename
+- Us/feature/10884(channel-quotes) handle  negative and decimal quantity input
+- Us/feature/10884(channel-quotes) select storage locations only when more than one, not allow negative and decimal quantity input
+- Us/feature/10922(channel-quotes) package lock changes
+- Us/feature/10922(channel-quotes) Setup test framework to utilize actual store with mocked API calls
+- Merge pull request #44 from bayer-int/26-MARCH-DEMO-CHANNEL-QUOTES
+- Merge branch 'development' into 26-MARCH-DEMO-CHANNEL-QUOTES
+- Merge pull request #46 from bayer-int/Quote-Details-API-Changes
+- US/Feature/Quote Details API changes
+- US/Feature/Quote Details API changes
+- Merge pull request #45 from bayer-int/Quote-Details-API-Changes
+- US/Feature/Quote Details API changes
+- US/Feature/Quote Details API changes
+- Us/feature/xxxx(channel-quotes) More Minor fixes
+- Us/fix/ (channel-quotes) Adjust Split Modal fixes
+- Us/feature/xxxx(channel-quotes) Minor fixes
+- Us/fix/(channel-quotes) Footer action button UI
+- Us/fix/10505 (channel-quotes) product list fixes
+- Us/feature/10827 (Channel-Quotes) Remove Payer
+- Us/feature/xxxx(channel-quotes) Added Product Search
+- Us/fix/10507 (channel-qutoes) Autofocus quantity
+- Us/features/10507 (Channel-quotes) Add products notification
+- US/Features/Adjust Split functionality added
+- US/Features/Adjust Split functionality added
+- Us/feature/xxxx(channel-quotes) Default view quotes call to Desktop
+- Us/feature/xxxx(channel-quotes) API related fixes
+- Us/feature/xxxx(channel-quotes) Fix build issues
+- Us/feature/xxxx(channel-quotes) Integrate Abandon quote with proper API calls
+- Us/fixes/(channel-quotes) translation
+- US/Features/Adjust Split functionality added
+- US/Feature/AdjustSplit implemented
+- Us/fix/10501 (Channel-Quotes) UI Fixes
+- Us/feature/xxxx(channel-quotes) Fix View quote button and its on click
+- Us/feature/xxxx(channel-quotes) Fix modal navigation and other issues
+- US/Feature/added custon title with back button for modal
+- US/Feature/added custon title with back button for modal
+- Us/feature/10503(channel-quotes) Select products cleanup
+- Us/feature/10503(channel-quotes) Add Quantity cleanupt
+- Us/feature/xxxx(channel-quotes) UI working with backend integration
+- Us/feature/renamed farmer list component
+- Us/feature/xxxx(channel-quotes) UI working partially
+- Merge branch '10503-Create_Quote_Product_list' into 26-MARCH-DEMO-CHANNEL-QUOTES
+- Us/feature/10503(channel-quotes) Add Product
+- Us/feature/10503(channel-quotes) Add Product
+- Us/feature/10503(channel-quotes) Add Product
+- Us/feature/10503(channel-quotes) Add Product
+- Us/feature/10503(channel-quotes) Add Product
+- Us/feature/10503(channel-quotes) Add Product
+- Us/feature/10503(channel-quotes) Add Product
+- Us/feature/10503/create_quote_product_list_quantity
+- Us/feature/10503/create_quote_product_list_initial
+- Us/feature/renamed farmer list component
+- Us/feature/renamed farmer list component
+- Us/feature/xxxx(channel-quotes) Enabled some functions
+- Merge branch '10501-Create-Quote-Modal' into 26-MARCH-DEMO-CHANNEL-QUOTES
+- Empty QuoteCreate - For Integration
+- Us/feature/10501 (channel-quotes) Create Quote Modal
+- Us/feature/xxxx(channel-quotes) Modal Infra
+- Merge branch '10496-SELECT-FARMER' into 26-MARCH-DEMO-CHANNEL-QUOTES
+- Us/feature/select farmers component added
+- Us/feature/select farmers component added
+- Us/feature/select farmers component added
+- Us/feature/select formers component added
+- Fix MessageWithAction
+- Merge pull request #41 from bayer-int/10658-Abandon-Quote
+- Us/feature/10658(channel-quotes) Add ability to abandon quote with save or discard options
+- Merge pull request #43 from bayer-int/kmani1-patch-3
+- Updated Quotes API Endpoint(Fields attribute)
+- Us/feature/10492(channel-quotes) Add Error state for View Quote
+- Fix an import
+- Merge pull request #39 from bayer-int/10612-ADD-QUOTE-CREATE-ENDPOINTS
+- Merge branch 'development' into 10612-ADD-QUOTE-CREATE-ENDPOINTS
+- Merge pull request #38 from bayer-int/10578-MENU-ITEMS
+- Us/feature/10578(channel-quotes) Removed View quote from table menu
+- Merge branch 'development' into 10578-MENU-ITEMS
+- Us/feature/10578(channel-quotes) Added menu items for View quote
+- Us/feature/10612(channel-quotes) Add payment term endpoint
+- Us/feature/10612(channel-quotes) Updated cart type
+- Us/feature/10612(channel-quotes) Added Products search query
+- Us/feature/10612(channel-quotes) Added to add entries to cart and convert cart to quote
+- Us/feature/10612(channel-quotes) Added update cart attributes endpoint
+- Us/feature/10612(channel-quotes) Added storage locations fetch
+- Us/feature/10612(channel-quotes) Refactored RTK structure and improved delete API call
+- Us/feature/xxxxx(channel-quotes) Added new CreateQuote component and refactored directory structure for quotes
+- View Quotes Page changes
+- Merge pull request #31 from bayer-int/9588-Sorting-Chips-Mobile
+- Us/feature/9588/sorting-mobile-conflict fix
+- 9929 quote delete desktop
+- Merge pull request #11 from bayer-int/9341-sonarqube
+- Us/feature/9341(channel-quotes) added build file for sonarqube
+- Merge pull request #34 from bayer-int/10012-Setup-Code-Deployment
+- Merge branch 'development' into 10012-Setup-Code-Deployment
+- Us/feature automation testing trigger addded
+- Us/feature automation testing
+- Merge pull request #25 from bayer-int/9583-Quotes-Search-Bar-Desktop
+- Us/feature/9583(channel-quotes) search
+- Us/feature/9583(channel-quotes) search
+- Us/feature/9583(channel-quotes) removed typo
+- Us/feature/9583(channel-quotes) removed typo
+- Us/feature/9583(channel-quotes) search-mobile styling
+- Us/feature/9583(channel-quotes) search
+- Us/feature/9583(channel-quotes) search text
+- Us/feature/9583(channel-quotes) search width
+- Us/feature/9583(channel-quotes) search-mobile revert package lock file
+- Us/feature/9583(channel-quotes) search-mobile
+- Us/feature/9588/sorting code review fix
+- Merge branch 'development' into 9588-Sorting-Chips-Mobile
+- Us/feature/----(channel-quotes) Fix an issue with empty state getting shown
+- Us/feature/9588/sorting code review fix
+- Us/feature/9588/Sorting related review comments fixed
+- Us/feature/9588/Sorting related review comments fixed
+- Us/feature/9588/Sorting related review comments fixed
+- Us/feature/9588/Sorting related review comments fixed
+- Us/features/9588/fixed review comments
+- Us/features/9588/fixed review comments
+- Merge pull request #33 from bayer-int/10266-INTEGRATE-QUOTE-DETAILS-ENDPOINT
+- Us/feature/10266(channel-quotes) rename
+- Us/feature/10266(channel-quotes) Fix broken UI when error occurs in API call
+- Us/feature/10266(channel-quotes) Call quote details API for selected quote
+- Us/feature/10157(channel-quotes) Added Pagination for quotes API
+- Us/features/9588/fixed review comments
+- Us/feature/9588/added sorting for mobile
+- Us/feature/9588/added sorting for mobile
+- Us/feature/9588/added sorting for mobile
+- Us/feature/9588/added sorting for mobile
+- Us/feature/9588/added sorting for mobile
+- Us/feature/9588/added sorting for mobile
+- Merge pull request #30 from bayer-int/10012-Setup-Code-Deployment
+- Merge branch 'development' into 10012-Setup-Code-Deployment
+- Merge pull request #29 from bayer-int/kmani1-patch-2
+- Us/feature/Node Version updated in dev.yml file
+- Merge pull request #27 from bayer-int/QuoteDetails-BaseStructure-Refactor
+- Us/refactor/quote detail (Channel-quotes) Base structure / refactor
+- Merge pull request #24 from bayer-int/9662-CREATE-FILTERS-MOBILE
+- Us/feature/9662(channel-quotes) Added filter chip leading icon
+- Merge pull request #23 from bayer-int/10012-Setup-Code-Deployment
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment testing
+- Us/feature/10012/(Channel-Quotes)-Code deployment testing
+- Us/feature/10012/(Channel-Quotes)-Code deployment testing
+- Us/feature/10012/(Channel-Quotes)-Code deployment testing
+- Us/feature/10012/(Channel-Quotes)-Code deployment testing
+- Us/feature/10012/(Channel-Quotes)-Code deployment testing
+- Us/feature/10012/(Channel-Quotes)-Code deployment testing
+- Us/feature/10012/(Channel-Quotes)-Code deployment testing
+- Us/feature/10012/(Channel-Quotes)-Code deployment testing
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Merge branch 'development' into 10012-Setup-Code-Deployment
+- Merge branch 'development' of github.com:bayer-int/gc-agency-ui-monorepo into development
+- Us/refactor/9665 (channel-quotes) Filter Quotes deployment
+- Us/refactor/9665 (channel-quotes) Filter Quotes deployment
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/10012/(Channel-Quotes)-Code deployment issue fixed
+- Us/feature/9588/sorting functionality added for mobile
+- Us/feature/9588/sorting functionality added for mobile
+- Us/feature/9662(channel-quotes) Added specs
+- Merge branch 'development' into 9662-CREATE-FILTERS-MOBILE
+- Merge pull request #21 from bayer-int/9665-CREATE-FILTERS
+- Us/feature/9662(channel-quotes) Working Filters for Mobile/Tablet view
+- Us/feature/9665(channel-quotes) Do not render all filters if only 1 available
+- Us/feature/9665(channel-quotes) Add/Update some specs
+- Us/feature/9665(channel-quotes) Add translations
+- Us/feature/9665(channel-quotes) Add filters to store and css fixes
+- Us/feature/9665(channel-quotes) Integrate with search
+- Merge branch 'development' into 9665-CREATE-FILTERS
+- Merge pull request #22 from bayer-int/10049-UI-Fix-code-refactor
+- Us/refactor/10049 (channel-quotes) Refactor UI fixes code
+- Merge pull request #19 from bayer-int/9583-Quotes-Search-Bar
+- Us/feature/9583(channel-quotes) Fix undo search
+- Merge branch 'development' into 9583-Quotes-Search-Bar
+- Us/feature/9583(channel-quotes) search for quotes list table
+- Us/feature/9583(channel-quotes) search for quotes list table
+- Us/feature/9583(channel-quotes) search for quotes list table
+- Us/feature/9583(channel-quotes) search for quotes list table
+- Us/feature/9583(channel-quotes) search for quotes list table
+- Us/feature/9583(channel-quotes) search for quotes list table
+- Us/feature/9583(channel-quotes) search for quotes list table
+- Us/feature/9583(channel-quotes) search for quotes list table
+- Us/feature/9583(channel-quotes) search for quotes list table
+- Us/feature/9583(channel-quotes) search for quotes list table
+- Us/feature/9665(channel-quotes) Working filters for desktop
+- Merge pull request #20 from bayer-int/10049-Fixes-for-UX-Observations
+- Us/fix/10049 (Channel-Quotes) Fix for UX observations
+- Merge pull request #16 from bayer-int/9927-Expanded-Table
+- Us/feature/9927(channel-quotes) Used new List
+- Us/feature/9927(channel-quotes) Fixed list
+- Merge branch 'development' into 9927-Expanded-Table
+- Us/feature/9927(channel-quotes) Fixed styling and quotes type
+- Us/feature/9927(channel-quotes) Added Specs
+- Us/feature/9927(channel-quotes) Add Expanded Table Template
+- 9841 - check box list filter panel
+- Merge pull request #18 from bayer-int/9563-Quotes-List-Mobile
+- Quotes list for mobile
+- Merge pull request #15 from bayer-int/9839-CC-INTEGRATION
+- Us/feature/9839(channel-quotes) Integrate with Commerce Cloud API
+- Merge pull request #14 from bayer-int/9840-BottomSheet-Wrapper
+- Us/feature/9840(channel-quotes) Added Specs
+- Us/feature/9840(channel-quotes) Add new reusable wrapper for Bottom Sheet
+- Us/refactor/9650 (channel-quotes) Custom BG for ICON
+- Quotes list for mobile
+- Merge pull request #8 from bayer-int/9653-Quotes-Table-Desktop
+- Us/feature/9563(channel-quotes) Fix Translations
+- Us/feature/9563(channel-quotes) CSS changes
+- Us/feature/9563(channel-quotes) Integration in Quotes List
+- Us/feature/9563(channel-quotes) Update Table search label
+- Merge branch 'development' into 9653-Quotes-Table-Desktop
+- 9560 quotes loading
+- 9650 message with action component
+- Us/feature/9563(channel-quotes) Fix Table
+- Merge branch 'development' into 9653-Quotes-Table-Desktop
+- 9652 wrapper badge component
+- Us/feature/9563(channel-quotes) Fix TableMenu and HeadingMobile
+- Us/feature/9563(channel-quotes) Initial changes for Table with Action Menu
+- Merge pull request #6 from bayer-int/9561-Quotes-Landing-Desktop
+- Updated port number
+- Merge pull request #5 from bayer-int/9561-Quotes-Landing-Desktop
+- Us/feature/9561(channel-quotes) Final changes with updated specs
+- Us/feature/9561(channel-quotes) Working version for mobile and desktop
+- Disable Button option included
+- Us/feature/9561(channel-quotes) Initial changes for Landing Page
+- Updated Readme for branching model
+- Merge pull request #4 from bayer-int/prettier-config
+- New updated prettier configs
+- Redux base Setup
+- Merge pull request #3 from bayer-int/main
+- Merge pull request #2 from bayer-int/sonarQube
+- Merge pull request #1 from bayer-int/faste-lite-integration
+- Faste Lite module integration
+- Use Node 20 and added EDS support
+- Fix readme
+- Initial MonoRepo Setup
+- Update README.md
+- Initial commit
+
+### Fixed
+- Fix lint issues
+- Test commit prefix feature
+- Fixed conflict
+- Fix
+- Fix
+- Fix
+- Fix
+
+### Removed
+- Remove unsed rtk query
+
+[unreleased]: https://github.com///compare/v0.0.13-seedsman..HEAD
+[0.0.13-seedsman]: https://github.com///compare/v0.0.12-seedsman..v0.0.13-seedsman
+[0.0.12-seedsman]: https://github.com///compare/v0.0.11-seedsman..v0.0.12-seedsman
+[0.0.11-seedsman]: https://github.com///compare/v0.0.10-seedsman..v0.0.11-seedsman
+[0.0.10-seedsman]: https://github.com///compare/v0.0.9-seedsman..v0.0.10-seedsman
+[0.0.9-seedsman]: https://github.com///compare/v0.0.8-seedsman..v0.0.9-seedsman
+[0.0.8-seedsman]: https://github.com///compare/v0.0.7-seedsman..v0.0.8-seedsman
+[0.0.7-seedsman]: https://github.com///compare/v0.0.6-seedsman..v0.0.7-seedsman
+[0.0.6-seedsman]: https://github.com///compare/v0.0.5-seedsman..v0.0.6-seedsman
+[0.0.5-seedsman]: https://github.com///compare/v0.0.4-seedsman..v0.0.5-seedsman
+[0.0.4-seedsman]: https://github.com///compare/v0.0.3-seedsman..v0.0.4-seedsman
+[0.0.3-seedsman]: https://github.com///compare/v0.0.2-seedsman..v0.0.3-seedsman
+[0.0.2-seedsman]: https://github.com///compare/v0.0.1-seedsman..v0.0.2-seedsman
+
+<!-- generated by git-cliff -->

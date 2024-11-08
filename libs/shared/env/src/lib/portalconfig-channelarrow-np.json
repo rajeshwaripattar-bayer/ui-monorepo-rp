@@ -1,0 +1,164 @@
+{
+  "gcPortalConfig": {
+    "salesYear": ["2024", "2025"],
+    "farmerTabs": ["Quotes", "Orders", "Deliveries", "Returns"],
+    "orderTabs": ["Farmer", "Stock", "SeedGrowth"],
+    "orderConfig": {
+      "division": "17",
+      "salesYear": "2024",
+      "documentType": "ZU3O",
+      "salesOffice": "MCCS",
+      "salesOrg": "7O31",
+      "distributionChannel": "80",
+      "salesOrgId": "7O31"
+    },
+    "paymentTermsConfig": [
+      {
+        "paymentDueDate": "25",
+        "paymentTerm": "Z725",
+        "paymentDueMonth": "common.month_july.label"
+      },
+      {
+        "paymentDueDate": "25",
+        "paymentTerm": "ZNOV",
+        "paymentDueMonth": "common.month_november.label"
+      },
+      {
+        "paymentTerm": "ZJDF",
+        "paymentTermProgramNotes": "common.payment_term_JD_Notes.label"
+      },
+      {
+        "paymentTerm": "ZJD2",
+        "paymentTermProgramNotes": "common.payment_term_JD_Notes.label"
+      }
+    ],
+    "crops": ["Corn", "Soybean", "Sorghum"],
+    "seedYear": "2025",
+    "uiCommon": {
+      "badgeThemeColor": [
+        {
+          "color": "red",
+          "text": ["Failure", "Error", "Submitted with Errors", "Prepay Required", "Canceled"]
+        },
+        {
+          "color": "green",
+          "text": ["Converted", "Added", "Applied", "Open", "Delivered", "Partially Delivered"]
+        },
+        {
+          "color": "orange",
+          "text": ["Draft", "Credit Block"]
+        },
+        {
+          "color": "blue",
+          "text": ["Buyer Submitted"]
+        }
+      ]
+    },
+    "expirationDateOptions": [
+      {
+        "timePeriod": "week",
+        "duration": 2,
+        "description": "quotes.expiration_two_weeks.label",
+        "code": "two-week"
+      },
+      {
+        "timePeriod": "month",
+        "duration": 1,
+        "description": "quotes.expiration_one_month.label",
+        "code": "one-month"
+      },
+      {
+        "timePeriod": "month",
+        "duration": 2,
+        "description": "quotes.expiration_two_months.label",
+        "code": "two-month"
+      }
+    ],
+    "discounts": {
+      "nonDiscretionaryDiscount": {
+        "defaultPrepay": "Channel Brand"
+      }
+    },
+    "quotesPageSize": 500,
+    "productsPageSize": 500,
+    "displayNota": false,
+    "cropList": [
+      {
+        "cropName": "Corn",
+        "cropCode": "seed_corn"
+      },
+      {
+        "cropName": "Soybean",
+        "cropCode": "seed_soybean"
+      },
+      {
+        "cropName": "Soybeans",
+        "cropCode": "seed_soybean"
+      },
+      {
+        "cropName": "Sorghum",
+        "cropCode": "seed_sorghum"
+      }
+    ],
+    "brandFamily": "Channel"
+  },
+  "quotesModule": {
+    "quoteActions": ["edit", "duplicate", "convertToOrder", "shareWithFarmer", "print", "delete"]
+  },
+  "farmersModule": {
+    "farmerListColumns": [
+      {
+        "displayType": "link",
+        "accessor": "name",
+        "header": "Farmer Name",
+        "id": "name",
+        "defaultSort": "asc",
+        "searchable": true
+      },
+      {
+        "accessor": "partyStatus",
+        "header": "Farmer Status",
+        "id": "partyStatus",
+        "filterable": true,
+        "searchable": true
+      },
+      {
+        "accessor": "sourceId",
+        "id": "sourceId",
+        "header": "Account ID",
+        "searchable": true,
+        "sortType": "basic"
+      },
+      {
+        "accessor": "relationshipStatus",
+        "id": "relationshipStatus",
+        "header": "SCoR Status",
+        "searchable": true
+      },
+      {
+        "accessor": "contracts[0].contractStatus",
+        "id": "contracts[0].contractStatus",
+        "header": "License Status",
+        "filterable": true,
+        "searchable": true
+      },
+      {
+        "accessor": "cyOrder",
+        "id": "cyOrder",
+        "header": "Connect License",
+        "displayType": "boolean",
+        "sortType": "basic"
+      },
+      {
+        "accessor": "",
+        "header": "Actions",
+        "displayType": "actionMenu",
+        "disableSortBy": true,
+        "actions": ["viewDetails", "edit", "inactivate"]
+      }
+    ],
+    "farmersProfile": {
+      "actions": ["quote", "order", "delivery", "return"]
+    }
+  }
+}

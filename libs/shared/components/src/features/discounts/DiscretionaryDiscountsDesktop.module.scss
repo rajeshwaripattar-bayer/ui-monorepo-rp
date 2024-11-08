@@ -1,0 +1,53 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(248, 249, 229, 1);
+  padding: 16px 24px 16px 24px;
+}
+
+.sub_heading {
+  padding: 20px 24px;
+}
+
+.no_data_msg {
+  margin-top: 100px !important;
+}
+
+.table {
+  border: none;
+  padding-bottom: 24px !important;
+  :global(.lmnt-select__anchor) {
+    min-height: 40px !important;
+  }
+  :global(.lmnt-select-container) {
+    margin-top: 2px;
+  }
+  :global(.mdc-notched-outline__leading) {
+    border-radius: 0 !important;
+  }
+  :global(.mdc-notched-outline__trailing) {
+    border-radius: 0 !important;
+  }
+
+  th:first-child {
+    padding-left: 24px;
+  }
+
+  th:last-child {
+    padding-right: 24px;
+  }
+}
+
+
+.recommended_range_loading{
+  width: 25%;
+  float: right
+}

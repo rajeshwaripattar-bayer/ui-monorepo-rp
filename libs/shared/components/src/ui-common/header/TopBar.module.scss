@@ -1,0 +1,56 @@
+.top_bar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  height: 63px;
+  width: 84%;
+  //padding: 0px 4% 0px 1%;
+  top: 0px;
+  background: #fff;
+  z-index: 5;
+  right: 0px;
+  left: 12%;
+
+  @media (min-width: 1024px) {
+    left: 6%;
+  }
+
+  @media (max-width: 599px) {
+    left: 2%;
+    width: 94%;
+  }
+  // @media (min-width: 600px) {
+  //   width: 88%;
+  // }
+
+  .title {
+    margin-left: 12px;
+    line-height: 64px;
+  }
+  .leading_block {
+    line-height: 78px;
+    cursor: pointer;
+  }
+
+  .trailing_block {
+    margin-left: auto;
+    margin-top: 14px;
+    cursor: pointer;
+  }
+  .more_action {
+    margin-left: auto;
+    margin-top: 14px;
+  }
+}
+
+.farmer_search {
+  position: absolute;
+  width: 94%;
+  left: 2%;
+  .trailing_block {
+    margin-top: 12px;
+  }
+  @media (max-width: 1023px) {
+    z-index: 3;
+  }
+}

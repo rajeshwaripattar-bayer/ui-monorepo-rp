@@ -1,0 +1,25 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.leading_section {
+  padding: 0px 16px !important;
+  pointer-events: none;
+  background-color: white !important;
+  min-height: 50px;
+}
+
+.select_all_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 48px;
+
+  span:nth-child(2) {
+    margin-left: auto;
+  }
+}

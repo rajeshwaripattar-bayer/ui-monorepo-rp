@@ -1,0 +1,11 @@
+.fieldViewModalContainer {
+  :global(.lmnt-modal__surface) {
+    overflow: hidden !important;
+  }
+  .errorBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20;
+  }
+}

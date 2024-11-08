@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SegmentButton Snapshot test 1`] = `
+<body>
+  <div>
+    <div
+      class="lmnt lmnt-group container"
+      style="display: flex; flex-direction: row; justify-content: flex-start; align-items: baseline; gap: 0px;"
+    >
+      <button
+        class="lmnt mdc-button lmnt-button mdc-button--touch lmnt-button--filled-primary mdc-button--raised lmnt-button--xsmall mdc-touch-target-wrapper"
+        type="button"
+      >
+        <span
+          class="mdc-button__ripple"
+        />
+        <span
+          class="mdc-button__label"
+        >
+          $
+        </span>
+        <span
+          class="mdc-button__touch"
+        />
+      </button>
+      <button
+        class="lmnt mdc-button lmnt-button mdc-button--touch lmnt-button--outlined-primary mdc-button--outlined lmnt-button--xsmall mdc-touch-target-wrapper"
+        type="button"
+      >
+        <span
+          class="mdc-button__ripple"
+        />
+        <span
+          class="mdc-button__label"
+        >
+          %
+        </span>
+        <span
+          class="mdc-button__touch"
+        />
+      </button>
+    </div>
+  </div>
+</body>
+`;

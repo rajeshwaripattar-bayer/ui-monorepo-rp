@@ -1,0 +1,17 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.mobile-floating-btn {
+    position: fixed !important;
+    bottom: 110px;
+    right: 16px;
+    border-radius: 10px !important;
+    z-index: 100;
+    @media (min-width: 600px) {
+      bottom: 20px;
+    }
+  }

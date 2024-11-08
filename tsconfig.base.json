@@ -1,0 +1,47 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "paths": {
+      "@gc/api/client": ["libs/api/client/src/index.ts"],
+      "@gc/components": ["libs/shared/components/src/index.ts"],
+      "@gc/components/types": ["libs/shared/components/types/index.ts"],
+      "@gc/constants": ["libs/shared/constants.ts"],
+      "@gc/features-channel-inventory": ["libs/features/channel/inventory/src/index.ts"],
+      "@gc/features-channel-orders": ["libs/features/channel/orders/src/index.ts"],
+      "@gc/features-channel-quotes": ["libs/features/channel/quotes/src/index.ts"],
+      "@gc/features-common-farmers": ["libs/features/common/farmers/src/index.ts"],
+      "@gc/features-common-farmers/federated": ["libs/features/common/farmers/src/federated.ts"],
+      "@gc/features-common-farmers/program": ["libs/features/common/farmers/src/pages/Program.tsx"],
+      "@gc/hooks": ["libs/hooks/src/index.ts"],
+      "@gc/redux-store": ["libs/redux-store/src/index.ts"],
+      "@gc/rtk-queries": ["libs/api/rtk-queries/src/index.ts"],
+      "@gc/shared/assets/*": ["libs/shared/assets/*"],
+      "@gc/shared/env": ["libs/shared/env/src/index.ts"],
+      "@gc/shared/faste-app-starter": ["libs/shared/faste-app-starter/src/index.ts"],
+      "@gc/shared/i18n": ["libs/shared/i18n/src/index.ts"],
+      "@gc/shared/test": ["libs/shared/test/src/index.ts"],
+      "@gc/types": ["libs/types/src/index.ts"],
+      "@gc/utils": ["libs/shared/utils/index.ts"]
+    },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
+  },
+  "exclude": ["node_modules", "tmp"]
+}

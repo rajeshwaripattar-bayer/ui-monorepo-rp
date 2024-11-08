@@ -1,0 +1,33 @@
+.returns_table {
+  tr:has(i[id='arrow_down']) {
+    background: #f5f5f5;
+  }
+
+  tr:has(div[id='returns_expansion_panel']) {
+    border-top: none !important;
+  }
+  .returns_expansion_panel {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 0px 32px;
+  }
+  :global(.lmnt-table__cell--nestable) {
+    padding: 0px;
+  }
+  tr > :nth-child(1) {
+    width: 56px;
+    padding-right: 0px;
+  }
+}
+
+.returns_list_mobile {
+  width: 100%;
+  :global(.lmnt-list-item--wrap) {
+    min-height: 85px !important;
+  }
+}
+
+.overline-text-wrapper {
+  margin: -15px 0px;
+  text-transform: capitalize;
+}

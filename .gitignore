@@ -1,0 +1,55 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# OS X
+.DS_Store*
+Icon?
+._*
+
+# compiled output
+dist
+tmp
+/out-tsc
+
+# module federation
+@mf-types
+
+# dependencies
+node_modules
+
+# IDE - VSCode
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+storybook-static
+
+# System Files
+.DS_Store
+Thumbs.db
+/.idea
+
+.env.local
+.env
+cypress.env.*
+.nx-cache
+.nx
+
+#Local setup files
+localhost-key.pem
+localhost.pem
+.vscode/extensions.json
+.vscode/settings.json
+faste-module.zip
+.vscode
+
+out.txt

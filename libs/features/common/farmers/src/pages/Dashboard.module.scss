@@ -1,0 +1,15 @@
+.dashboardContainer {
+  .licenseSearchImage {
+    height: 290px;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-image: url(https://d3rvji934ub4qv.cloudfront.net/images/farmerLicenseSearch.jpg);
+  }
+  :global(.lmnt .mdc-card__content .lmnt-card-body) {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}

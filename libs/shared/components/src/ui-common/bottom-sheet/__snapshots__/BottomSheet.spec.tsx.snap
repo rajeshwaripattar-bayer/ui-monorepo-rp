@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomSheet should render successfully 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div />
+    <div
+      class="lmnt lmnt-bottom-sheet  container"
+      content="[object Object]"
+      style="position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; overflow: hidden; pointer-events: none; z-index: 9999999; visibility: visible;"
+    >
+      <div
+        class="react-modal-sheet-container "
+        style="z-index: 2; position: absolute; left: 0px; bottom: 0px; width: 100%; background-color: rgb(255, 255, 255); border-top-right-radius: 8px; border-top-left-radius: 8px; box-shadow: 0px -2px 16px rgba(0, 0, 0, 0.3); display: flex; flex-direction: column; pointer-events: auto; transform: none;"
+      >
+        <div
+          draggable="false"
+          style="width: 100%; user-select: none;"
+        >
+          <header
+            class="lmnt-bottom-sheet__header"
+          >
+            <div
+              class="lmnt-bottom-sheet-drag-bar"
+            >
+              <div
+                class="lmnt-bottom-sheet-drag-handle"
+              />
+            </div>
+            <div
+              style="display: flex; padding: 0px 24px; justify-content: space-between;"
+            >
+              <span
+                class="lmnt-bottom-sheet__headline mdc-typography--headline6"
+                id="lmnt-bottom-sheet__headline"
+              >
+                Filter
+              </span>
+              <button
+                aria-label="Dismiss"
+                class="mdc-icon-button mdc-button--text lmnt-bottom-sheet__dismiss"
+                type="button"
+              >
+                <i
+                  aria-hidden="true"
+                  class="material-icons"
+                >
+                  close
+                </i>
+              </button>
+            </div>
+          </header>
+        </div>
+        <hr
+          class="lmnt lmnt-divider lmnt-divider--dense lmnt-divider--on-surface-stroke"
+        />
+        <div
+          class="react-modal-sheet-content lmnt-bottom-sheet-content-container"
+          draggable="false"
+          style="flex-grow: 1; display: flex; flex-direction: column; min-height: 0px; position: relative; user-select: none;"
+        >
+          <div
+            class="lmnt-bottom-sheet-content"
+          >
+            <p>
+              Main content comes here!!
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="react-modal-sheet-backdrop "
+        style="z-index: 1; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.2); pointer-events: auto; opacity: 0;"
+        tabindex="0"
+      />
+    </div>
+  </body>,
+  "container": <div />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

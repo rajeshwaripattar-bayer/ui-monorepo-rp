@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  @media (max-width: 1023px) {
+    padding: 24px 24px;
+    position: relative;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 48px 80px;
+  }
+  @media (max-width: 719px) {
+    padding: 0px;
+  }
+}
+.header {
+  @media (max-width: 719px) {
+    padding: 24px 16px;
+  }
+}

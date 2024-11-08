@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  width: auto;
+  padding: 12px 8px 12px 16px;
+}
+
+.line_height_22 {
+  line-height: 22px;
+}
+
+.card {
+  border-radius: 0 !important;
+
+  @media (max-width: 719px) {
+    border-width: 1px 0px !important;
+  }
+
+  & .card-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+  }
+
+  & .card-title {
+    min-height: 40px !important;
+  }
+}
+
+.segment-button {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.stock-order-list-mobile {
+  padding: 0px;
+
+  & .stock-order-list-item {
+    padding: 0px 16px;
+  }
+}
+
+.overline-text-wrapper {
+  margin: -15px 0px;
+  text-transform: capitalize;
+}

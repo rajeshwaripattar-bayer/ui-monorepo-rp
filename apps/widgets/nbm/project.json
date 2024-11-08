@@ -1,0 +1,92 @@
+{
+  "name": "nbm",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/widgets/nbm/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/widgets/nbm",
+        "outputFileName": "bundle",
+        "baseHref": "/",
+        "main": "apps/widgets/nbm/src/main.tsx",
+        "tsConfig": "apps/widgets/nbm/tsconfig.app.json",
+        "scripts": [],
+        "vendorChunk": false,
+        "webpackConfig": "apps/widgets/nbm/webpack.config.js"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": false
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/widgets/nbm/src/environments/environment.ts",
+              "with": "apps/widgets/nbm/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        },
+        "browser": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": false,
+          "vendorChunk": true,
+          "main": "apps/widgets/nbm/src/browser.tsx",
+          "outputFileName": "main",
+          "webpackConfig": "webpack.browser.config.js"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/webpack:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "nbm:build",
+        "port": 4010,
+        "allowedHosts": "all"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "nbm:build:development",
+          "ssl": true,
+          "sslKey": "./localhost-key.pem",
+          "sslCert": "./localhost.pem"
+        },
+        "production": {
+          "buildTarget": "nbm:build:production",
+          "ssl": true,
+          "sslKey": "./localhost-key.pem",
+          "sslCert": "./localhost.pem"
+        },
+        "browser": {
+          "buildTarget": "nbm:build:browser",
+          "port": 1233
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/widgets/nbm/jest.config.ts"
+      }
+    }
+  },
+  "tags": ["scope:nbm", "type:app"]
+}

@@ -1,0 +1,13 @@
+.farmerDetailsContainer {
+  display: grid !important;
+  row-gap: 0.8rem !important;
+  margin: 0 4% !important;
+  padding-top: 0 !important;
+
+  .farmerInfoCard {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 1rem;
+  }
+}

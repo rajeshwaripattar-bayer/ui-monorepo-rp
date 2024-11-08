@@ -1,0 +1,89 @@
+.myFarmersContainer {
+  padding: 0px !important;
+  .headerRow {
+    gap: 6px !important;
+    button {
+      padding: 0 !important;
+      margin-left: -2px;
+    }
+  }
+
+  .pageActionRow {
+    min-height: 40px;
+    :global(.lmnt-layout-grid__cell) {
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+    @media (min-width: 1024px) {
+      padding: 0px 80px;
+    }
+    @media (max-width: 719px) {
+      padding: 0px 80px;
+    }
+  }
+}
+
+.header_padding_full {
+  @media (min-width: 1024px) {
+    padding: 48px 80px;
+  }
+}
+
+.header_padding_partial {
+  @media (min-width: 1024px) {
+    padding: 48px 80px 0px 80px;
+  }
+}
+
+.content {
+  @media (max-width: 1023px) {
+    padding: 0px 16px;
+    position: relative;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0px 80px;
+  }
+
+  @media (max-width: 719px) {
+    padding: 0px;
+  }
+}
+
+.container_contingency {
+  min-height: 480px;
+}
+
+@media (min-width: 720px) {
+  :global(.lmnt-table__cell-content) {
+    min-height: 48px;
+    height: auto !important;
+  }
+}
+
+.farmer_list_container {
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+  .farmer_list {
+    width: 100%;
+  }
+  .farmer_list_item {
+    min-height: 64px;
+    :global(.mdc-list-item__start) {
+      margin-left: 16px !important;
+      align-self: flex-start !important;
+      margin-top: 12px !important;
+    }
+    :global(.mdc-list-item__content) {
+      padding-bottom: 2px !important;
+    }
+  }
+}
+
+.welcome_msg_mobile {
+  padding: 16px;
+  @media (min-width: 720px) {
+    padding: 24px;
+  }
+}

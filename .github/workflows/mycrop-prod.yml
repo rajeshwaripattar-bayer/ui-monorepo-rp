@@ -1,0 +1,81 @@
+name: MyCrop Farmers Module Prod Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      commitHash:
+        description: 'Source Commit Hash'
+        required: false
+
+run-name: Deploy Farmers module to mycrop prod by @${{ github.actor }}
+
+env:
+  MODULE_NAME: mycrop-farmers-ui
+  NODE_VERSION: 20
+  COMMIT_HASH: ${{ github.event.inputs.commitHash || github.sha }}
+  VAULT_PATH: kv/data/lodestar/nbm/deploy
+
+jobs:
+  deploy:
+    name: build-deploy
+    runs-on: ubuntu-latest
+    environment: lodestar
+    steps:
+      - name: Import Secrets
+        uses: hashicorp/vault-action@v3.0.0
+        with:
+          tlsSkipVerify: true
+          url: https://vault.agro.services
+          method: approle
+          roleId: ${{ secrets.VAULT_ROLE_ID }}
+          secretId: ${{ secrets.VAULT_ROLE_SECRET }}
+          secrets: |
+            ${{ env.VAULT_PATH }} npmAuthToken ;
+            ${{ env.VAULT_PATH }} prodApiKey ;
+            ${{ env.VAULT_PATH }} clientId ;
+            ${{ env.VAULT_PATH }} clientSecret ;
+
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.COMMIT_HASH }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Configure NPM
+        run: |
+          npm config set //artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/:_authToken ${{ env.NPMAUTHTOKEN }}
+          npm config set @monsantoit:registry=https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm config set @supernova:registry=https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm config set @faste-lite:registry=https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm config set @c7:registry=https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm config set @element:registry=https://artifactory.bayer.com/artifactory/api/npm/npm-platforms-engineering/
+          npm ci
+
+      - name: Install spectrum cli 
+        run: |
+          npm install @monsantoit/spectrum-cli@^5.3.1 -g
+
+      - name: Build Farmers Module
+        run: |
+          npm run setSpectrumConfig entry=dist/apps/mycrop/farmers/bundle.js assets=dist/apps/mycrop/farmers cmdb=mycrop-farmers-ui
+          npm run mycrop:farmers:build
+
+      - name: Get Approved Commit
+        run: |
+          npx @c7/spectrum-cli deploytool list commit --client-id ${{ env.CLIENTID }} --client-secret ${{ env.CLIENTSECRET }} > approved-commit.txt
+          echo '::set-output name=COMMIT_HASH::$(cat approved-commit.txt)'
+        id: approved-commit
+        
+      - name: Compare Commit Hash
+        run: |
+          echo Approved Hash: ${{ steps.approved-commit.outputs.COMMIT_HASH }}
+          echo Commit Hash: ${{ env.COMMIT_HASH }}
+
+      - name: Spectrum Deploy
+        run: |
+          spectrum faste publish --module-name ${{ env.MODULE_NAME }} --module-version stable --prod --ci --api-key ${{ env.PRODAPIKEY }} --client-id ${{ env.CLIENTID }} --client-secret ${{ env.CLIENTSECRET }}
+        id: spectrum-deploy

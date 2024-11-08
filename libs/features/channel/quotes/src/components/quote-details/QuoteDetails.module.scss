@@ -1,0 +1,167 @@
+.container_contingency {
+  min-height: 65vh;
+  padding: 16px;
+}
+
+.container {
+  padding: 48px 80px;
+  position: relative;
+
+  @media (max-width: 719px) {
+    padding: 0px;
+  }
+
+  @media (min-width: 720px) and (max-width: 1023px) {
+    padding: 24px;
+  }
+}
+
+.header {
+  @media (max-width: 719px) {
+    padding: 24px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+}
+
+.loader {
+  position: relative;
+  margin-top: 25vh;
+}
+
+.payer-list-section {
+  width: 100%;
+}
+
+.crop-summary-section {
+  width: 100%;
+}
+.brand-discount-section {
+  width: 100%;
+}
+
+.section {
+  margin-top: 48px;
+
+  @media (max-width: 1023px) {
+    margin-top: 24px;
+  }
+
+  @media (max-width: 599px) {
+    margin-top: 16px;
+  }
+}
+
+.label {
+  width: 156px;
+  height: 40px;
+  float: left;
+  margin-bottom: 10px;
+  clear: both;
+  line-height: 40px;
+}
+
+.wrapper {
+  width: 100%;
+  :global(.mdc-text-field-helper-line) {
+    float: left;
+    padding: 0px !important;
+    margin-top: 6px !important;
+  }
+  :global(.lmnt-text-field--container-to-content-width) {
+    width: auto !important;
+  }
+}
+
+.quote_input {
+  width: 300px;
+  float: left;
+  margin-bottom: 10px;
+  :global(.mdc-notched-outline__leading) {
+    border-radius: 0 !important;
+  }
+  :global(.mdc-notched-outline__trailing) {
+    border-radius: 0 !important;
+  }
+  :global(.mdc-select__anchor) {
+    min-height: 40px !important;
+  }
+}
+
+.actions {
+  background-color: #fff;
+  text-align: right;
+
+  @media (max-width: 719px) {
+    margin-top: 16px;
+    padding: 16px;
+  }
+
+  @media (min-width: 720px) {
+    margin-top: 24px;
+  }
+}
+
+.primary_action {
+  @media (max-width: 719px) {
+    margin-left: 0px;
+    margin-top: 8px;
+  }
+
+  @media (min-width: 720px) {
+    margin-left: 16px;
+    margin-top: 0px;
+  }
+}
+
+.desktop_top_bar {
+  position: fixed;
+  height: 63px;
+  width: 100%;
+  top: 0px;
+  background: #fff;
+  z-index: 10;
+  right: 0;
+  left: 81px;
+  line-height: 64px;
+
+  .trailing_icon {
+    margin-left: 16px;
+    margin-top: 12px;
+  }
+
+  .title {
+    margin-left: 22px;
+    line-height: 64px;
+  }
+
+  .actions_desktop {
+    position: fixed;
+    height: 36px !important;
+    flex-direction: unset !important;
+    align-items: unset !important;
+    margin-top: 14px;
+    @media (min-width: 720px) {
+      right: 80px;
+    }
+
+    @media (max-width: 719px) {
+      right: 8px;
+    }
+  }
+  .action_mobile {
+    border-radius: 10px !important;
+  }
+}
+
+.alert_message {
+  @media (max-width: 719px) {
+    margin: 16px !important;
+  }
+
+  @media (min-width: 720px) {
+    margin-bottom: 24px !important;
+  }
+}
+:global(#c7-main-content) {
+  margin-bottom: 94px !important;
+}

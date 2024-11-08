@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  left: 0px;
+  top: 0px;
+  padding: 12px 8px;
+  position: absolute;
+  align-items: center;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+}
+
+.modal_title {
+  left: 12px;
+  top: 10px;
+  position: absolute;
+  text-transform: capitalize;
+}
+
+.trailing_content {
+  margin-left: auto;
+}
